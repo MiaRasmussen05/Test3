@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>Snake Snack</title>
 </head>
 <body>
     <div background>
@@ -54,9 +54,9 @@
             <div class="play-container">
                 <div class="difficulty-wrapper">
 
-                  <a class="difficulty" id="play-easy">Easy</a>
-                  <a class="difficulty" id="play-medium">Medium</a>
-                  <a class="difficulty" id="play-hard">Hard</a>
+                  <a href="./game.html" class="difficulty" id="play-easy">Easy</a>
+                  <a href="./game.html" class="difficulty" id="play-medium">Medium</a>
+                  <a href="./game.html" class="difficulty" id="play-hard">Hard</a>
 
                 </div>
 
@@ -69,7 +69,15 @@
     </div>
 
     <script>
-        
+        window.onclick = function(event) {
+    if (event.target == rules-modal) {
+        rulesModal.style.display = "none";
+    }
+  
+      if (event.target == play-modal) {
+          playModal.style.display = "none";
+      }
+  }
     </script>
 
     <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
