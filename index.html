@@ -11,6 +11,8 @@
 <body>
     <div background>
 
+        <div id="welcome"></div>
+
         <div class="landing-page">
             <header>
                 <div>logo</div>
@@ -30,13 +32,48 @@
                     <img src="" alt="">
                 </div>
                 <div class="buttons">
-                    <button>Rules</button>
-                    <a href="#">Play</a>
+                    <button class="btn" id="rules-btn">Rules</button>
+                    <button class="btn" id="play-btn">Play</button>
                 </div>
             </div>
         </div>
 
+        
+        <div class="rules-modal">
+            <div class="rules-container">
+                <h2>RULES</h2>
+                <h3>I am sure you already know this, but lets just go over it one more time for the people who don't!</h3>
+                
+
+                <a class="close-btn" id="close-rules"><i class="fas fa-times"></i></a>
+
+            </div>
+        </div>
+
+        <div class="play-modal">
+            <div class="play-container">
+                <div class="difficulty-wrapper">
+
+                  <a class="difficulty" id="play-easy">Easy</a>
+                  <a class="difficulty" id="play-medium">Medium</a>
+                  <a class="difficulty" id="play-hard">Hard</a>
+
+                </div>
+
+              <a class="close-btn" id="close-play"><i class="fas fa-times"></i></a>
+
+            </div>
+            <div class="square"></div>
+        </div>
+
     </div>
+
+    <script>
+        
+    </script>
+
+    <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/rules-modal.js"></script>
 
 </body>
 </html>
