@@ -50,8 +50,8 @@ nav li {
 }
 
 nav li i {
-    width: 32px;
-    height: 28px;
+    width: 100%;
+    height: 84%;
     text-align: center;
     position: relative;
     font-size: 100%;
@@ -145,8 +145,8 @@ img {
 }
 
 .btn {
-    width: 150px;
-    height: 80px;
+    width: 25%;
+    height: 15%;
     align-self: center;
     /*background-color: #CC2B20;*/
     background-image: linear-gradient(to bottom right, #A9ACAD, #A9ACAD, #A9ACAD, #A9ACAD, #6F6F70, #A9ACAD);
