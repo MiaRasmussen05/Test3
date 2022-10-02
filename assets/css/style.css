@@ -69,12 +69,12 @@ nav li i {
     -1px -1px 1px #a7a7a7,
     inset 1px 1px 1px #000,
     inset -1px -1px 1px #a7a7a7;
-    padding: 10% 0 0 0;
+    padding: 14% 0 0 0;
 }
 
-.fa-facebook {
-    /*background-color: #280659;
-    background-color: #7F0F0F;*/
+/*.fa-facebook {
+    background-color: #280659;
+    background-color: #7F0F0F;
 }
 
 .fa-facebook:hover {
@@ -83,22 +83,33 @@ nav li i {
 }
 
 .fa-youtube {
-   /* background-image: linear-gradient(to bottom right, #280659, #660F56);*/
+   background-image: linear-gradient(to bottom right, #280659, #660F56);
 }
 
 .fa-youtube:hover {
     color: #FE0000;
     border: 3px solid #FE0000;
+    color: #7F0F0F;
+    text-shadow: 0 0 4px #FE0000;
+    border: 3px solid #7F0F0F;
+    color: #2D2D2D;
+    text-shadow: 0 0 4px #7F0F0F;
+    border: 3px solid #2D2D2D;
+    box-shadow: 0px 0px 2px #000,
+    0px 0px 2px #000,
+    inset 1px 1px 1px #000,
+    inset -1px -1px 1px #000;
+    padding: 10% 0 0 0;
 }
 
 .fa-twitter {
-    /*background-color: #660F56;*/
+    background-color: #660F56;
 }
 
 .fa-twitter:hover {
     color: #1DA1F2;
     border: 3px solid #1DA1F2;
-}
+}*/
 
 nav li i:hover {
     /*color: #06BBD0;*/
@@ -107,6 +118,13 @@ nav li i:hover {
     inset -1px -1px 1px #000;*/
     /*color: #000;
     border: 3px solid #000;*/
+    color: #2D2D2D;
+    text-shadow: 0 0 4px #7F0F0F;
+    border: 3px solid #2D2D2D;
+    box-shadow: 0px 0px 2px #000,
+    0px 0px 2px #000,
+    inset 1px 1px 1px #000,
+    inset -1px -1px 1px #000;
 }
 
 .landing-card {
@@ -163,7 +181,7 @@ img {
 }
 
 #play-btn {
-    background-image: linear-gradient(to bottom right, #AAA9AD, #A9ACAD, #DFDEE0, #F0F0F0);
+    background-image: linear-gradient(to bottom right, #6F6F70, #AAA9AD, #A9ACAD, #DFDEE0, #F0F0F0);
 
 }
 
