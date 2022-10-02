@@ -37,7 +37,7 @@ header {
 }
 
 nav {
-    width: 50%;
+    width: 100%;
     position: relative;
     text-align: end;
     margin-right: 6%;
@@ -50,11 +50,11 @@ nav li {
 }
 
 nav li i {
-    width: 100%;
-    height: 84%;
+    width: 42px;
+    height: 38px;
     text-align: center;
     position: relative;
-    font-size: 100%;
+    font-size: 131%;
     /*color: #CC2B20;
     color: #FFFFFC;
     color: #A9ACAD;*/
@@ -135,7 +135,7 @@ nav li i:hover {
 img {
     width: 100%;
     display: block;
-    margin: 5% 5% 9% 5%;
+    margin: 5% 5% 10% 5%;
 }
 
 .buttons {
@@ -154,7 +154,7 @@ img {
     border-radius: 10px;
     box-shadow: inset 2px 2px 4px #F0F0F0,
     inset -2px -2px 4px #3B3B3B;
-    font-size: 200%;
+    font-size: 240%;
     color: #000;
     text-shadow: 1px 1px 3px #3B3B3B;
     text-align: center;
@@ -243,11 +243,11 @@ img {
 
 .play-container{
     width: 8%;
-    min-height: 25%;
+    min-height: 22%;
     position: absolute;
     right: 0;
     padding: 1%;
-    margin: 9% 11.3% 0 0;
+    margin: 9.5% 11.3% 0 0;
     z-index: 1;
 }
 
@@ -258,7 +258,7 @@ img {
     right: 0;
     background-image: linear-gradient(to top left, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
     transform: rotate(135deg);
-    margin: 22.1% 15.7% 0 0;
+    margin: 21.6% 15.7% 0 0;
     z-index: 0;
 }
 
@@ -277,7 +277,7 @@ img {
 
 .difficulty  {
     width: 100%;
-    font-size: 180%;
+    font-size: 220%;
     cursor: pointer;
     padding: 0;
     margin-top: 10%;
