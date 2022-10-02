@@ -15,23 +15,24 @@ body {
     width: 100%;
     position: absolute;
     top: 0;
+    display: inline-flex;
     text-align: center;
 }
 
 .board {
     width: 87%;
-    height: 80vmin;
+    height: 80%;
     display: grid;
     position: absolute;
     object-fit: contain;
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-rows: repeat(25, 1fr);
     grid-template-columns: repeat(50, 1fr);
     background-color: #0d9b37;
     border-radius: 10px;
     margin: 1.8% 2% 3% 2%;
 }
 
-/* learned this from tutorialspoint */
+/* learned about this from tutorialspoint */
 .board  {
     border: 15px solid transparent;
     border-image: url('../images/Bush2.png');
