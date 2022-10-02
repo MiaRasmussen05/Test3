@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-body {
-    background-image: linear-gradient(to bottom right, #422680, #341671, #280659, #660F56, #AE2D68, #F54952);
-}
-
 .landing-card {
     height: 95.7%;
 }
