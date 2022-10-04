@@ -12,8 +12,8 @@
 }
 
 .board {
-    width: 87%;
-    height: 80%;
+    width: 83%;
+    height: 75%;
     display: grid;
     position: absolute;
     object-fit: contain;
@@ -21,7 +21,7 @@
     grid-template-columns: repeat(50, 1fr);
     background-color: #0d9b37;
     border-radius: 10px;
-    margin: 1.8% 2% 3% 2%;
+    margin: -1.5% 2% 3% 4%;
 }
 
 /* learned about this from tutorialspoint */
