@@ -38,17 +38,71 @@
             </nav>
         </header>
 
-        <div class="board">
+        <div class="game-board">>
             <div class="score-board">
                 <div class="center">
                     <p class="score">Score: <span id="new-score">0</span></p>
                     <p class="high-score">High Score: <span id="new-high-score">0</span></p>
                     <p class="level">Level: <span id="new-level">0</span></p>
+                    <!--<div class="snake">
+                        <div class="snakeHead">
+                            <img src="./assets/images/snakeHead.png" alt="">
+                        </div>
+                        <div class="snakeBody">
+                            <img src="./assets/images/snakeBody.png" class="head" alt="">
+                        </div>
+                        <div class="snakeTail">
+                            <img src="./assets/images/Tail.png" alt="">
+                        </div>
+                    </div>-->
                 </div>
             </div>
         </div>
+
+
+        <!--Touch controls box-->
+    <div class="touch-controls">
+        <table class="table-buttons">
+            <tr>
+                <td></td>
+                <td>
+                    <button class='btnControls' id="btn-up" aria-label="Up Button">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <button class='btnControls' id="btn-left" aria-label="Left Button">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <button class='btnControls' id="btn-right" aria-label="Right Button">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button class='btnControls' id="btn-down" aria-label="Down Button">
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </td>
+                <td></td>
+            </tr>
+        </table>
     </div>
-    <script src="game.js" defer type="module"></script>
+    </div>
+
+
+
+    <script src="game.js"></script>
 
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>

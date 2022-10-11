@@ -1,34 +1,51 @@
-* {
-    padding: 0;
-    margin: 0;
+body {
+    width: 100%;
 }
 
-.board {
-    width: 83%;
-    height: 75%;
-    display: grid;
+.game-border {
+    width: 75vmin;
+    height: 78.8vmin;
     position: absolute;
-    object-fit: contain;
-    grid-template-rows: repeat(25, 1fr);
-    grid-template-columns: repeat(50, 1fr);
     background-color: #0d9b37;
     border-radius: 10px;
-    margin: -1.5% 2% 3% 4%;
+    margin: 0% 26%;
+    margin-top: 2%;
+}
+
+/* learned about this from tutorialspoint */
+.game-border  {
+    border: 15px solid transparent;
+    border-image: url('../images/Bush2.png');
+    border-image-slice: 20;
+    border-image-width: 1 1 1 1;
+    border-image-outset: 0.2;
+    border-image-repeat: round;
+ }
+
+.board {
+    width: 75vmin;
+    height: 75vmin;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    background-color: #0d9b37;
+    border-radius: 10px;
+    margin: 0;
+    margin-top: 0%;
 }
 
 .score-board {
-    width: 98%;
-    position: absolute;
-    top: 0;
-    text-align: center;
-    margin-left: 1%;
+    width: 75vmin;
+    /*text-align: center;*/
+
 }
 
 .center p {
-    width: 10%;
+    width: 31.1%;
     position: relative;
-    display: inline-flex;
     justify-content: center;
+    display: inline-flex;
     font-size: 120%;
     border: 3px solid #000;
     border-style: double;
@@ -39,20 +56,90 @@
     padding: 0 0 0 10%;
 }
 
-.center .high-score {
-    width: 12%;
+/*.center .high-score {
+    width: 15%;
+}*/
+
+/* .snake img {
+    width: 2%;
+    height: 8%;
+    position: relative;
 }
 
-/* learned about this from tutorialspoint */
-.board  {
-    border: 15px solid transparent;
-    border-image: url('../images/Bush2.png');
-    border-image-slice: 20;
-    border-image-width: 1 1 1 1;
-    border-image-outset: 0.2;
-    border-image-repeat: round;
- }
+.snakeBody img {
+    width: 1%;
+    margin: -10px 0 0 1px ;
+}
 
+.snakeTail img {
+    width: 1.3%;
+    margin: -27px 0 0 0 ;
+} */
+
+/* Style of the snake */
 .snake {
-    background-image: url("../images/Head.png");
+    background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
+    border: 1.5px solid #000;
 }
+/* Style for the food */
+.food {
+    background-color: #be0f0f;
+    background-image: url("./assets/images/Apple1.png") center center no reapeat;
+    border: 1px solid #681E1E;
+}
+
+/* Game Over*/
+
+.game-over {
+    width: 83%;
+    color: #000;
+    text-align: center;
+    font-size: 400%;
+    margin-top: 30%;
+    margin-left: 9%;
+}
+
+.restart {
+    width: 70px;
+    height: 70px;
+    background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
+    border: none;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 4px #F0F0F0,
+    inset -2px -2px 4px #3B3B3B;
+    font-size: 90%;
+    padding: 3% 2% 2% 3%;
+    margin-top: 0%;
+    margin-left: 40%;
+}
+
+.restart i:hover {
+    transition: all 0.5s;
+    transform: rotate(-360deg);
+}
+
+/*  Controls */
+.controls {
+    position: absolute;
+    right: 0;
+    margin: 8% 12% 0 0;
+}
+
+.btnControls {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
+    border: none;
+    border-radius: 50%;
+    font-size: 250%;
+    font-weight: 700;
+}
+
+#btn-pause {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

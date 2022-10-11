@@ -171,7 +171,7 @@ nav li i:hover {
 
 .btn {
     width: 25%;
-    height: 15%;
+    height: 13%;
     align-self: center;
     /*background-color: #CC2B20;*/
     background-image: linear-gradient(to bottom right, #A9ACAD, #A9ACAD, #A9ACAD, #A9ACAD, #6F6F70, #A9ACAD);
@@ -183,6 +183,7 @@ nav li i:hover {
     color: #000;
     text-shadow: 1px 1px 3px #3B3B3B;
     text-align: center;
+    line-height: 90px;
     cursor: pointer;
     margin: 0 10%;
 }
