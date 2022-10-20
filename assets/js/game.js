@@ -2,10 +2,10 @@ let lastRenderTime = 0;
 const GRID_SIZE = 30;
 const board = document.getElementsByClassName('board')[0];
 
-const SNAKE_SPEED = 5;
-
 const SNAKE_BODY = [{ x: 15, y: 15 }];
 let newSegments = 0;
+
+const SNAKE_SPEED = 5;
 
 var img = new Image(); 
 var div = document.getElementsByClassName('food'); 
@@ -21,13 +21,13 @@ const getScore = document.getElementsByClassName('score')[0];
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
 
-const controlBtns = document.getElementsByClassName('touch-controls')[0];
+const controlButtons = document.getElementsByClassName('touch-controls')[0];
 const touchControls = document.getElementsByClassName('btnControls');
  
 
 const gameOverMessage = document.getElementsByClassName('game-over')[0];
-const restartBtn = document.querySelector('.restart');
 let gameOver = false;
+const restartBtn = document.querySelector('.restart');
 
 
 
@@ -183,15 +183,6 @@ function addSegments() {
 }
 
 /**
- * Listen to the user input with the arrow keys on the keyboard
- *  and get the user input and change direction of the snake
- */
-function getInputDirection() {
-    lastInputDirection = inputDirection
-    return inputDirection
-}
-
-/**
  * Update the snake and score based on the expansion rate and get a new position for the food 
  */
 function updateFood() {
@@ -261,19 +252,20 @@ function outsideGrid(position) {
  * Function to Restart the game
  */
  function restart(){
-    restartBtn.addEventListener('click', () => {
+    restartBtn.addEventListener('click' || event.keyCode == 13, () => {
         window.location = './test.html';
       });
+};
 
-    restartBtn.addEventListener('keyup', (e) => {
-        if (e.code === 'Space' || e.code === 'Enter') {
-            window.location = './test.html';
-        }
-      });
+
+/**
+ * Listen to the user input with the arrow keys on the keyboard
+ *  and get the user input and change direction of the snake
+ */
+ function getInputDirection() {
+    lastInputDirection = inputDirection
+    return inputDirection
 }
-
-
-
 
 
 // EventListener for the keydown of the keyboard to move the snake
@@ -281,28 +273,32 @@ function outsideGrid(position) {
 window.addEventListener('keydown', e => {
     switch (e.key) {
         case 'ArrowUp':
-            if (lastInputDirection.y !== 0) break
+            if (lastInputDirection.y !== 0) 
+            break
             inputDirection = {
                 x: 0,
                 y: -1
             }
             break
         case 'ArrowDown':
-            if (lastInputDirection.y !== 0) break
+            if (lastInputDirection.y !== 0) 
+            break
             inputDirection = {
                 x: 0,
                 y: 1
             }
             break
         case 'ArrowLeft':
-            if (lastInputDirection.x !== 0) break
+            if (lastInputDirection.x !== 0) 
+            break
             inputDirection = {
                 x: -1,
                 y: 0
             }
             break
         case 'ArrowRight':
-            if (lastInputDirection.x !== 0) break
+            if (lastInputDirection.x !== 0) 
+            break
             inputDirection = {
                 x: 1,
                 y: 0
@@ -313,7 +309,7 @@ window.addEventListener('keydown', e => {
 
 // Attributes for the controls in the game page
 function touchControlsClicked() {
-    if (this.getAttribute("id") === "btn-left") {
+    if (this.getAttribute("id") === "leftBtn") {
         if(lastInputDirection.x !== 0){
             return
         } else {
@@ -323,7 +319,7 @@ function touchControlsClicked() {
             }
             return
         }
-    } else if (this.getAttribute("id") === "btn-right") {
+    } else if (this.getAttribute("id") === "rightBtn") {
        if(lastInputDirection.x !== 0){
         return
        } else {
@@ -333,7 +329,7 @@ function touchControlsClicked() {
         }
         return
        }
-    } else if (this.getAttribute("id") === "btn-up") {
+    } else if (this.getAttribute("id") === "upBtn") {
        if(lastInputDirection.y !== 0){
         return
        } else {
@@ -343,7 +339,7 @@ function touchControlsClicked() {
         }
         return
        }
-    } else if (this.getAttribute("id") === "btn-down") {
+    } else if (this.getAttribute("id") === "downBtn") {
         if(lastInputDirection.y !== 0){
             return
         } else {
