@@ -1,3 +1,8 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     width: 100%;
 }
@@ -315,18 +320,19 @@ body {
     }
     
     .game-border {
-        width: 75vmin;
-        height: 78.8vmin;
-        position: absolute;
+        width: 95.7%;
+        height: 102vmin;
+
+        position: fixed;
         background-color: #0d9b37;
         border-radius: 10px;
-        margin: 0% 10%;
-        margin-top: 14%;
+        margin: 0 0%;
+        margin-top: 60px;
     }
     
     /* learned about this from tutorialspoint */
     .game-border  {
-        border: 15px solid transparent;
+        border: 2vmin solid #0c5321;
         border-image: url('../images/Bush2.png');
         border-image-slice: 20;
         border-image-width: 1 1 1 1;
@@ -335,33 +341,31 @@ body {
      }
     
     .board {
-        width: 75vmin;
-        height: 75vmin;
+        width: 96vmin;
+        height: 96vmin;
         position: absolute;
         display: grid;
         grid-template-columns: repeat(30, 1fr);
         grid-template-rows: repeat(30, 1fr);
         background-color: #0d9b37;
         border-radius: 10px;
-        margin: 0;
+        margin: 0 auto;
         margin-top: 0%;
     }
     
     .score-board {
-        width: 75vmin;
-        /*text-align: center;*/
-    
+        width: 100%;
+        text-align: center;
     }
     
     .center p {
-        width: 30%;
+        width: 29.5%;
         position: relative;
         justify-content: center;
         display: inline-flex;
-        font-size: 120%;
+        font-size: 90%;
         border: 3px solid #000;
         border-style: double;
-        padding: 0.5%;
     }
     
     .center span {
@@ -372,12 +376,12 @@ body {
     /* Game Over*/
     
     .game-over {
-        width: 83%;
+        width: 100%;
         color: #000;
         text-align: center;
-        font-size: 400%;
-        margin-top: 30%;
-        margin-left: 9%;
+        font-size: 250%;
+        margin-top: 10%;
+        margin-left: 0;
     }
     
     .restart {
