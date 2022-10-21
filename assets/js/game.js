@@ -5,7 +5,7 @@ const board = document.getElementsByClassName('board')[0];
 const SNAKE_BODY = [{ x: 15, y: 15 }];
 let newSegments = 0;
 
-const SNAKE_SPEED = 5;
+const SNAKE_SPEED = 1;
 
 var img = new Image(); 
 var div = document.getElementsByClassName('food'); 
@@ -52,7 +52,7 @@ function main(currentTime) {
 
     //getting the frame to animate the game
     window.requestAnimationFrame(main)
-    const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
+    const secondsSinceLastRender = (currentTime - lastRenderTime) / 150
     //updates based on the snake speed
     if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
 
