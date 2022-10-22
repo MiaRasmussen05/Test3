@@ -216,7 +216,7 @@ body {
 }
 
 #rightBtn {
-    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     margin-left: 20px;
 }
@@ -230,8 +230,8 @@ body {
 }
 
 #downBtn {
-    border-top-right-radius: 25px;
-    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     margin-top: 18px;
 }
 
@@ -246,7 +246,8 @@ body {
 .point{
     width: 60px;
     height: 60px;
-    background-color: #2B2B2C;
+    /* background-color: #2B2B2C; */
+    background-color: #10108f;
     position: absolute;
     border-radius: 20px;
     rotate: 45deg;
@@ -320,14 +321,13 @@ body {
     }
     
     .game-border {
-        width: 95.7%;
-        height: 102vmin;
-
+        width: 90%;
+        height: 97.5vmin;
         position: fixed;
         background-color: #0d9b37;
         border-radius: 10px;
-        margin: 0 0%;
-        margin-top: 60px;
+        margin: 0 3%;
+        margin-top: 50px;
     }
     
     /* learned about this from tutorialspoint */
@@ -341,8 +341,8 @@ body {
      }
     
     .board {
-        width: 96vmin;
-        height: 96vmin;
+        width: 90vmin;
+        height: 90vmin;
         position: absolute;
         display: grid;
         grid-template-columns: repeat(30, 1fr);
@@ -359,11 +359,11 @@ body {
     }
     
     .center p {
-        width: 29.5%;
+        width: 28%;
         position: relative;
         justify-content: center;
         display: inline-flex;
-        font-size: 90%;
+        font-size: 75%;
         border: 3px solid #000;
         border-style: double;
     }
@@ -410,35 +410,30 @@ body {
     
     /*  Controls */
     .controls {
-        position: absolute;
+        position: fixed;
         right: 0;
-        display: flex;
-        margin-top: 90%;
+        margin-top: 100%;
+        margin-right: 20%;
     }
     
     .btnControls {
-        width: 70px;
-        height: 70px;
+        width: 45px;
+        height: 45px;
         position: relative;
         /* background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C); */
         background-color: #2B2B2C;
         border: none;
-        border-radius: 20px;
-        font-size: 250%;
+        border-radius: 10px;
+        font-size: 150%;
         font-weight: 700;
         text-align: center;
-        line-height: 70px;
+        line-height: 50px;
         cursor: pointer;
     }
     
     #pauseBtn {
         border-radius: 50%;
     }
-    
-    /* .btnControls:hover {
-        box-shadow: inset 2px 2px 4px #3B3B3B,
-        inset -2px -2px 4px #F0F0F0;
-    } */
     
     .btnControls i {
         /* color: #121212; */
@@ -465,9 +460,9 @@ body {
     }
     
     #upBtn {
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        margin-bottom: 20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-bottom: 12px;
     }
     
     #upBtn:hover {
@@ -479,9 +474,9 @@ body {
     }
     
     #leftBtn {
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
-        margin-right: 25px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        margin-right: 17px;
     }
     
     #leftBtn:hover {
@@ -493,9 +488,9 @@ body {
     }
     
     #rightBtn {
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        margin-left: 20px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-left: 13px;
     }
     
     #rightBtn:hover {
@@ -507,9 +502,9 @@ body {
     }
     
     #downBtn {
-        border-top-right-radius: 25px;
-        border-top-right-radius: 25px;
-        margin-top: 18px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-top: 12px;
     }
     
     #downBtn:hover {
@@ -521,9 +516,10 @@ body {
     }
     
     .point{
-        width: 60px;
-        height: 60px;
+        width: 43px;
+        height: 43px;
         background-color: #2B2B2C;
+        /* background-color: #10108f; */
         position: absolute;
         border-radius: 20px;
         rotate: 45deg;
@@ -533,8 +529,8 @@ body {
     .point-top {
         border-bottom-right-radius: 10px;
         box-shadow: 2px 2px 1px #111111;
-        margin-top: -68px;
-        margin-left: 5px;
+        margin-top: -46px;
+        margin-left: 1px;
     }
     
     #upBtn:hover + .point-top {
@@ -544,8 +540,8 @@ body {
     .point-left {
         border-top-right-radius: 10px;
         box-shadow: 2px -2px 1px #111111;
-        margin-top: 5px;
-        margin-left: 22px;
+        margin-top: 1px;
+        margin-left: 11px;
     }
     
     #leftBtn:hover + .point-left {
@@ -555,8 +551,8 @@ body {
     .point-right {
         border-bottom-left-radius: 10px;
         box-shadow: -2px 2px 1px #111111;
-        margin-top: 4px;
-        margin-left: 9px;
+        margin-top: 1.5px;
+        margin-left: 4px;
     }
     
     #rightBtn:hover + .point-right {
@@ -566,8 +562,8 @@ body {
     .point-down {
         border-top-left-radius: 10px;
         box-shadow: -2px -2px 1px #111111;
-        margin-top: -80px;
-        margin-left: 5px;
+        margin-top: -54px;
+        margin-left: 1px;
     }
     
     #downBtn:hover ~ .point-down {
