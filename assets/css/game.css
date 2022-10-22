@@ -12,18 +12,16 @@ body {
 }
 
 .game-border {
-    width: 75vmin;
+    width: 37.4%;
     height: 78.8vmin;
     position: absolute;
-    background-color: #0d9b37;
-    border-radius: 10px;
-    margin: 0% 26%;
-    margin-top: 2%;
+    margin: 0 26%;
+    margin-top: 0.7%;
 }
 
 /* learned about this from tutorialspoint */
-.game-border  {
-    border: 15px solid transparent;
+.board  {
+    border: 2vmin solid #0c5321;
     border-image: url('../images/Bush2.png');
     border-image-slice: 20;
     border-image-width: 1 1 1 1;
@@ -40,22 +38,24 @@ body {
     grid-template-rows: repeat(30, 1fr);
     background-color: #0d9b37;
     border-radius: 10px;
-    margin: 0;
+    margin: 0 auto;
     margin-top: 0%;
 }
 
 .score-board {
-    width: 75vmin;
-    /*text-align: center;*/
-
+    width: 103.5%;
+    text-align: center;
+    margin-bottom: 1%;
 }
 
 .center p {
-    width: 31.1%;
+    width: 29%;
     position: relative;
     justify-content: center;
     display: inline-flex;
+    background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
     font-size: 120%;
+    font-weight: 700;
     border: 3px solid #000;
     border-style: double;
     padding: 0.5%;
@@ -64,26 +64,6 @@ body {
 .center span {
     padding: 0 0 0 10%;
 }
-
-/*.center .high-score {
-    width: 15%;
-}*/
-
-/* .snake img {
-    width: 2%;
-    height: 8%;
-    position: relative;
-}
-
-.snakeBody img {
-    width: 1%;
-    margin: -10px 0 0 1px ;
-}
-
-.snakeTail img {
-    width: 1.3%;
-    margin: -27px 0 0 0 ;
-} */
 
 /* Style of the snake */
 .snake {
@@ -246,8 +226,8 @@ body {
 .point{
     width: 60px;
     height: 60px;
-    /* background-color: #2B2B2C; */
-    background-color: #10108f;
+    background-color: #2B2B2C;
+    /* background-color: #10108f; */
     position: absolute;
     border-radius: 20px;
     rotate: 45deg;
@@ -412,8 +392,8 @@ body {
     .controls {
         position: fixed;
         right: 0;
+        margin: 0 35%;
         margin-top: 100%;
-        margin-right: 20%;
     }
     
     .btnControls {
@@ -427,7 +407,7 @@ body {
         font-size: 150%;
         font-weight: 700;
         text-align: center;
-        line-height: 50px;
+        line-height: 45px;
         cursor: pointer;
     }
     

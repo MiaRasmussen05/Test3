@@ -51,9 +51,58 @@
                     </ul>
                 </nav>
             </header>
-            <main >
+            <main>
+                <h2 class="heading">Contact Us</h2>
+                <!--<div class="">
+                        <h2>We would love to hear from you!</h2>
+                        <ul>
+                            <li>Did you really like one of the stickers, but wanted something changed? That can be fixed!
+                            </li>
+                            <li>Have you own idea for a sticker? Send it to us, we will see what we can find out.</li>
+                            <li>Just want to send a comment? We would love to hear from you!</li>
+                            <li class="different">Or have something completely different in mind? You know the drill.</li>
+                        </ul>
+                    </div>-->
+                <section class="form-section">
+                    <form class="form-container" action="thanks.html" method="get">
 
+                        <div class="input-wrapper">
+                            <label for="fuName">Full Name</label>
+                            <input id="fuName" type="text" name="Full_name" class="input" placeholder="e.g. John Doe"
+                                required>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="Email_address" class="input"
+                                placeholder="e.g. johndoe@gmail.com" required>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <label for="feedback"> <input id="feedback" type="radio" name="radioBtn"
+                                    class="radio feedback" required>
+                                Feedback</label>
+                            <label for="Message"> <input id="Message" type="radio" name="radioBtn"
+                                    class="radio message"> Message</label>
+                            <label for="collaboration"> <input id="collaboration" type="radio" name="radioBtn"
+                                    class="radio collaboration">
+                                Collaboration</label>
+                        </div>
+
+                        <div class="form-end">
+                        <label for="teArea">Message</label>
+                        <textarea id="teArea" placeholder="Write your message here..." maxlength="550"
+                            required></textarea>
+
+                        <input type="submit" value="Send" class="contactBtn">
+                        </div>
+                        
+                    </form>
+
+
+                </section>
             </main>
+            <footer>
+                <p class="copyright">Copyright ©Mia Rasmussen 2022</p>
+                <p class="disclaimer">Disclaimer: this Gamepage was built for a project and is not for commercial use</p>
+            </footer>
 
             <!-- font awesome script -->
             <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>

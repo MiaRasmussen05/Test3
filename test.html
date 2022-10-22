@@ -13,62 +13,64 @@
 </head>
 
 <body>
-    <div class="game-border">
-        <div class="score-board">
-            <div class="center">
-                <p>Score: <span class="score"></span></p>
-                <!--<p class="score">Score: <span id="new-score">0</span></p>-->
-                <p>High Score: <span class="highScore"></span></p>
-                <p class="level">Level: <span id="new-level">0</span></p>
+    <section>
+        <div class="game-border">
+            <div class="score-board">
+                <div class="center">
+                    <p>Score: <span class="score"></span></p>
+                    <!--<p class="score">Score: <span id="new-score">0</span></p>-->
+                    <p>High Score: <span class="highScore"></span></p>
+                    <p class="level">Level: <span id="new-level">0</span></p>
+                </div>
             </div>
-        </div>
-        <!-- Game over message -->
-        <div class="game-over">
-            <h2>Game Over</h2>
-            <div class="restart" onclick="restart()" onkeydown="restart()"><i class="fas fa-undo"></i></div>
-        </div>
-        <div class="board"></div>
-    </div>
-
-    <div class="landing-card">
-        <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="./assets/images/Logos7.png" alt="">
-                </a>
+            <!-- Game over message -->
+            <div class="game-over">
+                <h2>Game Over</h2>
+                <div class="restart" onclick="restart()" onkeydown="restart()"><i class="fas fa-undo"></i></div>
             </div>
+            <div class="board"></div>
+        </div>
+    </section>
+    <section>
+        <div class="landing-card">
+            <header>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/images/Logos7.png" alt="">
+                    </a>
+                </div>
 
-            <nav>
-                <ul class="pages">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <ul class="social-links">
-                    <li>
-                        <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                            aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="http://www.youtube.com" target="_blank" rel="noopener"
-                            aria-label="(opens in a new tab)"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com" target="_blank" rel="noopener"
-                            aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                <nav>
+                    <ul class="pages">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                                aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.youtube.com" target="_blank" rel="noopener"
+                                aria-label="(opens in a new tab)"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" target="_blank" rel="noopener"
+                                aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    </section>
 
-
-
+    <section>
         <div class="controls">
             <table>
                 <tr>
@@ -112,11 +114,16 @@
                 </tr>
             </table>
         </div>
+    </section>
+    <footer>
+        <p class="copyright">Copyright ©Mia Rasmussen 2022</p>
+        <p class="disclaimer">Disclaimer: this website was built for a project and is not for commercial use</p>
+    </footer>
 
-        <!-- font awesome script -->
-        <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
-        <!-- scripts to run the snake game -->
-        <script src="./assets/js/game.js"></script>
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
+    <!-- scripts to run the snake game -->
+    <script src="./assets/js/game.js"></script>
 </body>
 
 </html>
