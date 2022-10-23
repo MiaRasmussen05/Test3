@@ -441,7 +441,7 @@ form {
 
 .radio-wrapper {
     width: 100%;
-    margin: 0 0 4% -5%;
+    margin: 0 0 4% -3%;
 }
 
 .message, .collaboration {
@@ -750,14 +750,26 @@ textarea {
 @media screen and (max-width:748px) {
     nav {display: none;}
 
+    .menu-bars {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #DFDEE0;
+        margin: 10px 0 0 0;
+    }
+
     .menu {
         width: 150px;
         height: 170px;
         position: fixed;
         top: 0;
-        background-color: #422680;
+        right: 0;
+        background-color: #2B2B2C;
         text-align: center;
         padding: 3% 2% 1% 2%;
+        margin: 15px 0 0 0;
         transition: margin-left 1s;
         z-index: 6;
     }
@@ -776,6 +788,7 @@ textarea {
         width: 20px;
         height: 20px;
         font-size: 100%;
+        margin: 3% 4% 0 0;
     }
    
 }
@@ -792,12 +805,6 @@ textarea {
         position: relative;
         display: inline-flex;
         font-size: 150%;
-    }
-
-    .menu-bars i{
-        width: 30px;
-        height: 30px;
-        color: #DFDEE0;
     }
     
     .logo {
@@ -1054,8 +1061,8 @@ textarea {
     }
     
     .form-container {
-        width: 100%;
-        margin: 0 0 0 2%;
+        width: 95%;
+        margin: 0 0 0 3%;
     }
     
     form {
@@ -1079,7 +1086,8 @@ textarea {
     
     .radio-wrapper {
         width: 100%;
-        margin: 0 0 4% 1%;
+        text-align: center;
+        margin: 0 0 4% 0;
     }
     
     .message, .collaboration {
