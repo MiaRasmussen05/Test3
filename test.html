@@ -39,7 +39,23 @@
                         <img src="./assets/images/Logos7.png" alt="">
                     </a>
                 </div>
-
+                <div class="menu-container">
+                    <div class="menu" id="toggleMenu">
+                        <a class="close-btn" onclick="closeToggleMenu()"><i class="fas fa-times"></i></a>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="menu-bars" onclick="openToggleMenu()"><i class="fas fa-bars"></i></a>
+                </div>
                 <nav>
                     <ul class="pages">
                         <li>
@@ -68,49 +84,49 @@
                     </ul>
                 </nav>
             </header>
-        <div class="controls">
-            <table>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class='btnControls' id="upBtn" aria-label="Up Button">
-                            <i class="fas fa-chevron-up"></i>
-                        </div>
-                        <div class="point point-top"></div>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="left">
-                        <div class='btnControls' id="leftBtn" aria-label="Left Button">
-                            <i class="fas fa-chevron-left"></i>
-                        </div>
-                        <div class="point point-left"></div>
-                    </td>
-                    <td>
-                        <div class="btnControls" id="pauseBtn" aria-label="Pause Button">
-                            <i class="fas fa-pause"></i>
-                        </div>
-                    </td>
-                    <td class="right">
-                        <div class='btnControls' id="rightBtn" aria-label="Right Button">
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
-                        <div class="point point-right"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class='btnControls' id="downBtn" aria-label="Down Button">
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="point point-down"></div>
-                    </td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
+            <div class="controls">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class='btnControls' id="upBtn" aria-label="Up Button">
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="point point-top"></div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="left">
+                            <div class='btnControls' id="leftBtn" aria-label="Left Button">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="point point-left"></div>
+                        </td>
+                        <td>
+                            <div class="btnControls" id="pauseBtn" aria-label="Pause Button">
+                                <i class="fas fa-pause"></i>
+                            </div>
+                        </td>
+                        <td class="right">
+                            <div class='btnControls' id="rightBtn" aria-label="Right Button">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="point point-right"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class='btnControls' id="downBtn" aria-label="Down Button">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="point point-down"></div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
     </section>
     <footer>
         <p class="copyright">Copyright ©Mia Rasmussen 2022</p>
@@ -121,6 +137,7 @@
     <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
     <!-- scripts to run the snake game -->
     <script src="./assets/js/game.js"></script>
+    <script src="./assets/js/menu.js"></script>
 </body>
 
 </html>

@@ -304,14 +304,13 @@ body {
         width: 90%;
         height: 97.5vmin;
         position: fixed;
-        background-color: #0d9b37;
         border-radius: 10px;
         margin: 0 3%;
         margin-top: 50px;
     }
     
     /* learned about this from tutorialspoint */
-    .game-border  {
+    .board  {
         border: 2vmin solid #0c5321;
         border-image: url('../images/Bush2.png');
         border-image-slice: 20;

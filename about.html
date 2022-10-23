@@ -22,7 +22,23 @@
                         <img src="./assets/images/Logos7.png" alt="">
                     </a>
                 </div>
-
+                <div class="menu-container">
+                    <div class="menu" id="toggleMenu">
+                        <a class="close-btn" onclick="closeToggleMenu()"><i class="fas fa-times"></i></a>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="menu-bars" onclick="openToggleMenu()"><i class="fas fa-bars"></i></a>
+                </div>
                 <nav>
                     <ul class="pages">
                         <li>
@@ -78,12 +94,14 @@
             </main>
             <footer>
                 <p class="copyright">Copyright ©Mia Rasmussen 2022</p>
-                <p class="disclaimer">Disclaimer: this Gamepage was built for a project and is not for commercial use</p>
+                <p class="disclaimer">Disclaimer: this Gamepage was built for a project and is not for commercial use
+                </p>
             </footer>
 
             <!-- font awesome script -->
             <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
             <script src="./assets/js/rules-modal.js"></script>
+            <script src="./assets/js/menu.js"></script>
 
 </body>
 
