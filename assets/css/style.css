@@ -232,6 +232,7 @@ nav {
     backdrop-filter: blur(10px);
     z-index: 2;
 }
+
 .rules-container, .play-container{
     width: 50%;
     min-height: 80%;
@@ -767,8 +768,9 @@ textarea {
     }
 
     .menu {
-        width: 150px;
-        height: 190px;
+        width: 160px;
+        height: 230px;
+        display: none;
         position: fixed;
         top: 0;
         right: 0;
@@ -776,7 +778,7 @@ textarea {
         box-shadow: 0 0 5px #000;
         text-align: center;
         padding: 4% 2% 1% 2%;
-        margin: 15px 0 0 0;
+        margin: 10px 10px 0 0;
         z-index: 6;
     }
 
@@ -795,6 +797,16 @@ textarea {
         color: #DFDEE0;
     }
 
+    .social-links-menu {
+        display: inline-flex;
+        margin-top: 15px;
+    }
+
+    .social-links-menu li {
+        text-align: center;
+        padding: 0 15px;
+    }
+
     .menu .close-btn {
         width: 20px;
         height: 20px;
@@ -807,21 +819,7 @@ textarea {
 @media screen and (max-width: 548px) {
 
     body {
-        width: 100%;
         max-height: 100vh;
-    }
-    
-    header {
-        width: 100%;
-        height: 50px;
-        position: relative;
-        display: inline-flex;
-        font-size: 150%;
-    }
-    
-    .logo {
-        width: 20%;
-        margin: 0.5% 0 0 1%;
     }
     
     .logo img {
@@ -832,11 +830,8 @@ textarea {
     .landing-card {
         width: 96%;
         height: 95vh;
-        border-radius: 15px;
         box-shadow: none;
-        margin: 0 auto;
         margin-top: 2%;
-        margin-bottom: 30px;
     }
     
     .middle {
@@ -848,126 +843,63 @@ textarea {
     }
     
     .hero-image img {
-        width: 100%;
         height: 160px;
-        display: block;
         margin: 9% 0.5% 5% 0.5%;
     }
     
     .buttons {
         width: 100%;
-        /* display: inline-flex; */
         display: block;
-        justify-content: center;
     }
     
     .btn {
         width: 70%;
-        height: 13%;
-        align-self: center;
-        background-image: linear-gradient(to bottom right, #A9ACAD, #A9ACAD, #A9ACAD, #A9ACAD, #6F6F70, #A9ACAD);
-        border: none;
-        border-radius: 10px;
-        box-shadow: inset 2px 2px 4px #F0F0F0,
-        inset -2px -2px 4px #3B3B3B;
-        font-size: 240%;
-        color: #000;
-        text-shadow: 1px 1px 3px #3B3B3B;
-        text-align: center;
-        line-height: 90px;
-        cursor: pointer;
         margin: 5% 20%;
     }
     
-    #play-btn {
-        background-image: linear-gradient(to bottom right, #6F6F70, #AAA9AD, #A9ACAD, #DFDEE0, #F0F0F0);
-    
-    }
-    
-    .btn:hover {
-        box-shadow: inset 2px 2px 4px #3B3B3B,
-        inset -2px -2px 4px #F0F0F0;
-    }
-    
-    .rules-modal{
-        width: 100%;
-        height: 100%;
-        display: none;
-        position: fixed;
-        top: 0;
-        backdrop-filter: blur(10px);
-        z-index: 2;
-    }
     .rules-container, .play-container{
-        width: 50%;
-        min-height: 80%;
-        max-height: 80%;
-        /*background-image: linear-gradient(to bottom right, #000, #522D2D, #7F0F0F, #522D2D, #000);*/
-        background-image: linear-gradient(to bottom right, #969697, #AAA9AD, #DFDEE0, #FFF, #A9ACAD, #969697, #F0F0F0, #969697);
-        border-radius: 10px;
-        text-align: center;
-        color: #000;
-        padding: 2%;
-        overflow: auto;
-        margin: 0 auto;
-        margin-top: 2.3%;
+        width: 80%;
+        padding: 2% 4%;
+        margin-top: 13.5%;
     }
     
     .rules-container h2 {
         font-size: 250%;
     }
-    
-    .rules-container h3 {
-        font-size: 150%;
-        font-weight: 500;
-        margin: 1% 0;
+
+    .rules-container h3 span {
+        font-size: 140%;
     }
     
-    .rules-container h3 span {
-        font-weight: 600;
+    .rules-container h3 {
+        font-size: 100%;
     }
     
     .rules-container h4 {
-        font-size: 140%;
-        padding: 2% 0;
+        font-size: 120%;
+        padding: 3% 0;
     }
     
     .rules-container p {
-        font-size: 120%;
+        font-size: 100%;
     }
     
     .foods {
-        margin-top: 3%;
-    }
-    
-    .foods span{
-        font-size: 150%;
-        font-weight: 600;
+        margin-top: 5%;
     }
     
     .apple {
-        width: 20%;
+        width: 25%;
+        padding: 2.5% 0;
     }
     
     .chocolate {
-        width: 30%;
-    }
-    
-    .close-btn {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 200%;
-        cursor: pointer;
+        width: 35%;
+        padding: 2.5% 0;
     }
     
     #close-rules, #close-play{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        margin: 3.3% 24% 0 0;
+        margin: 17% 11% 0 0;
     }
     
     #close-play{
@@ -975,70 +907,32 @@ textarea {
         margin: 7.5% 7% 0 0;
     }
     
-    #close-rules:hover, #close-play:hover{
-        font-size: 250%;
-       /*color: #CC2B20;*/
-       color: #7F0F0F;
-    }
-    
     #close-play:hover {
         font-size: 220%;
-    }
-    
-    .play-modal{
-        width: 100%;
-        height: 100%;
-        display: none;
-        position: absolute;
-        top: 0;
-        z-index: 1;
     }
     
     .play-container{
         width: 8%;
         min-height: 22%;
-        position: absolute;
-        right: 0;
         padding: 1%;
         margin: 11% 11.3% 0 0;
-        z-index: 1;
     }
     
     .square {
         width: 20px;
         height: 20px;
-        position: absolute;
-        right: 0;
-        background-image: linear-gradient(to top left, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
-        transform: rotate(135deg);
         margin: 23.1% 15.7% 0 0;
-        z-index: 0;
     }
     
     .difficulty-wrapper {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
         margin-top: 12%;
-    }
-    
-    .difficulty-wrapper a {
-        text-decoration: none;
-        color: #000;
     }
     
     .difficulty  {
         width: 100%;
         font-size: 220%;
-        cursor: pointer;
-        padding: 0;
         margin-top: 10%;
-    }
-    
-    .difficulty:hover  {
-        background-color: #2B2B2C;
-        color: #DFDEE0;
     }
     
     .about {
