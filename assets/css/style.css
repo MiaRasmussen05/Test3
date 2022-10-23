@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    height: 100vh;
+}
+
 body {
     width: 100%;
     height: 95.9vmin;
@@ -20,12 +24,12 @@ header {
 }
 
 .logo {
-    width: 50%;
+    width: 20%;
     margin: 0.5% 0 0 1%;
 }
 
 .logo img {
-    width: 15%;
+    width: 30%;
     position: relative;
     filter: drop-shadow(0px 0px 7px #ff0000);
     z-index: 2;
@@ -45,15 +49,21 @@ nav {
     justify-content: space-between;
     text-align: center;
     line-height: 50px;
+    margin: 0 0 0 12%;
 }
 
 .pages li, .social-links li {
+    position: relative;
+    display: inline-flex;
     list-style: none;
+    margin: 0 3%;
 }
 
 .pages li a {
     text-decoration: none;
+    font-size: 140%;
     color: #DFDEE0;
+    margin: 0 50px;
 }
 
 .pages li a:hover {
@@ -65,11 +75,7 @@ nav {
     text-align: end;
 }
 
-.social-links li {
-    position: relative;
-    display: inline-flex;
-    margin: 0 3%;
-}
+
 
 .social-links li i {
     width: 42px;
@@ -762,21 +768,26 @@ textarea {
 
     .menu {
         width: 150px;
-        height: 170px;
+        height: 190px;
         position: fixed;
         top: 0;
         right: 0;
         background-color: #2B2B2C;
+        box-shadow: 0 0 5px #000;
         text-align: center;
-        padding: 3% 2% 1% 2%;
+        padding: 4% 2% 1% 2%;
         margin: 15px 0 0 0;
-        transition: margin-left 1s;
         z-index: 6;
     }
 
     .menu li {
         list-style: none;
-        padding-top: 20px;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    .menu li:hover {
+        background-color: #681E1E;
     }
 
     .menu li a {
@@ -794,9 +805,10 @@ textarea {
 }
 
 @media screen and (max-width: 548px) {
+
     body {
         width: 100%;
-        min-height: 100vh;
+        max-height: 100vh;
     }
     
     header {
@@ -808,21 +820,18 @@ textarea {
     }
     
     .logo {
-        width: 50%;
+        width: 20%;
         margin: 0.5% 0 0 1%;
     }
     
     .logo img {
-        width: 40px;
-        height: 60px;
-        position: relative;
-        filter: drop-shadow(0px 0px 7px #ff0000);
-        z-index: 2;
+        width: 35px;
+        height: 50px;
     }
     
     .landing-card {
         width: 96%;
-        height: 97.5vh;
+        height: 95vh;
         border-radius: 15px;
         box-shadow: none;
         margin: 0 auto;
@@ -831,27 +840,29 @@ textarea {
     }
     
     .middle {
-        display: inline-flex;
+        display: block;
     }
     
     .hero-image {
-        width: 50%;
+        width: 100%;
     }
     
     .hero-image img {
         width: 100%;
+        height: 160px;
         display: block;
-        margin: 7.8% 5%;
+        margin: 9% 0.5% 5% 0.5%;
     }
     
     .buttons {
-        width: 50%;
-        display: inline-flex;
+        width: 100%;
+        /* display: inline-flex; */
+        display: block;
         justify-content: center;
     }
     
     .btn {
-        width: 25%;
+        width: 70%;
         height: 13%;
         align-self: center;
         background-image: linear-gradient(to bottom right, #A9ACAD, #A9ACAD, #A9ACAD, #A9ACAD, #6F6F70, #A9ACAD);
@@ -865,7 +876,7 @@ textarea {
         text-align: center;
         line-height: 90px;
         cursor: pointer;
-        margin: 0 10%;
+        margin: 5% 20%;
     }
     
     #play-btn {
