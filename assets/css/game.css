@@ -113,6 +113,7 @@ body {
 }
 
 /*  Controls */
+
 .controls {
     position: absolute;
     right: 0;
@@ -134,33 +135,43 @@ body {
     cursor: pointer;
 }
 
-#pauseBtn {
-    border-radius: 50%;
-}
-
-/* .btnControls:hover {
-    box-shadow: inset 2px 2px 4px #3B3B3B,
-    inset -2px -2px 4px #F0F0F0;
-} */
-
 .btnControls i {
-    /* color: #121212; */
     color: #1e1e1f;
 }
 
-#pauseBtn {
-    box-shadow: 1px 1px 0.5px #111111,
-    -1px -1px 0.5px #7c7c7c,
-    -1px 1px 0.5px #111111,
-    1px -1px 0.5px #7c7c7c;
-    margin: 5px 5px 5px 0;
+.pause, .music {
+    width: 50px;
+    height: 50px;
+    background-color: #DFDEE0;
+    border-radius: 50%;
+    font-size: 200%;
+    line-height: 50px;
 }
 
-#pauseBtn:hover {
-    box-shadow: inset 1px 1px 0.2px #111111,
-    inset -1px -1px 0.2px #7c7c7c,
-    inset -1px 1px 0.2px #111111,
-    inset 1px -1px 0.2px #7c7c7c;
+#pauseBtn {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 168px 370px;
+}
+
+#musicBtn {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 100px 370px;
+}
+
+#pauseBtn, #musicBtn {
+    box-shadow: 1px 1px 3px #111111,
+    -1px -1px 3px #7c7c7c,
+    -1px 1px 3px #111111,
+    1px -1px 3px #7c7c7c;
+}
+
+#pauseBtn:hover, #musicBtn:hover {
+    box-shadow: inset 1px 1px 3px #111111,
+    inset -1px -1px 3px #7c7c7c,
+    inset -1px 1px 3px #111111,
+    inset 1px -1px 3px #7c7c7c;
 }
 
 .left, .right {
@@ -391,7 +402,7 @@ body {
     .controls {
         position: fixed;
         right: 0;
-        margin: 0 35%;
+        margin: 0 18%;
         margin-top: 100%;
     }
     
@@ -410,28 +421,26 @@ body {
         cursor: pointer;
     }
     
-    #pauseBtn {
-        border-radius: 50%;
-    }
-    
     .btnControls i {
         /* color: #121212; */
         color: #1e1e1f;
     }
-    
-    #pauseBtn {
-        box-shadow: 1px 1px 0.5px #111111,
-        -1px -1px 0.5px #7c7c7c,
-        -1px 1px 0.5px #111111,
-        1px -1px 0.5px #7c7c7c;
-        margin: 5px 5px 5px 0;
+
+    .pause, .music {
+        width: 35px;
+        height: 35px;
+        background-color: #DFDEE0;
+        border-radius: 50%;
+        font-size: 140%;
+        line-height: 35px;
     }
     
-    #pauseBtn:hover {
-        box-shadow: inset 1px 1px 0.2px #111111,
-        inset -1px -1px 0.2px #7c7c7c,
-        inset -1px 1px 0.2px #111111,
-        inset 1px -1px 0.2px #7c7c7c;
+    #pauseBtn {
+        margin: 0 0 46% 19%;
+    }
+    
+    #musicBtn {
+        margin: 0 0 46% 3%;
     }
     
     .left, .right {
@@ -442,7 +451,7 @@ body {
         height: 38px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
     }
     
     #upBtn:hover {
@@ -457,7 +466,7 @@ body {
         width: 38px;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-        margin-right: 17px;
+        margin-right: 9px;
     }
     
     #leftBtn:hover {
@@ -472,7 +481,7 @@ body {
         width: 38px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        margin-left: 13px;
+        margin-left: 9px;
     }
     
     #rightBtn:hover {
@@ -487,7 +496,7 @@ body {
         height: 38px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        margin-top: 12px;
+        margin-top: 7px;
     }
     
     #downBtn:hover {
@@ -512,7 +521,7 @@ body {
     .point-top {
         border-bottom-right-radius: 10px;
         box-shadow: 2px 2px 1px #111111;
-        margin-top: -46px;
+        margin-top: -42px;
         margin-left: 1px;
     }
     
@@ -535,7 +544,7 @@ body {
         border-bottom-left-radius: 10px;
         box-shadow: -2px 2px 1px #111111;
         margin-top: 1.5px;
-        margin-left: 4px;
+        margin-left: 0;
     }
     
     #rightBtn:hover + .point-right {
