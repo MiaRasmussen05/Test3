@@ -151,13 +151,13 @@ body {
 #pauseBtn {
     position: absolute;
     bottom: 0;
-    margin: 0 0 168px 370px;
+    margin: 0 0 28px -60px;
 }
 
 #musicBtn {
     position: absolute;
     bottom: 0;
-    margin: 0 0 100px 370px;
+    margin: 0 0 -40px -60px;
 }
 
 #pauseBtn, #musicBtn {
