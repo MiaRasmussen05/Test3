@@ -776,6 +776,17 @@ textarea {
         padding: 4% 2% 1% 2%;
         margin: 10px 10px 0 0;
         z-index: 6;
+        animation: menu-show 1s ease forwards;
+    }
+
+    @keyframes menu-show {
+        0% {
+            transform: translateY(-108%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
     }
 
     .menu li {
