@@ -9,7 +9,6 @@ html {
 
 body {
     width: 100%;
-    height: 95.9vmin;
     background-image: linear-gradient(to bottom right, #422680, #341671, #280659, #660F56, #AE2D68, #F54952);
     background-image: linear-gradient(to bottom right, #000, #1E1E1E, #522D2D, #681E1E, #7F0F0F, #681E1E, #522D2D, #3B3B3B, #2D2D2D, #1E1E1E, #000);
     /* background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C); */
@@ -155,7 +154,7 @@ nav {
 
 .landing-card {
     width: 93%;
-    height: 87vh;
+    height: 88vh;
     /*background-image: linear-gradient(to bottom right, #fff, #3B3B3B, #000);
     background-image: linear-gradient(to bottom right, #000, #1E1E1E, #3B3B3B, #7C7C7C, #FFF, #F2F2F2, #7C7C7C, #626262, #FFF,
     #404040, #202020, #1E1E1E, #000);
@@ -194,6 +193,9 @@ nav {
     align-self: center;
     /*background-color: #CC2B20;*/
     background-image: linear-gradient(to bottom right, #A9ACAD, #A9ACAD, #A9ACAD, #A9ACAD, #6F6F70, #A9ACAD);
+    background-image: url(../images/scales.png);
+    background-position: center;
+    background-size: cover;
     border: none;
     border-radius: 10px;
     box-shadow: inset 2px 2px 4px #F0F0F0,
@@ -209,6 +211,9 @@ nav {
 
 #play-btn {
     background-image: linear-gradient(to bottom right, #6F6F70, #AAA9AD, #A9ACAD, #DFDEE0, #F0F0F0);
+    background-image: url(../images/scales.png);
+    background-position: center;
+    background-size: cover;
 }
 
 #play-btn a {
@@ -237,6 +242,9 @@ nav {
     max-height: 80%;
     /*background-image: linear-gradient(to bottom right, #000, #522D2D, #7F0F0F, #522D2D, #000);*/
     background-image: linear-gradient(to bottom right, #969697, #AAA9AD, #DFDEE0, #FFF, #A9ACAD, #969697, #F0F0F0, #969697);
+    background-image: url(../images/scales.png);
+    background-position: center;
+    background-size: cover;
     border-radius: 10px;
     text-align: center;
     color: #000;
@@ -400,7 +408,7 @@ footer {
     bottom: 0;
     text-align: center;
     color: #DFDEE0;
-    padding-bottom: 1%;
+    margin-bottom: 0.5%;
 }
 
 .copyright, .disclaimer {
@@ -481,6 +489,9 @@ textarea {
     text-align: center;
     font-size: 100%;
     background-image: linear-gradient(to top left, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
+    background-image: url(../images/scales.png);
+    background-position: center;
+    background-size: cover;
     border-radius: 40px;
     cursor: pointer;
     margin: 0 40%;
@@ -535,7 +546,9 @@ textarea {
     
     .landing-card {
         width: 93%;
-        height: 91.9vh;
+        /* height: 91.9vh; */
+
+
         margin: 0 auto;
         margin-top: 2%;
         margin-bottom: 30px;
@@ -820,6 +833,69 @@ textarea {
         font-size: 100%;
         margin: 3% 4% 0 0;
     }
+
+    .about {
+        padding: 0;
+    }
+    
+    .heading {
+        font-size: 250%;
+    }
+    
+    .paragrafs {
+        display: block;
+        padding: 4% 0 4% 7%;
+    }
+    
+    .paragrafs p {
+        width: 90%;
+        font-size: 100%;
+        padding: 4% 1%;
+    }
+
+    .copyright, .disclaimer {
+        font-size: 50%;
+    }
+    
+    .form-container {
+        width: 93%;
+        margin: 0 0 0 6%;
+    }
+    
+    form {
+        font-size: 110%;
+    }
+    
+    .input-wrapper {
+        width: 90%;
+        margin-top: 2%;
+    }
+    
+    .input {
+        height: 30px;
+        margin: 2% 0 8% 0;
+    }
+    
+    .radio-wrapper {
+        text-align: center;
+        margin: 1% 0 6% 0;
+    }
+    
+    .form-end {
+        width: 90%;
+    }
+    
+    textarea {
+        height: 150px;
+        min-height: 150px;
+        max-height: 150px;
+    }
+    
+    .contactBtn {
+        width: 25%;
+        height: 40px;
+        margin-top: 2%;
+    }
    
 }
 
@@ -836,7 +912,7 @@ textarea {
     
     .landing-card {
         width: 96%;
-        height: 95vh;
+        /* height: 95vh; */
         box-shadow: none;
         margin-top: 2%;
     }
@@ -970,8 +1046,8 @@ textarea {
     }
     
     .form-container {
-        width: 95%;
-        margin: 0 0 0 3%;
+        width: 93%;
+        margin: 0 0 0 6%;
     }
     
     form {

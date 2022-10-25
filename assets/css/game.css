@@ -48,17 +48,26 @@ body {
     margin-bottom: 1%;
 }
 
-.center p {
-    width: 29%;
+.center {
+    width: 77.8vmin;
     position: relative;
+    display: flex;
     justify-content: center;
-    display: inline-flex;
     background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
+    background-image: url(../images/scales.png);
+    background-position: center;
+    background-size: cover;
     font-size: 120%;
     font-weight: 700;
     border: 3px solid #000;
     border-style: double;
     padding: 0.5%;
+}
+
+.center p {
+    width: 35%;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .center span {
@@ -92,6 +101,9 @@ body {
     width: 70px;
     height: 70px;
     background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
+    background-image: url(../images/scales.png);
+    background-position: center;
+    background-size: cover;
     border: none;
     border-radius: 50%;
     box-shadow: inset 2px 2px 4px #F0F0F0,
@@ -126,6 +138,9 @@ body {
     position: relative;
     /* background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C); */
     background-color: #2B2B2C;
+    background-image: url(../images/scales.png);
+    background-position: center;
+    background-size: cover;
     border: none;
     border-radius: 20px;
     font-size: 250%;
@@ -143,6 +158,9 @@ body {
     width: 50px;
     height: 50px;
     background-color: #DFDEE0;
+    background-image: url(../images/scales.png);
+    background-position: center;
+    background-size: cover;
     border-radius: 50%;
     font-size: 200%;
     line-height: 50px;
@@ -239,6 +257,9 @@ body {
     height: 60px;
     background-color: #2B2B2C;
     /* background-color: #10108f; */
+    background-image: url(../images/scales.png);
+    background-position: center;
+    background-size: cover;
     position: absolute;
     border-radius: 20px;
     rotate: 45deg;
@@ -254,6 +275,7 @@ body {
 
 #upBtn:hover + .point-top {
     box-shadow: none;
+    box-shadow: inset -2px -2px 12px #111111;
 }
 
 .point-left {
@@ -265,6 +287,7 @@ body {
 
 #leftBtn:hover + .point-left {
     box-shadow: none;
+    box-shadow: inset -2px 2px 12px #111111;
 }
 
 .point-right {
@@ -276,6 +299,7 @@ body {
 
 #rightBtn:hover + .point-right {
     box-shadow: none;
+    box-shadow: inset 2px -2px 12px #111111;
 }
 
 .point-down {
@@ -287,6 +311,7 @@ body {
 
 #downBtn:hover ~ .point-down {
     box-shadow: none;
+    box-shadow: inset 2px 2px 12px #111111;
 }
 
 /* MEDIA QUERIES */
@@ -347,21 +372,11 @@ body {
         width: 100%;
         text-align: center;
     }
-    
-    .center p {
-        width: 28%;
-        position: relative;
-        justify-content: center;
-        display: inline-flex;
-        font-size: 75%;
-        border: 3px solid #000;
-        border-style: double;
+
+    .center {
+        width: 91.3vmin;
+        font-size: 100%;
     }
-    
-    .center span {
-        padding: 0 0 0 10%;
-    }
-    
     
     /* Game Over*/
     
@@ -375,15 +390,9 @@ body {
     }
     
     .restart {
-        width: 70px;
-        height: 70px;
-        background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
-        border: none;
-        border-radius: 50%;
-        box-shadow: inset 2px 2px 4px #F0F0F0,
-        inset -2px -2px 4px #3B3B3B;
+        width: 50px;
+        height: 50px;
         font-size: 90%;
-        padding: 3% 2% 2% 3%;
         margin-top: 0%;
         margin-left: 40%;
     }
@@ -432,15 +441,15 @@ body {
         background-color: #DFDEE0;
         border-radius: 50%;
         font-size: 140%;
-        line-height: 35px;
+        line-height: 37px;
     }
     
     #pauseBtn {
-        margin: 0 0 46% 19%;
+        margin: 0 0 -58px 45px;
     }
     
     #musicBtn {
-        margin: 0 0 46% 3%;
+        margin: 0 0 -58px 0;
     }
     
     .left, .right {
