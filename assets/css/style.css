@@ -188,8 +188,8 @@ nav {
 }
 
 .btn {
-    width: 25%;
-    height: 13%;
+    width: 225px;
+    height: 80px;
     align-self: center;
     /*background-color: #CC2B20;*/
     background-image: linear-gradient(to bottom right, #A9ACAD, #A9ACAD, #A9ACAD, #A9ACAD, #6F6F70, #A9ACAD);
@@ -499,6 +499,18 @@ textarea {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1400px) {
+
+    .pages {
+        margin: 0 0 0 7%;
+    }
+    
+    .pages li a {
+        font-size: 110%;
+    }
+    
+}
+
 /* For larger screen sizes from 1280px wide and down */
 
 @media screen and (max-width: 1280px) {
@@ -510,23 +522,23 @@ textarea {
     }
     
     .logo {
-        width: 50%;
+        width: 10%;
         margin: 0.5% 0 0 1%;
     }
     
     .logo img {
-        width: 15%;
-    }
-    
-    nav {
-        width: 100%;
-        margin-right: 6%;
-        padding-top: 1%;
+        width: 55px;
+        height: 70px;
     }
     
     .pages {
         width: 20%;
-        line-height: 50px;
+        margin: 0 10%;
+    }
+
+    .pages li a {
+        font-size: 100%;
+        padding: 0 3%;
     }
     
     .social-links {
@@ -568,8 +580,8 @@ textarea {
     }
     
     .btn {
-        width: 25%;
-        height: 13%;
+        width: 225px;
+        height: 80px;
         font-size: 240%;
         margin: 0 10%;
     }

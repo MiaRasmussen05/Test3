@@ -1,12 +1,3 @@
-html {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    width: 100%;
-}
-
 .pages {
     visibility: hidden;
 }
@@ -15,8 +6,9 @@ body {
     width: 37.4%;
     height: 78.8vmin;
     position: absolute;
-    margin: 0 26%;
+    margin: 0 0 0 25%;
     margin-top: 0.7%;
+    transition: all 2s;
 }
 
 /* learned about this from tutorialspoint */
@@ -38,8 +30,6 @@ body {
     grid-template-rows: repeat(30, 1fr);
     background-color: #0d9b37;
     border-radius: 10px;
-    margin: 0 auto;
-    margin-top: 0%;
 }
 
 .score-board {
@@ -129,7 +119,9 @@ body {
 .controls {
     position: absolute;
     right: 0;
-    margin: 8% 12% 0 0;
+    margin: 33% -450px 0 0;
+    /* margin: 30% 0 0 130%; */
+    transition: all 2.5s;
 }
 
 .btnControls {
@@ -315,6 +307,18 @@ body {
 }
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+    .game-border {
+        margin: 2% 0 0 15%;
+        margin-top: 0.7%;
+    }
+
+    .controls {
+        margin: 40% -500px 0 0;
+    }
+    
+}
 
 /* For larger screen sizes from 1280px wide and down */
 

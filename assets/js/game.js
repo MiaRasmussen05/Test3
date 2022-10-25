@@ -1,5 +1,6 @@
 let lastRenderTime = 0;
 const GRID_SIZE = 30;
+const music = new Audio('assets/sound/music.mp3');
 const board = document.getElementsByClassName('board')[0];
 
 const SNAKE_BODY = [{ x: 15, y: 15 }];
@@ -29,15 +30,15 @@ const gameOverMessage = document.getElementsByClassName('game-over')[0];
 let gameOver = false;
 const restartBtn = document.querySelector('.restart');
 
-
-
-
 window.addEventListener('DOMContentLoaded', (event) => {
     window.requestAnimationFrame(main)
     gameOverMessage.style.display = "none"
     for (let i = 0; i < touchControls.length; i++) {
         touchControls[i].addEventListener('click', touchControlsClicked);
     }
+
+    music.play();
+    music.volume = 0.2;
 });
 
 /**
@@ -350,4 +351,5 @@ function touchControlsClicked() {
             return
         }
     }
+    
 }
