@@ -144,7 +144,7 @@
     color: #1e1e1f;
 }
 
-.pause, .music {
+.pause, .music, .sound {
     width: 50px;
     height: 50px;
     background-color: #DFDEE0;
@@ -156,26 +156,40 @@
     line-height: 50px;
 }
 
-#pauseBtn {
-    position: absolute;
-    bottom: 0;
-    margin: 0 0 28px -60px;
+.music, .sound {
+    width: 50px;
+    height: 50px;
+    font-size: 130%;
+    line-height: 50px;
+    opacity: 1;
 }
 
-#musicBtn {
+#pauseBtn {
     position: absolute;
     bottom: 0;
     margin: 0 0 -40px -60px;
 }
 
-#pauseBtn, #musicBtn {
+#musicBtn {
+    margin: 20% 0 0 0;
+}
+
+#musicBtn i {
+    padding-right: 6%;
+}
+
+#soundBtn {
+    margin: 20% 0 0 25%;
+}
+
+#pauseBtn, #musicBtn, #soundBtn {
     box-shadow: 1px 1px 3px #111111,
     -1px -1px 3px #7c7c7c,
     -1px 1px 3px #111111,
     1px -1px 3px #7c7c7c;
 }
 
-#pauseBtn:hover, #musicBtn:hover {
+#pauseBtn:hover, #musicBtn:hover, #soundBtn:hover {
     box-shadow: inset 1px 1px 3px #111111,
     inset -1px -1px 3px #7c7c7c,
     inset -1px 1px 3px #111111,

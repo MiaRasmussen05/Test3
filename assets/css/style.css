@@ -38,7 +38,7 @@ nav {
     width: 100%;
     position: relative;
     display: flex;
-    margin-right: 6%;
+    margin-right: 2%;
     padding-top: 1%;
 }
 
@@ -150,6 +150,74 @@ nav {
     0px 0px 2px #000,
     inset 1px 1px 1px #000,
     inset -1px -1px 1px #000;
+}
+
+.settingsBtn {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 120%;
+    background-color: #2B2B2C;
+    border: 2px solid #A9ACAD;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000;
+    cursor: pointer;
+    margin: 4px 0 0 2%;
+}
+
+.settingsBtn i {
+    color: #fff;
+    text-shadow: 0 0.5px 0px #5f5f5f,
+    0 1px 0px #5f5f5f,
+    0 1.5px 0px #5f5f5f,
+    0 2px 0px #5f5f5f,
+    0 2.5px 0px #5f5f5f,
+    0 3px 0px #5f5f5f,
+    0 5px 1px #000;
+}
+
+legend {
+    width: 15%;
+    height: 15%;
+    background-color: #2B2B2C;
+    border: 2px solid #A9ACAD;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 200%;
+    line-height: 30px;
+    color: #DFDEE0;
+    text-shadow: 0 0.5px 0px #5f5f5f,
+    0 1px 0px #5f5f5f,
+    0 1.5px 0px #5f5f5f,
+    0 2px 0px #5f5f5f,
+    0 2.5px 0px #5f5f5f,
+    0 3px 0px #5f5f5f,
+    0 3.5px 0px #5f5f5f,
+    0 4px 0px #5f5f5f,
+    0 7px 1px #000;
+    padding: 2%;
+}
+
+.settings-wrapper {
+    width: 30%;
+    height: 40vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(25, 25, 25, 0.8);
+    border: 2px solid #A9ACAD;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000;
+    margin: 13% 20%;
+    z-index: 4;
+}
+
+.settingBtns {
+    width: 100%;
+    display: inline-flex;
+    text-shadow: 3px 3px 2px #4d4d4d;
+    margin: 0 0 0 28%;
 }
 
 .landing-card {
@@ -304,11 +372,16 @@ nav {
     cursor: pointer;
 }
 
-#close-rules, #close-play{
+#close-rules, #close-play, #closeSettings {
     display:flex;
     justify-content:center;
     align-items:center;
     margin: 3.3% 24% 0 0;
+}
+
+#closeSettings {
+    font-size: 150%;
+    margin: -5% 4% 0 0;
 }
 
 #close-play{
@@ -316,7 +389,7 @@ nav {
     margin: 7.5% 7% 0 0;
 }
 
-#close-rules:hover, #close-play:hover{
+#close-rules:hover, #close-play:hover, #closeSettings:hover {
     font-size: 250%;
    /*color: #CC2B20;*/
    color: #7F0F0F;
@@ -324,6 +397,10 @@ nav {
 
 #close-play:hover {
     font-size: 220%;
+}
+
+#closeSettings:hover{
+    font-size: 200%;
 }
 
 .play-modal{
