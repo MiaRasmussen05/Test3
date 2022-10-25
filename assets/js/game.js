@@ -39,6 +39,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     music.play();
     music.volume = 0.2;
+    music.loop = true;
 });
 
 /**

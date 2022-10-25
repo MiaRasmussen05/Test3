@@ -13,70 +13,7 @@
 </head>
 
 <body>
-    <section>
-        <div class="game-border">
-            <div class="score-board">
-                <div class="center">
-                    <p>Score: <span class="score"></span></p>
-                    <!--<p class="score">Score: <span id="new-score">0</span></p>-->
-                    <p>High Score: <span class="highScore"></span></p>
-                    <p class="level">Level: <span id="new-level">0</span></p>
-                </div>
-            </div>
-            <!-- Game over message -->
-            <div class="game-over">
-                <h2>Game Over</h2>
-                <div class="restart" onclick="restart()" onkeydown="restart()"><i class="fas fa-undo"></i></div>
-            </div>
-            <div class="board"></div>
-            <div class="pause btnControls" id="pauseBtn" aria-label="Pause Button">
-                <i class="fas fa-pause"></i>
-            </div>
-            <div class="music btnControls" id="musicBtn">
-                <i class="fas fa-volume-mute"></i>
-            </div>
-            <div class="controls">
-                <table>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <div class='btnControls' id="upBtn" aria-label="Up Button">
-                                <i class="fas fa-chevron-up"></i>
-                            </div>
-                            <div class="point point-top"></div>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="left">
-                            <div class='btnControls' id="leftBtn" aria-label="Left Button">
-                                <i class="fas fa-chevron-left"></i>
-                            </div>
-                            <div class="point point-left"></div>
-                        </td>
-                        <td></td>
-                        <td class="right">
-                            <div class='btnControls' id="rightBtn" aria-label="Right Button">
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="point point-right"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <div class='btnControls' id="downBtn" aria-label="Down Button">
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div class="point point-down"></div>
-                        </td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </section>
-    <section>
+    <main>
         <div class="landing-card">
             <header>
                 <div class="logo">
@@ -143,7 +80,69 @@
                     </ul>
                 </nav>
             </header>
-    </section>
+            <div class="game-border">
+                <div class="score-board">
+                    <div class="center">
+                        <p>Score: <span class="score"></span></p>
+                        <!--<p class="score">Score: <span id="new-score">0</span></p>-->
+                        <p>High Score: <span class="highScore"></span></p>
+                        <p class="level">Level: <span id="new-level">0</span></p>
+                    </div>
+                </div>
+                <div class="board"></div>
+                <div class="pause btnControls" id="pauseBtn" aria-label="Pause Button">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <div class="music btnControls" id="musicBtn">
+                    <i class="fas fa-volume-mute"></i>
+                </div>
+                <div class="controls">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class='btnControls' id="upBtn" aria-label="Up Button">
+                                    <i class="fas fa-chevron-up"></i>
+                                </div>
+                                <div class="point point-top"></div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="left">
+                                <div class='btnControls' id="leftBtn" aria-label="Left Button">
+                                    <i class="fas fa-chevron-left"></i>
+                                </div>
+                                <div class="point point-left"></div>
+                            </td>
+                            <td></td>
+                            <td class="right">
+                                <div class='btnControls' id="rightBtn" aria-label="Right Button">
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                                <div class="point point-right"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class='btnControls' id="downBtn" aria-label="Down Button">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="point point-down"></div>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Game over message -->
+                <div class="game-over">
+                    <h2>Game Over</h2>
+                    <div class="restart" onclick="restart()" onkeydown="restart()"><i class="fas fa-undo"></i></div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <p class="copyright">Copyright ©Mia Rasmussen 2022</p>
         <p class="disclaimer">Disclaimer: this website was built for a project and is not for commercial use</p>
