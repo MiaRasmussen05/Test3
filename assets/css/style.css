@@ -177,6 +177,19 @@ nav {
     0 5px 1px #000;
 }
 
+.settings-wrapper {
+    width: 30%;
+    height: 40vh;
+    position: absolute;
+    display: none;
+    background-color: rgb(25, 25, 25, 0.8);
+    border: 2px solid #A9ACAD;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000;
+    margin: 13% 20%;
+    z-index: 4;
+}
+
 legend {
     width: 15%;
     height: 15%;
@@ -197,20 +210,6 @@ legend {
     0 4px 0px #5f5f5f,
     0 7px 1px #000;
     padding: 2%;
-}
-
-.settings-wrapper {
-    width: 30%;
-    height: 40vh;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(25, 25, 25, 0.8);
-    border: 2px solid #A9ACAD;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #000;
-    margin: 13% 20%;
-    z-index: 4;
 }
 
 .settingBtns {
