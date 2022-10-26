@@ -2,6 +2,9 @@ let lastRenderTime = 0;
 const GRID_SIZE = 30;
 const music = new Audio('assets/sound/music.mp3');
 let musicBtnPlay = document.getElementById('musicBtn');
+const healtyFoodEffect = new Audio('assets/sound/healtyFood.mp3');
+const gameOverSound = new Audio('assets/sound/gameOver.mp3');
+let soundBtnPlay = document.getElementById('soundBtn');
 const board = document.getElementsByClassName('board')[0];
 
 const SNAKE_BODY = [{ x: 15, y: 15 }];
@@ -45,9 +48,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
 function main(currentTime) {
 
     if (gameOver) {
-        board.style.display = "none"
-        gameOverMessage.style.display = "block"
-    }
+        board.style.display = 'none'
+        gameOverMessage.style.display = 'block'
+        gameOverSound.play();
+        gameOverSound.volume = '0.1';
+        pause();
+    };
 
     //getting the frame to animate the game
     window.requestAnimationFrame(main)
@@ -126,6 +132,10 @@ function drawSnake(board) {
  */
 function expandSnake(amount) {
     newSegments += amount
+    //healtyFoodEffect.playbackRate = 1;
+    healtyFoodEffect.play();
+    healtyFoodEffect.volume = '0.07';
+    healtyFoodEffect.currentTime = 0;
 }
 
 /**
@@ -139,16 +149,16 @@ function onSnake(position, {
         //ignores if the snake head is on the snake head
         if (ignoreHead && index === 0) return false
         return equalPositions(segment, position)
-    })
-}
+    });
+};
 
 
 /**
  * Get the position of the head of the snake 
  */
 function getSnakeHead() {
-    return SNAKE_BODY[0]
-}
+    return SNAKE_BODY[0];
+};
 
 /**
  * Verify if the head of the snake touches the body 
@@ -156,15 +166,15 @@ function getSnakeHead() {
 function snakeIntersection() {
     return onSnake(SNAKE_BODY[0], {
         ignoreHead: true
-    })
-}
+    });
+};
 
 /**
  * Verify if the position of the food and the snake match
  */
 function equalPositions(num1, num2) {
-    return num1.x === num2.x && num1.y === num2.y
-}
+    return num1.x === num2.x && num1.y === num2.y;  
+};
 
 /**
  * Take new segments and add to the bottom of the snake
@@ -175,11 +185,11 @@ function addSegments() {
         //takes the very last segment and duplicate on the end of the snake
         SNAKE_BODY.push({
             ...SNAKE_BODY[SNAKE_BODY.length - 1]
-        })
-    }
+        });
+    };
     //Avoid add more elements then its told to
     newSegments = 0
-}
+};
 
 /**
  * Update the snake and score based on the expansion rate and get a new position for the food 
@@ -189,8 +199,8 @@ function updateFood() {
         expandSnake(EXPANSION_RATE)
         score++
         food = getRandomFoodPosition()
-    }
-}
+    };
+};
 
 /**
  * Draw the food on the screen based with the update loop
@@ -229,7 +239,7 @@ function randomGridPosition() {
 // New random position for every new food on the board
 function getRandomFoodPosition() {
     let newFoodPosition
-    while (newFoodPosition == null || onSnake(newFoodPosition)) {
+    if (newFoodPosition == null || onSnake(newFoodPosition)) {
         newFoodPosition = randomGridPosition()
     }
     return newFoodPosition
