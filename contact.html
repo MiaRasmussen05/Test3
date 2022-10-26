@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/game.css">
     <title>Snake Snack | Contact</title>
 </head>
 
@@ -80,6 +81,25 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="settingsBtn" onclick="openSettings()">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <fieldset class="settings-wrapper" id="settings">
+                    <legend><i class="fas fa-cog"></i></legend>
+                    <div class="settingBtns">
+                        <div class="settingBtnborder" id="settingBorder">
+                            <div class="music btnControls" id="musicBtn">
+                                <i class="fas fa-pause"></i>
+                            </div>
+                        </div>
+                        <div class="settingBtnborder" id="settingBorder">
+                            <div class="sound btnControls" id="soundBtn">
+                                <i class="fas fa-volume-mute"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="close-btn" id="closeSettings" onclick="closeSettings()"><i class="fas fa-times"></i></a>
+                </fieldset>
             </header>
             <main>
                 <h1 class="heading">Contact Us</h1>
@@ -141,6 +161,7 @@
             <!-- scripts links -->
             <script src="./assets/js/menu.js"></script>
             <script src="./assets/js/alert.js"></script>
+            <script src="./assets/js/game.js"></script>
 
 </body>
 

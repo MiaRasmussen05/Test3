@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/game.css">
     <title>Snake Snack</title>
 </head>
 
@@ -20,7 +21,7 @@
                         <img src="./assets/images/Logos7.png" alt="">
                     </a>
                 </div>
-                
+
                 <div class="menu-container">
                     <a class="menu-bars" onclick="openToggleMenu()"><i class="fas fa-bars"></i></a>
                     <div class="menu" id="toggleMenu">
@@ -79,6 +80,25 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="settingsBtn" onclick="openSettings()">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <fieldset class="settings-wrapper" id="settings">
+                    <legend><i class="fas fa-cog"></i></legend>
+                    <div class="settingBtns">
+                        <div class="settingBtnborder" id="settingBorder">
+                            <div class="music btnControls" id="musicBtn">
+                                <i class="fas fa-pause"></i>
+                            </div>
+                        </div>
+                        <div class="settingBtnborder" id="settingBorder">
+                            <div class="sound btnControls" id="soundBtn">
+                                <i class="fas fa-volume-mute"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="close-btn" id="closeSettings" onclick="closeSettings()"><i class="fas fa-times"></i></a>
+                </fieldset>
             </header>
             <section>
                 <div class="middle">
@@ -167,17 +187,7 @@
         <p class="disclaimer">Disclaimer: this Gamepage was built for a project and is not for commercial use</p>
     </footer>
 
-    <script>
-        window.onclick = function (event) {
-            if (event.target == rules - modal) {
-                rulesModal.style.display = "none";
-            }
 
-            if (event.target == play - modal) {
-                playModal.style.display = "none";
-            }
-        }
-    </script>
 
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
@@ -185,6 +195,7 @@
     <!-- script links-->
     <script src="./assets/js/rules-modal.js"></script>
     <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/game.js"></script>
 
 </body>
 

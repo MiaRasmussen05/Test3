@@ -1,5 +1,87 @@
-.pages {
+.gamePage .pages {
     visibility: hidden;
+}
+
+.settingsBtn {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 120%;
+    background-color: #2B2B2C;
+    border: 2px solid #A9ACAD;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000;
+    cursor: pointer;
+    margin: 17px 20px 0 2%;
+}
+
+.settingsBtn i {
+    color: #fff;
+    text-shadow: 0 0.5px 0px #5f5f5f,
+    0 1px 0px #5f5f5f,
+    0 1.5px 0px #5f5f5f,
+    0 2px 0px #5f5f5f,
+    0 2.5px 0px #5f5f5f,
+    0 3px 0px #5f5f5f,
+    0 5px 1px #000;
+}
+
+.settings-wrapper {
+    width: 20%;
+    height: 40vh;
+    position: absolute;
+    display: none;
+    /* background-color: rgb(25, 25, 25, 0.8); */
+    background-color: #000;
+    border: 2px solid #A9ACAD;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000;
+    margin: 11% 40%;
+    z-index: 4;
+}
+
+legend {
+    width: 15%;
+    height: 15%;
+    background-color: #2B2B2C;
+    border: 2px solid #A9ACAD;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 200%;
+    line-height: 30px;
+    color: #DFDEE0;
+    text-shadow: 0 0.5px 0px #5f5f5f,
+    0 1px 0px #5f5f5f,
+    0 1.5px 0px #5f5f5f,
+    0 2px 0px #5f5f5f,
+    0 2.5px 0px #5f5f5f,
+    0 3px 0px #5f5f5f,
+    0 3.5px 0px #5f5f5f,
+    0 4px 0px #5f5f5f,
+    0 7px 1px #000;
+    padding: 2%;
+}
+
+.settingBtns {
+    width: 100%;
+    text-shadow: 3px 3px 2px #4d4d4d;
+}
+
+.settingBtnborder {
+    width: 60%;
+    height: 60px;
+    display: inline-flex;
+    justify-content: start;
+    background-color: #1e1e1f;
+    box-shadow: 2px 1px 2px #DFDEE0,
+    -2px -1px 2px #1d1d1d,
+    inset -5px -5px 10px #000000,
+    inset 3px 3px 10px #DFDEE0;
+    border-radius: 30px;
+    padding-right: 1%;
+    margin-top: 5%;
+    margin-left: 20%;
 }
 
 .game-border {
@@ -159,9 +241,9 @@
 .music, .sound {
     width: 50px;
     height: 50px;
+    display: inline-flex;
     font-size: 130%;
     line-height: 50px;
-    opacity: 1;
 }
 
 #pauseBtn {
@@ -171,15 +253,15 @@
 }
 
 #musicBtn {
-    margin: 20% 0 0 0;
+    margin: 5px 0 15% 2%;
 }
 
-#musicBtn i {
-    padding-right: 6%;
+#musicBtn i, #soundBtn i{
+    padding: 15% 0 0 20%;
 }
 
 #soundBtn {
-    margin: 20% 0 0 20%;
+    margin: 5px 0 0 2%;
 }
 
 #pauseBtn, #musicBtn, #soundBtn {
@@ -451,7 +533,7 @@
         color: #1e1e1f;
     }
 
-    .pause, .music {
+    .pause, .music, .sound {
         width: 35px;
         height: 35px;
         background-color: #DFDEE0;
@@ -461,10 +543,6 @@
     }
     
     #pauseBtn {
-        margin: 0 0 -58px 45px;
-    }
-    
-    #musicBtn {
         margin: 0 0 -58px 0;
     }
     

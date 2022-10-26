@@ -2,7 +2,9 @@ let lastRenderTime = 0;
 const GRID_SIZE = 30;
 const music = new Audio('assets/sound/music.mp3');
 let musicBtnPlay = document.getElementById('musicBtn');
-const board = document.getElementsByClassName('board')[0];
+let settingBorderMove = document.getElementsByClassName('settingBtnborder');
+const healtyFoodEffect = new Audio('assets/sound/healtyFood.mp3');
+const boardGame = document.getElementsByClassName('board')[0];
 
 const SNAKE_BODY = [{ x: 15, y: 15 }];
 let newSegments = 0;
@@ -23,6 +25,7 @@ const getScore = document.getElementsByClassName('score')[0];
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
 
+let pausePlayBtn = document.getElementById('pauseBtn');
 const controlButtons = document.getElementsByClassName('touch-controls')[0];
 const touchControls = document.getElementsByClassName('btnControls');
  
@@ -36,7 +39,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
     gameOverMessage.style.display = "none"
     for (let i = 0; i < touchControls.length; i++) {
         touchControls[i].addEventListener('click', touchControlsClicked);
-    }
+    };
+
+    //document.getElementById("restartBtn").addEventListener("keydown", function(event) {
+        //if (e.keyCode === "Enter") {
+        //    restart();
+       // }
+   // });
+
 });
 
 /**
@@ -139,7 +149,8 @@ function onSnake(position, {
         //ignores if the snake head is on the snake head
         if (ignoreHead && index === 0) return false
         return equalPositions(segment, position)
-    })
+    });
+
 }
 
 
@@ -163,7 +174,7 @@ function snakeIntersection() {
  * Verify if the position of the food and the snake match
  */
 function equalPositions(num1, num2) {
-    return num1.x === num2.x && num1.y === num2.y
+    return num1.x === num2.x && num1.y === num2.y;
 }
 
 /**
@@ -175,10 +186,10 @@ function addSegments() {
         //takes the very last segment and duplicate on the end of the snake
         SNAKE_BODY.push({
             ...SNAKE_BODY[SNAKE_BODY.length - 1]
-        })
+        });
     }
     //Avoid add more elements then its told to
-    newSegments = 0
+    newSegments = 0;
 }
 
 /**
@@ -189,7 +200,8 @@ function updateFood() {
         expandSnake(EXPANSION_RATE)
         score++
         food = getRandomFoodPosition()
-    }
+    };
+    
 }
 
 /**
@@ -197,17 +209,17 @@ function updateFood() {
  * 
  */
 function drawFood(board) {
-    const foodElement = document.createElement('div')
-    foodElement.style.gridRowStart = food.y
-    foodElement.style.gridColumnStart = food.x
-    img.onload = function() { 
-        div.appendChild(img); 
-      }; 
+    const foodElement = document.createElement('div');
+    foodElement.style.gridRowStart = food.y;
+    foodElement.style.gridColumnStart = food.x;
+    //img.onload = function() { 
+    //   div.appendChild(img); 
+    //  }; 
        
-      img.src = './assets/images/Apple1.png' 
-    foodElement.classList.add('food')
-    board.appendChild(foodElement)
-}
+      //img.src = './assets/images/Apple1.png';
+    foodElement.classList.add('food');
+    board.appendChild(foodElement);
+};
 
 /**
  * Gives a random position inside the grid
@@ -247,24 +259,29 @@ function outsideGrid(position) {
     )
 }
 
+
+
 /**
  * Function to Restart the game
  */
  function restart(){
-    restartBtn.addEventListener('click' || event.keyCode == 13, () => {
+    restartBtn.addEventListener('click' || e.keyCode == 13, () => {
         window.location = './test.html';
       });
+//
+      //if (e.keyCode == "Enter") {
+        //restart();
+    //};
 };
 
+//function keyDown(e) {
+    //if (e.keyCode === 13) pauseGame();
+//};
 
-/**
- * Listen to the user input with the arrow keys on the keyboard
- *  and get the user input and change direction of the snake
- */
- function getInputDirection() {
-    lastInputDirection = inputDirection
-    return inputDirection
-}
+// pauseBtns.onclick = function() {
+//     pauseBtns.innerHTML = boardGame.paused() ? '<i class="fas fa-play"></i>' : '<i class="fas fa-pause"></i>';
+//   };
+
 
 musicBtnPlay.addEventListener("click", function() {
     if(music.paused){
@@ -278,6 +295,23 @@ musicBtnPlay.addEventListener("click", function() {
       settingBorderMove.style.position = 'start';
     };
   });
+
+  //settingBorderMove.addEventListener("click", function() {
+    //if(settingBorderMove.touchControlsClicked){
+        //settingBorderMove.style.position = 'end';
+    //} else {
+       // settingBorderMove.style.position = 'start';
+    //};
+  //});
+
+/**
+ * Listen to the user input with the arrow keys on the keyboard
+ *  and get the user input and change direction of the snake
+ */
+ function getInputDirection() {
+    lastInputDirection = inputDirection
+    return inputDirection
+}
 
 // EventListener for the keydown of the keyboard to move the snake
 
