@@ -5,6 +5,10 @@ let musicBtnPlay = document.getElementById('musicBtn');
 const healtyFoodEffect = new Audio('assets/sound/healtyFood.mp3');
 const gameOverSound = new Audio('assets/sound/gameOver.mp3');
 let soundBtnPlay = document.getElementById('soundBtn');
+//var soundeffectList = [];
+//soundeffectList[0]= healtyFoodEffect();
+//soundeffectList[1]= healtyFoodEffect();
+
 const board = document.getElementsByClassName('board')[0];
 
 const SNAKE_BODY = [{ x: 15, y: 15 }];
@@ -288,6 +292,16 @@ musicBtnPlay.addEventListener("click", function() {
       settingBorderMove.style.position = 'start';
     };
   });
+
+  //soundBtnPlay.addEventListener("click", function() {
+    //if(soundeffectList.paused){
+   //     soundeffectList.play();
+  //    soundBtnPlay.innerHTML = '<i class="fas fa-volume-up"></i>';
+  //  } else {
+  //      soundeffectList.pause();
+  //    soundBtnPlay.innerHTML = '<i class="fas fa-volume-mute"></i>';
+  //  };
+ // });
 
 // EventListener for the keydown of the keyboard to move the snake
 
