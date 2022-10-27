@@ -37,7 +37,17 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
     - The footer is under the card effects with a copyright mark and disclaimer.
     
   - ### About Page
+    - The about page have the header and two secions inside the page.
+    - The first section describes what Snake Snack is and what it is based on. While the second section is about why this website was created.
+    - It is fully responsive and the two section move under each other on smaller screens. 
+
   - ### Contact Page
+    - The contact page is for the visitor that wants to get in contact with the creator.
+    - The visitor can give feedback, send a message, or even write about collaborating. 
+    - With two additional boxes to the right of the form the visitor will get information on respond time. As well as the email address and hours where the creator will be working.
+    - In the form the visitor have to give there full name, there email address, choose a topic in the radio buttons, and give a little about what there inquiry is about. For  - To be able to push the send button all the boxes need to be answered as well as one radio button needs to be choosen. 
+    - The send button then send the visitor to another page with a pop up window that needs to be clicked. Then they get a thank you that their message have been submited and with a link to go back to the home page.
+    
   - ### Game Page
 
 - ### Future Features
