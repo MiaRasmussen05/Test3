@@ -67,6 +67,13 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
 - ### Typography
 
 - ### Color Scheme
+  - The color scheme for Snake Snack is made with two different color scheme. 
+  - The first is a more dark color scheme for the background and different element as well as a green for the game board. This was done to give a good contrast to the green board and the silver snake.
+  - The second is a light color scheme which is used for the silver colours. For the text on the pages to give a contrast from the darker background. As well as most element like the rules modal, controller buttons, normal buttons, and scoreboard have snake scales with silvery color in the background.
+
+ ![Snake Snack dark color scheme, pallet made on https://coolors.co/](./READMEimages/DarkColorPallet.webp)
+
+ ![Snake Snack light color scheme, pallet made on https://coolors.co/](./READMEimages/LightColorPallet.webp)
 
 ### __Wireframes__
 

@@ -11,7 +11,7 @@ body {
     width: 100%;
     background-image: linear-gradient(to bottom right, #422680, #341671, #280659, #660F56, #AE2D68, #F54952);
     background-image: linear-gradient(to bottom right, #000, #1E1E1E, #522D2D, #681E1E, #7F0F0F, #681E1E, #522D2D, #3B3B3B, #2D2D2D, #1E1E1E, #000);
-    /* background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C); */
+    /* background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #AAA9AD, #6F6F70, #F0F0F0, #707070, #2B2B2C); */
 }
 
 header {
