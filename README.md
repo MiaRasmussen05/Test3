@@ -58,6 +58,9 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
     - On smaller screens the controls are moved under the game board and the game board fills out the width out the screen under the logo. The pause button stays on the left side but moves under the board instead of staying on the side. 
 
 - ### Future Features
+  - A future feature could be to have high score board that saves all high scores so visitors can try and beat each others score and get to the top.
+  - Levels with opsticals of different bushes so the highest levels have a whole labyrient that the player have to go back and forth in to get the food.
+  - Even more different kinds of food to go after.  
 
 ### __Typography and Color Scheme__
 
