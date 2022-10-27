@@ -28,7 +28,14 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
     - On smaller screens the navigation menu moves inside a hambuger menu with the setting and logo staying outside.
 
   - ### Home Page
+    - The home page introduces the game page. It has the hero-image that catches the eye of the visitor when they get on it, an image of a snake that is jumping out of the screen with the name Snake Snack behind it. 
+    - The working buttons of rules and play to the right of the hero image. The rules buttons have a modal box pop op on the screen that explains the rules, how to play and what the different foods there are in the game. The play buttons open up directly into the game when clicked. 
+    - The home page as well as the navigation bar is inclosed inside a card shape that fill out most of the page with the shadow border to give the effect.
+    - On smaller screens the hero images moves to fill the whole width and the buttons move under it.
+
   - ### Footer
+    - The footer is under the card effects with a copyright mark and disclaimer.
+    
   - ### About Page
   - ### Contact Page
   - ### Game Page
