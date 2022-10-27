@@ -56,6 +56,7 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
     - The clickable buttons to the right is fully responsive with hover effects that shows they are clickable. With different colors for each of the four control buttons.
     - On the game page the page links are gone and the logo is used to go back to the home page. 
     - On smaller screens the controls are moved under the game board and the game board fills out the width out the screen under the logo. The pause button stays on the left side but moves under the board instead of staying on the side. 
+    - When the game is over, a game over message comes to the pages instead of it showing the board with a restart button.
 
 - ### Future Features
   - A future feature could be to have high score board that saves all high scores so visitors can try and beat each others score and get to the top.
@@ -69,7 +70,7 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
 - ### Color Scheme
   - The color scheme for Snake Snack is made with two different color scheme. 
   - The first is a more dark color scheme for the background and different element as well as a green for the game board. This was done to give a good contrast to the green board and the silver snake.
-  - The second is a light color scheme which is used for the silver colours. For the text on the pages to give a contrast from the darker background. As well as most element like the rules modal, controller buttons, normal buttons, and scoreboard have snake scales with silvery color in the background.
+  - The second is a light color scheme which is used for the silver colours. For the text on the pages to give a contrast from the darker background. As well as most element like the rules modal, controller buttons, restart and other buttons, and scoreboard have snake scales with silvery color in the background.
 
  ![Snake Snack dark color scheme, pallet made on https://coolors.co/](./READMEimages/DarkColorPallet.webp)
 
