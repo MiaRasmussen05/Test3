@@ -90,6 +90,14 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
 [The Game Page - Wireframe](./READMEimages/wireframes/GameWireframes.png)
 
 ### __Imagery__
+  - All imagery on this website has been created specially for this page and game.
+
+  ![Apple image](./READMEimages/Apple.webp)
+  ![Chocolate image](./READMEimages/Chocolate.webp)
+  ![Snake Snack Logo image](./READMEimages/Logo.webp)
+  ![Bush for the border of the game image](./READMEimages/Bush.webp)
+  ![Scales image](./READMEimages/Scales.webp)
+  ![hero-image](./READMEimages/.webp)
 
 ## __Testing__
 
