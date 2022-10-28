@@ -1,25 +1,25 @@
-const rulesBtn = document.querySelector('#rules-btn');
-const rulesModal = document.querySelector('.rules-modal');
-const closeRulesBtn = document.querySelector('#close-rules');
+let rulesBtn = document.querySelector('#rules-btn');
+let rulesModal = document.querySelector('.rules-modal');
+let closeRulesBtn = document.querySelector('#close-rules');
 const playBtn = document.querySelector('#play-btn');
 const playModal = document.querySelector('.play-modal');
 const closePlayBtn = document.querySelector('#close-play');
 
-function openRules(){
+function openRules() {
     rulesModal.style.display = "block";
 };
 
-function openPlay(){
-    playModal.style.display = "block";
+function closeRules() {
+    rulesModal.style.display = "none";
 };
 
 /* Open the play modal */
 
-function closeRules(){
-    rulesModal.style.display = "none";
+function openPlay() {
+    playModal.style.display = "block";
 };
 
-function closePlay(){
+function closePlay() {
     playModal.style.display = "none";
 };
 
@@ -28,12 +28,16 @@ closeRulesBtn.addEventListener("click", closeRules);
 playBtn.addEventListener("click", openPlay);
 closePlayBtn.addEventListener("click", closePlay);
 
-window.onclick = function(event) {
-    if (event.target == rules-modal) {
+/**
+ * Close the Modals by a click on the keyboard  
+ */
+ document.addEventListener('keydown', (event) => {
+    
+    if (event.key === 'enter') {
         rulesModal.style.display = "none";
-    }
-  
-      if (event.target == play-modal) {
-          playModal.style.display = "none";
-      }
-  }
+    };
+
+  });
+
+
+    //window.addEventListener('DOMContentLoaded', (event) => {};

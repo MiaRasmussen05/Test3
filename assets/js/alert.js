@@ -1,13 +1,20 @@
-const fullName = document.querySelector('fuName');
-const emailAdd = document.querySelector('email');
-const clickedRadio = document.querySelector('radio');
-const textArea = document.querySelector('teArea');
+    let fullName = document.getElementById('fuName');
+    let emailAdd = document.getElementById('email');
+    let clickedRadio = document.getElementsByClassName('radio');
+    let textArea = document.getElementById('teArea');
 
-window.addEventListener('DOMContentLoaded', (event) => {
+    /**
+     * Alert to stop accidentally closing of window while filling the form 
+     */
+    
+    window.addEventListener("beforeunload", (event) => {
 
-    if (fullName !== '' || emailAdd !== '' || clickedRadio !== '' || textArea !== '') {
+        if (fullName !== '' || emailAdd !== '' || clickedRadio !== '' || textArea !== '') {
 
-        i.preventDefault();
-        i.returnValue = '';
-    };
-});
+            event.returnValue = 'You are about to leave the page without sending your message.\n Are you sure you want to continue?';
+
+        } else {
+
+            window.onbeforeunload = null;
+        }
+    });
