@@ -222,10 +222,6 @@ legend {
     cursor: pointer;
 }
 
-.btnControls i {
-    color: #1e1e1f;
-}
-
 .pause, .music, .sound {
     width: 50px;
     height: 50px;
@@ -470,8 +466,138 @@ legend {
         padding: 0.5%;
     }
 
+    .btnControls {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        font-size: 250%;
+        line-height: 70px;
+    }
+
     #pauseBtn {
         margin: 0 0 22px -60px;
+    }
+    
+    .left, .right {
+        display: flex;
+    }
+    
+    #upBtn {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        margin-bottom: 20px;
+    }
+    
+    #upBtn:hover {
+        box-shadow: inset 0px 2px 2px 1px #3B3B3B;
+    }
+    
+    #upBtn:hover > i {
+        color: #0DEFD5;
+    }
+    
+    #leftBtn {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        margin-right: 25px;
+    }
+    
+    #leftBtn:hover {
+        box-shadow: inset 2px 0px 2px 1px #3B3B3B;
+    }
+    
+    #leftBtn:hover > i {
+        color: #D78DB5;
+    }
+    
+    #rightBtn {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-left: 20px;
+    }
+    
+    #rightBtn:hover {
+        box-shadow: inset -2px 0px 2px 1px #3B3B3B;
+    }
+    
+    #rightBtn:hover > i {
+        color: #D4706C;
+    }
+    
+    #downBtn {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-top: 18px;
+    }
+    
+    #downBtn:hover {
+        box-shadow: inset 0px -2px 2px 1px #3B3B3B;
+    }
+    
+    #downBtn:hover > i {
+        color: #9FAAD9;
+    }
+    
+    .point{
+        width: 60px;
+        height: 60px;
+        background-color: #2B2B2C;
+        /* background-color: #10108f; */
+        background-image: url(../images/scales.png);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        border-radius: 20px;
+        rotate: 45deg;
+        z-index: -1;
+    }
+    
+    .point-top {
+        border-bottom-right-radius: 10px;
+        box-shadow: 2px 2px 1px #111111;
+        margin-top: -68px;
+        margin-left: 5px;
+    }
+    
+    #upBtn:hover + .point-top {
+        box-shadow: none;
+        box-shadow: inset -2px -2px 12px #111111;
+    }
+    
+    .point-left {
+        border-top-right-radius: 10px;
+        box-shadow: 2px -2px 1px #111111;
+        margin-top: 5px;
+        margin-left: 22px;
+    }
+    
+    #leftBtn:hover + .point-left {
+        box-shadow: none;
+        box-shadow: inset -2px 2px 12px #111111;
+    }
+    
+    .point-right {
+        border-bottom-left-radius: 10px;
+        box-shadow: -2px 2px 1px #111111;
+        margin-top: 4px;
+        margin-left: 9px;
+    }
+    
+    #rightBtn:hover + .point-right {
+        box-shadow: none;
+        box-shadow: inset 2px -2px 12px #111111;
+    }
+    
+    .point-down {
+        border-top-left-radius: 10px;
+        box-shadow: -2px -2px 1px #111111;
+        margin-top: -80px;
+        margin-left: 5px;
+    }
+    
+    #downBtn:hover ~ .point-down {
+        box-shadow: none;
+        box-shadow: inset 2px 2px 12px #111111;
     }
 
 }
@@ -567,11 +693,6 @@ legend {
         text-align: center;
         line-height: 45px;
         cursor: pointer;
-    }
-    
-    .btnControls i {
-        /* color: #121212; */
-        color: #1e1e1f;
     }
 
     .pause, .music, .sound {
