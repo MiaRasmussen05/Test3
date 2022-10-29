@@ -1,4 +1,4 @@
-.gamePage .pages {
+.pages {
     visibility: hidden;
 }
 
@@ -88,7 +88,7 @@ legend {
     width: 37.4%;
     height: 78.8vmin;
     position: absolute;
-    margin: -5% 0 0 20%;
+    margin: -5% 0 0 17%;
     transition: all 2s;
 }
 
@@ -404,20 +404,76 @@ legend {
 
 @media screen and (max-width: 1400px) {
     .game-border {
-        margin: 2% 0 0 15%;
-        margin-top: 0.7%;
+        margin: 0 0 0 15%;
     }
 
     .controls {
-        margin: 40% -500px 0 0;
+        margin: 30% -500px 0 0;
     }
     
+}
+
+@media screen and (max-width: 1400px) {
+    .game-border {
+        width: 37.4%;
+        height: 78.8vmin;
+        margin: -4% 0 0 13%;
+    }
+    
+    .board {
+        width: 72vmin;
+        height: 72vmin;
+    }
+
+    .score-board {
+        width: 99%;
+        margin-bottom: 1%;
+    }
+
+    .center {
+        width: 74.9vmin;
+        padding: 0.5%;
+    }
+    
+    .center p {
+        width: 35%;
+    }
+
+    #pauseBtn {
+        margin: 0 0 -15px -60px;
+    }
+
 }
 
 /* For larger screen sizes from 1280px wide and down */
 
 @media screen and (max-width: 1280px) {
+
+    .game-border {
+        width: 37.4%;
+        height: 78.8vmin;
+        position: fixed;
+        margin: -1% 0 0 8%;
+    }
     
+    .board {
+        width: 68vmin;
+        height: 68vmin;
+    }
+
+    .score-board {
+        width: 100%;
+    }
+
+    .center {
+        width: 71.1vmin;
+        padding: 0.5%;
+    }
+
+    #pauseBtn {
+        margin: 0 0 22px -60px;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -430,10 +486,6 @@ legend {
 
 @media screen and (max-width: 548px) {
     
-    .pages {
-        visibility: hidden;
-    }
-    
     .game-border {
         width: 90%;
         height: 97.5vmin;
@@ -442,16 +494,6 @@ legend {
         margin: 0 3%;
         margin-top: 43px;
     }
-    
-    /* learned about this from tutorialspoint */
-    .board  {
-        border: 2vmin solid #0c5321;
-        border-image: url('../images/Bush2.png');
-        border-image-slice: 20;
-        border-image-width: 1 1 1 1;
-        border-image-outset: 0.2;
-        border-image-repeat: round;
-     }
     
     .board {
         width: 90vmin;
@@ -517,7 +559,6 @@ legend {
         width: 45px;
         height: 45px;
         position: relative;
-        /* background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C); */
         background-color: #2B2B2C;
         border: none;
         border-radius: 10px;
