@@ -89,7 +89,7 @@ legend {
     height: 78.8vmin;
     position: absolute;
     margin: -5% 0 0 17%;
-    transition: all 2s;
+    /* transition: all 1s; */
 }
 
 /* learned about this from tutorialspoint */
@@ -160,12 +160,11 @@ legend {
 /* Game Over*/
 
 .game-over {
-    width: 83%;
+    width: 100%;
     color: #000;
     text-align: center;
     font-size: 400%;
-    margin-top: 30%;
-    margin-left: 9%;
+    margin: 30% 0 0 7%;
 }
 
 .restart {
@@ -181,8 +180,7 @@ legend {
     inset -2px -2px 4px #3B3B3B;
     font-size: 90%;
     padding: 3% 2% 2% 3%;
-    margin-top: 0%;
-    margin-left: 40%;
+    margin: 0 0 0 40%;
 }
 
 .restart:hover {
@@ -200,8 +198,8 @@ legend {
 .controls {
     position: absolute;
     right: 0;
-    margin: 33% -450px 0 0;
-    transition: all 2.5s;
+    margin: 33% -70% 0 0;
+    /* transition: all 2.5s; */
 }
 
 .btnControls {
@@ -420,8 +418,12 @@ legend {
         width: 35%;
     }
 
+    .game-over {
+        margin: 40% 0 0 10%;
+    }
+
     .controls {
-        margin: 30% -500px 0 0;
+        margin: 30% -85% 0 0;
     }
 
     #pauseBtn {
@@ -434,16 +436,20 @@ legend {
 
 @media screen and (max-width: 1280px) {
 
+    .settingsBtn {
+        margin-top: 14px;
+    }
+
     .game-border {
         width: 37.4%;
         height: 78.8vmin;
         position: fixed;
-        margin: -1% 0 0 8%;
+        margin: -1.5% 0 0 8%;
     }
     
     .board {
-        width: 68vmin;
-        height: 68vmin;
+        width: 66vmin;
+        height: 66vmin;
     }
 
     .score-board {
@@ -451,8 +457,18 @@ legend {
     }
 
     .center {
-        width: 71.1vmin;
+        width: 69vmin;
         padding: 0.5%;
+    }
+
+    .controls {
+        margin: 30% -100% 0 0;
+    }
+
+    .game-over {
+        width: 100%;
+        font-size: 300%;
+        margin: 35% 18% 0 18%;
     }
 
     .btnControls {
@@ -468,65 +484,130 @@ legend {
         height: 50px;
         font-size: 200%;
         line-height: 50px;
+        border-radius: 50%;
         margin: 0 0 20px -60px;
     }
     
     #upBtn {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 14px;
     }
     
     #leftBtn {
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        margin-right: 25px;
+        margin-right: 19px;
     }
     
     #rightBtn {
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        margin-left: 20px;
+        margin-left: 14px;
     }
     
     #downBtn {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        margin-top: 18px;
+        margin-top: 12px;
     }
     
     .point{
-        width: 51.5px;
-        height: 51.5px;
+        width: 51px;
+        height: 51px;
     }
     
     .point-top {
         border-bottom-right-radius: 10px;
-        margin-top: -62px;
+        margin-top: -54px;
         margin-left: 2.5px;
     }
     
     .point-left {
         border-top-right-radius: 10px;
-        margin-top: 5px;
-        margin-left: 22px;
+        margin-top: 3px;
+        margin-left: 16px;
     }
     
     .point-right {
         border-bottom-left-radius: 10px;
-        margin-top: 4px;
-        margin-left: 9px;
+        margin-top: 3px;
+        margin-left: 4px;
     }
     
     .point-down {
         border-top-left-radius: 10px;
-        margin-top: -80px;
-        margin-left: 5px;
+        margin-top: -68px;
+        margin-left: 3px;
     }
 
 }
 
 @media screen and (max-width: 992px) {
+
+    .game-border {
+        width: 90%;
+        height: 97.5vmin;
+        position: fixed;
+        border-radius: 10px;
+        margin: 0 3%;
+        margin-top: -15px;
+    }
+    
+    .board {
+        width: 55vmin;
+        height: 55vmin;
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(30, 1fr);
+        grid-template-rows: repeat(30, 1fr);
+        background-color: #0d9b37;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    .center {
+        width: 57.1vmin;
+        font-size: 100%;
+    }
+
+    .game-over {
+        width: 100%;
+        color: #000;
+        text-align: center;
+        font-size: 250%;
+        margin-top: 10%;
+        margin-left: 0;
+    }
+    
+    .restart {
+        width: 50px;
+        height: 50px;
+        font-size: 90%;
+        margin-top: 0%;
+        margin-left: 40%;
+    }
+    
+    .restart:hover {
+        box-shadow: inset 2px 2px 4px #3B3B3B,
+        inset -2px -2px 4px #F0F0F0;
+    }
+    
+    .restart i:hover {
+        transition: all 0.5s;
+        transform: rotate(-360deg);
+    }
+    
+    /*  Controls */
+    .controls {
+        margin: 15% 5% 0 0;
+    }
+
+    #pauseBtn {
+        margin: 0 0 170px 0;
+    }
     
 }
 
