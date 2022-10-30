@@ -168,8 +168,10 @@ legend {
 }
 
 .restart {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
+    font-size: 90%;
+    line-height: 100px;
     background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
     background-image: url(../images/scales.png);
     background-position: center;
@@ -178,8 +180,6 @@ legend {
     border-radius: 50%;
     box-shadow: inset 2px 2px 4px #F0F0F0,
     inset -2px -2px 4px #3B3B3B;
-    font-size: 90%;
-    padding: 3% 2% 2% 3%;
     margin: 0 0 0 40%;
 }
 
@@ -468,7 +468,15 @@ legend {
     .game-over {
         width: 100%;
         font-size: 300%;
-        margin: 35% 18% 0 18%;
+        margin: 35% 13% 0 18%;
+    }
+
+    .restart {
+        width: 70px;
+        height: 70px;
+        font-size: 85%;
+        line-height: 70px;
+        margin-left: 45%;
     }
 
     .btnControls {
@@ -583,21 +591,13 @@ legend {
     }
     
     .restart {
-        width: 50px;
-        height: 50px;
-        font-size: 90%;
+        width: 70px;
+        height: 70px;
+        font-size: 85%;
+        line-height: 70px;
+        padding: 0 0 0 0;
         margin-top: 0%;
-        margin-left: 40%;
-    }
-    
-    .restart:hover {
-        box-shadow: inset 2px 2px 4px #3B3B3B,
-        inset -2px -2px 4px #F0F0F0;
-    }
-    
-    .restart i:hover {
-        transition: all 0.5s;
-        transform: rotate(-360deg);
+        margin-left: 45%;
     }
     
     /*  Controls */

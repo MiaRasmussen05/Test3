@@ -12,6 +12,12 @@ body {
     background-image: linear-gradient(to bottom right, #000, #1E1E1E, #522D2D, #681E1E, #7F0F0F, #681E1E, #522D2D, #3B3B3B, #2D2D2D, #1E1E1E, #000);
 }
 
+#welcome {
+    font-size: 700%;
+    line-height: 180px;
+    margin-top:  16.4%;
+}
+
 header {
     width: 100%;
     height: 50px;
@@ -483,6 +489,10 @@ textarea {
 
 @media screen and (max-width: 1400px) {
 
+    #welcome {
+        font-size: 650%;
+    }
+
     .pages {
         margin: 0 0 0 7%;
     }
@@ -496,6 +506,11 @@ textarea {
 /* For larger screen sizes from 1280px wide and down */
 
 @media screen and (max-width: 1280px) {
+
+    #welcome {
+        font-size: 510%;
+        margin-top:  18.4%;
+    }
     
     header {
         width: 100%;
@@ -709,13 +724,10 @@ textarea {
 }
 
 @media screen and (max-width: 992px) {
-    
-    html {
-        height: 100%;
-    }
 
-    body {
-        height: 100vmax;
+    #welcome {
+        font-size: 410%;
+        margin-top:  25.4%;
     }
 
     nav {
@@ -764,10 +776,6 @@ textarea {
         inset -1px -1px 1px #000;
     }
 
-    .landing-card {
-        height: 92vmax;
-    }
-
     .heading {
         font-size: 320%;
     }
@@ -795,6 +803,12 @@ textarea {
 }
 
 @media screen and (max-width:748px) {
+
+    #welcome {
+        font-size: 240%;
+        margin-top:  36.4%;
+    }
+    
     nav {display: none;}
 
     .menu-bars {
@@ -934,6 +948,11 @@ textarea {
 
     body {
         max-height: 100vh;
+    }
+
+    #welcome {
+        font-size: 160%;
+        margin-top:  50%;
     }
     
     .logo img {

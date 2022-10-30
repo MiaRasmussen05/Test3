@@ -13,47 +13,50 @@
 </head>
 
 <body>
-    <main class="gamePage">
-        <div class="landing-card">
-            <header>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="./assets/images/Logos7.png" alt="">
-                    </a>
-                </div>
-                <div class="menu-container">
-                    <div class="menu" id="toggleMenu">
-                        <a class="close-btn" onclick="closeToggleMenu()"><i class="fas fa-times"></i></a>
-                        <ul>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                        <ul class="social-links-menu">
-                            <li>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                                    aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://www.github.com" target="_blank" rel="noopener"
-                                aria-label="(opens in a new tab)"><i class="fab fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com" target="_blank" rel="noopener"
-                                    aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#" class="menu-bars" onclick="openToggleMenu()"><i class="fas fa-bars"></i></a>
-                </div>
-                <nav>
-                    <ul class="pages">
+
+    <div class="landing-card">
+
+        <!-- THE START OF HEADER ON THE GAME PAGE -->
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/images/Logos7.png" alt="">
+                </a>
+            </div>
+
+            <nav>
+                <ul class="pages">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                            aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.github.com" target="_blank" rel="noopener"
+                            aria-label="(opens in a new tab)"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank" rel="noopener"
+                            aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- THE START OF HAMBURGER MENU -->
+            <div class="menu-container">
+                <div class="menu" id="toggleMenu">
+                    <a class="close-btn" onclick="closeToggleMenu()"><i class="fas fa-times"></i></a>
+                    <ul>
                         <li>
                             <a href="index.html">Home</a>
                         </li>
@@ -64,7 +67,7 @@
                             <a href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <ul class="social-links">
+                    <ul class="social-links-menu">
                         <li>
                             <a href="https://www.facebook.com" target="_blank" rel="noopener"
                                 aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
@@ -78,40 +81,62 @@
                                 aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
                         </li>
                     </ul>
-                </nav>
-                <div class="settingsBtn" onclick="openSettings()">
-                    <i class="fas fa-cog"></i>
                 </div>
-                <fieldset class="settings-wrapper" id="settings">
-                    <legend><i class="fas fa-cog"></i></legend>
-                    <div class="settingBtns">
-                        <div class="settingBtnborder" id="settingBorder">
-                            <div class="music btnControls" id="musicBtn">
-                                <i class="fas fa-pause"></i>
-                            </div>
-                        </div>
-                        <div class="settingBtnborder" id="settingBorder">
-                            <div class="sound btnControls" id="soundBtn">
-                                <i class="fas fa-volume-mute"></i>
-                            </div>
+                <a href="#" class="menu-bars" onclick="openToggleMenu()"><i class="fas fa-bars"></i></a>
+            </div>
+
+            <!-- THE START OF SETTINGS MENU -->
+            <div class="settingsBtn" onclick="openSettings()">
+                <i class="fas fa-cog"></i>
+            </div>
+            <fieldset class="settings-wrapper" id="settings">
+                <legend><i class="fas fa-cog"></i></legend>
+                <div class="settingBtns">
+                    <div class="settingBtnborder" id="settingBorder">
+                        <div class="music btnControls" id="musicBtn">
+                            <i class="fas fa-pause"></i>
                         </div>
                     </div>
-                    <a class="close-btn" id="closeSettings" onclick="closeSettings()"><i class="fas fa-times"></i></a>
-                </fieldset>
-            </header>
-            <div class="game-border">
-                <div class="score-board">
-                    <div class="center">
-                        <p>Score: <span class="score"></span></p>
-                        <!--<p class="score">Score: <span id="new-score">0</span></p>-->
-                        <p>High Score: <span class="highScore"></span></p>
-                        <p class="level">Level: <span id="new-level">0</span></p>
+                    <div class="settingBtnborder" id="settingBorder">
+                        <div class="sound btnControls" id="soundBtn">
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="board"></div>
-                <div class="pause btnControls" id="pauseBtn" aria-label="Pause Button">
-                    <i class="fas fa-pause"></i>
+                <a class="close-btn" id="closeSettings" onclick="closeSettings()"><i class="fas fa-times"></i></a>
+            </fieldset>
+        </header>
+
+        <main>
+
+            <!-- THE START OF GAMEBOARD SECTION -->
+            <section>
+
+                <div class="game-border">
+                    <div class="score-board">
+                        <div class="center">
+                            <p>Score: <span class="score"></span></p>
+                            <!--<p class="score">Score: <span id="new-score">0</span></p>-->
+                            <p>High Score: <span class="highScore"></span></p>
+                            <p class="level">Level: <span id="new-level">0</span></p>
+                        </div>
+                    </div>
+                    <div class="board"></div>
+                    <div class="pause btnControls" id="pauseBtn" aria-label="Pause Button">
+                        <i class="fas fa-pause"></i>
+                    </div>
+
+                    <!-- THE GAMEOVER MESSAGE -->
+                    <div class="game-over">
+                        <h2>Game Over</h2>
+                        <div class="restart" onclick="restart()" onkeydown="restart()"><i class="fas fa-undo"></i></div>
+                    </div>
                 </div>
+
+            </section>
+
+            <!-- THE START OF CONTROLS SECTIONS -->
+            <section>
                 <div class="controls">
                     <table>
                         <tr>
@@ -151,14 +176,13 @@
                         </tr>
                     </table>
                 </div>
-                <!-- Game over message -->
-                <div class="game-over">
-                    <h2>Game Over</h2>
-                    <div class="restart" onclick="restart()" onkeydown="restart()"><i class="fas fa-undo"></i></div>
-                </div>
-            </div>
-        </div>
-    </main>
+
+            </section>
+        </main>
+
+    </div>
+
+    <!-- THE START OF FOOTER ON GAME PAGE -->
     <footer>
         <p class="copyright">Copyright ©Mia Rasmussen 2022</p>
         <p class="disclaimer">Disclaimer: this website was built for a project and is not for commercial use</p>
@@ -167,8 +191,9 @@
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
     <!-- scripts to run the snake game -->
-    <script src="./assets/js/game.js"></script>
     <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/game.js"></script>
+    
 </body>
 
 </html>
