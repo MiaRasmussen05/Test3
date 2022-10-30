@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     welcomeMessage.style.textShadow = "0px 0px 5px #000";
     welcomeMessage.style.padding = "0 0.5%";
     welcomeMessage.style.marginLeft = "2%";
-    welcomeMessage.style.transition = "all 1s";
+    welcomeMessage.style.transition = "all 2s";
 
 });
 
@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     
     };
     
-    setTimeout("welcomeLeave()", 5000);
+    setTimeout("welcomeLeave()", 3000);
 
     function startMessage() {
 
@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     };
 
-    setTimeout("startMessage()", 7000);
+    setTimeout("startMessage()", 3000);
 
     function startLeave() {
 
@@ -43,4 +43,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     };
 
-    setTimeout("startLeave()", 11000);
+    setTimeout("startLeave()", 5000);
