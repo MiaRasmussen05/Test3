@@ -12,6 +12,18 @@ body {
     background-image: linear-gradient(to bottom right, #000, #1E1E1E, #522D2D, #681E1E, #7F0F0F, #681E1E, #522D2D, #3B3B3B, #2D2D2D, #1E1E1E, #000);
 }
 
+/* .welcomeBackground {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, #000, #1E1E1E, #522D2D, #681E1E, #7F0F0F, #681E1E, #522D2D, #3B3B3B, #2D2D2D, #1E1E1E, #000);
+    opacity: 1;
+    z-index: 15;
+    transition: all 1s ease-out;
+} */
+
 #welcome {
     font-size: 700%;
     line-height: 180px;
