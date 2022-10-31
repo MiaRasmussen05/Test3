@@ -44,9 +44,8 @@ header {
 }
 
 .logo img {
-    width: 30%;
+    width: 90px;
     position: relative;
-    filter: drop-shadow(0px 0px 7px #ff0000);
     z-index: 2;
 }
 
@@ -115,6 +114,10 @@ nav {
     0px 0px 2px #000,
     inset 1px 1px 1px #000,
     inset -1px -1px 1px #000;
+}
+
+.game-body .pages {
+    visibility: hidden;
 }
 
 .landing-card {
@@ -373,7 +376,7 @@ footer {
     left: 0;
     bottom: 0;
     text-align: center;
-    color: #DFDEE0;
+    color: #FFF;
     margin-bottom: 0.5%;
 }
 
@@ -434,7 +437,7 @@ footer {
 form {
     width: 100%;
     font-size: 120%;
-    color: #DFDEE0;
+    color: #FFF;
 }
 
 .input-wrapper {
@@ -533,11 +536,6 @@ textarea {
     .logo {
         width: 10%;
         margin: 0.5% 0 0 1%;
-    }
-    
-    .logo img {
-        width: 55px;
-        height: 70px;
     }
     
     .pages {
@@ -810,7 +808,7 @@ textarea {
 
 }
 
-@media screen and (min-width: 748px) {
+@media screen and (min-width: 749px) {
     .menu-container {display: none;}
 }
 
@@ -891,6 +889,12 @@ textarea {
         margin: 3% 4% 0 0;
     }
 
+    .landing-card {
+        width: 96%;
+        box-shadow: none;
+        margin-top: 2%;
+    }
+
     .about {
         padding: 0;
     }
@@ -968,14 +972,8 @@ textarea {
     }
     
     .logo img {
-        width: 35px;
-        height: 50px;
-    }
-    
-    .landing-card {
-        width: 96%;
-        box-shadow: none;
-        margin-top: 2%;
+        width: 150%;
+        height: 100%;
     }
     
     .middle {
@@ -1103,7 +1101,7 @@ textarea {
     }
     
     .copyright, .disclaimer {
-        font-size: 50%;
+        font-size: 60%;
     }
     
     .form-container {

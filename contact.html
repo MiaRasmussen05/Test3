@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The website for Snake Snack a new version of the classic snake game">
+    <meta name="keywords" content="Snake Snack, game, classic games, snake, snack, snake game">
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/game.css">
@@ -14,18 +16,16 @@
 <body>
     <div>
 
-        <div id="welcome"></div>
-
         <div class="landing-card">
             <header>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="./assets/images/Logos7.png" alt="">
+                        <img src="./assets/images/Logo.png" alt="Snake Snack logo of black snake around apple button push to go to home page">
                     </a>
                 </div>
                 <div class="menu-container">
                     <div class="menu" id="toggleMenu">
-                        <a class="close-btn" onclick="closeToggleMenu()"><i class="fas fa-times"></i></a>
+                        <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i class="fas fa-times"></i></a>
                         <ul>
                             <li>
                                 <a href="index.html">Home</a>
@@ -52,7 +52,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="menu-bars" onclick="openToggleMenu()"><i class="fas fa-bars"></i></a>
+                    <a href="#" class="menu-bars" onclick="openToggleMenu()" aria-label="hamburger menu"><i class="fas fa-bars"></i></a>
                 </div>
                 <nav>
                     <ul class="pages">
@@ -98,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="close-btn" id="closeSettings" onclick="closeSettings()"><i class="fas fa-times"></i></a>
+                    <a href="#" class="close-btn" id="closeSettings" onclick="closeSettings()"><i class="fas fa-times"></i></a>
                 </fieldset>
             </header>
             <main>

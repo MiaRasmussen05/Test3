@@ -1,13 +1,13 @@
+const firstTime = localStorage.getItem('visited');
+let welcomeMessage = document.getElementById('welcome');
+
 /**
  * Welcome message shows up when home page is loaded and dissapears
  * there after
  */
-let welcomeMessage = document.getElementById('welcome');
-
-window.addEventListener('DOMContentLoaded', (event) => {
     welcomeMessage.textContent += " to Snake Snack";
     welcomeMessage.style.width = "95%";
-    welcomeMessage.style.display = "block";
+    welcomeMessage.style.display = "none";
     welcomeMessage.style.position = "absolute";
     welcomeMessage.style.backgroundColor = "#2B2B2C";
     welcomeMessage.style.borderRadius = "10px";
@@ -20,38 +20,31 @@ window.addEventListener('DOMContentLoaded', (event) => {
     welcomeMessage.style.padding = "0 0.5%";
     welcomeMessage.style.marginLeft = "2%";
     welcomeMessage.style.transition = "all 2s ease-in";
-});
 
-function welcomeLeave() {
-    message.style.display = "none"
+function startWelcome() {
+    welcomeMessage.style.display = "block";
 };
 
-setTimeout("welcomeLeave()", 3000);
+function welcomeLeave() {
+    welcomeMessage.style.display = "none";
+};
 
 function startMessage() {
-    welcomeMessage.style.display = "block"
+    welcomeMessage.style.display = "block";
     welcomeMessage.innerHTML = "Let's get started!";
 };
 
-setTimeout("startMessage()", 3000);
-
 function startLeave() {
-    welcomeMessage.style.transition = "all 2s ease-out";
-    welcomeMessage.style.display = "none"
+    welcomeMessage.style.display = "none";
 };
 
-setTimeout("startLeave()", 5000);
-
-const firstTime = localStorage.getItem('visited');
-
-function time() {
     if (firstTime == null) {
-        welcomeLeave();
-        startMessage();
-        startLeave();
-        sessionStorage.setItem("visited", 1);
+        localStorage.setItem("visited", 1);
+        window.setInterval(startWelcome, 1000);
+        window.setInterval(welcomeLeave, 3000);
+        window.setInterval(startMessage, 3000);
+        window.setInterval(startLeave, 5000);
     } else {
         welcomeLeave();
         startLeave();
     };
-};

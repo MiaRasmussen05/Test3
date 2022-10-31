@@ -1,7 +1,3 @@
-.pages {
-    visibility: hidden;
-}
-
 .settingsBtn {
     width: 50px;
     height: 40px;
@@ -150,7 +146,7 @@ legend {
     background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
     border: 1.5px solid #000;
 }
-/* Style for the food */
+/* Style for the healty food */
 .food {
     background-color: #be0f0f;
     background-image: url("./assets/images/Apple1.png") center center no reapeat;
@@ -198,7 +194,7 @@ legend {
 .controls {
     position: absolute;
     right: 0;
-    margin: 33% -70% 0 0;
+    margin: 10% 15% 0 0;
     /* transition: all 2.5s; */
 }
 
@@ -423,7 +419,7 @@ legend {
     }
 
     .controls {
-        margin: 30% -85% 0 0;
+        margin: 10% 12% 0 0;
     }
 
     #pauseBtn {
@@ -462,7 +458,7 @@ legend {
     }
 
     .controls {
-        margin: 30% -100% 0 0;
+        margin: 12% 16% 0 0;
     }
 
     .game-over {
@@ -565,11 +561,6 @@ legend {
     .board {
         width: 55vmin;
         height: 55vmin;
-        position: absolute;
-        display: grid;
-        grid-template-columns: repeat(30, 1fr);
-        grid-template-rows: repeat(30, 1fr);
-        background-color: #0d9b37;
         border-radius: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -602,7 +593,7 @@ legend {
     
     /*  Controls */
     .controls {
-        margin: 15% 5% 0 0;
+        margin: 15% 6% 0 0;
     }
 
     #pauseBtn {
@@ -612,49 +603,39 @@ legend {
 }
 
 @media screen and (max-width: 748px) {
-    
-}
 
-@media screen and (max-width: 548px) {
-    
+    .settingsBtn {
+        width: 38px;
+        height: 37px;
+        position: absolute;
+        right: 0;
+        line-height: 38px;
+        font-size: 90%;
+        margin: 42px 0 0 0;
+    }
+
     .game-border {
-        width: 90%;
+        width: 50%;
         height: 97.5vmin;
-        position: fixed;
-        border-radius: 10px;
-        margin: 0 3%;
-        margin-top: 43px;
+        margin: 0 16%;
+        margin-top: -80px;
     }
     
     .board {
-        width: 90vmin;
-        height: 90vmin;
-        position: absolute;
-        display: grid;
-        grid-template-columns: repeat(30, 1fr);
-        grid-template-rows: repeat(30, 1fr);
-        background-color: #0d9b37;
+        width: 64vmin;
+        height: 64vmin;
         border-radius: 10px;
         margin: 0 auto;
         margin-top: 0%;
     }
-    
-    .score-board {
-        width: 100%;
-        text-align: center;
-    }
 
     .center {
-        width: 91.3vmin;
-        font-size: 100%;
+        width: 66.7vmin;
     }
     
     /* Game Over*/
     
     .game-over {
-        width: 100%;
-        color: #000;
-        text-align: center;
         font-size: 250%;
         margin-top: 10%;
         margin-left: 0;
@@ -668,121 +649,56 @@ legend {
         margin-left: 40%;
     }
     
-    .restart:hover {
-        box-shadow: inset 2px 2px 4px #3B3B3B,
-        inset -2px -2px 4px #F0F0F0;
-    }
-    
-    .restart i:hover {
-        transition: all 0.5s;
-        transform: rotate(-360deg);
-    }
-    
     /*  Controls */
     .controls {
-        position: fixed;
         right: 0;
-        margin: 0 18%;
-        margin-top: 100%;
+        margin: 61.2% 25% 0 0;
     }
     
     .btnControls {
-        width: 45px;
-        height: 45px;
-        position: relative;
-        background-color: #2B2B2C;
-        border: none;
+        width: 50px;
+        height: 50px;
         border-radius: 10px;
-        font-size: 150%;
+        font-size: 160%;
         font-weight: 700;
-        text-align: center;
         line-height: 45px;
-        cursor: pointer;
     }
 
-    .pause, .music, .sound {
-        width: 35px;
-        height: 35px;
-        background-color: #DFDEE0;
-        border-radius: 50%;
-        font-size: 140%;
-        line-height: 37px;
-    }
-    
     #pauseBtn {
-        margin: 0 0 -58px 0;
+        margin: 0 0 50% -57px;
     }
-    
-    .left, .right {
-        display: flex;
-    }
-    
+
     #upBtn {
         height: 38px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        margin-bottom: 8px;
-    }
-    
-    #upBtn:hover {
-        box-shadow: inset 0px 2px 2px 1px #3B3B3B;
-    }
-    
-    #upBtn:hover > i {
-        color: #0DEFD5;
+        margin-bottom: 4px;
     }
     
     #leftBtn {
         width: 38px;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-        margin-right: 9px;
-    }
-    
-    #leftBtn:hover {
-        box-shadow: inset 2px 0px 2px 1px #3B3B3B;
-    }
-    
-    #leftBtn:hover > i {
-        color: #D78DB5;
+        margin-right: 4px;
     }
     
     #rightBtn {
         width: 38px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        margin-left: 9px;
-    }
-    
-    #rightBtn:hover {
-        box-shadow: inset -2px 0px 2px 1px #3B3B3B;
-    }
-    
-    #rightBtn:hover > i {
-        color: #D4706C;
+        margin-left: 4px;
     }
     
     #downBtn {
         height: 38px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        margin-top: 7px;
-    }
-    
-    #downBtn:hover {
-        box-shadow: inset 0px -2px 2px 1px #3B3B3B;
-    }
-    
-    #downBtn:hover > i {
-        color: #9FAAD9;
+        margin-top: 2px;
     }
     
     .point{
-        width: 43px;
-        height: 43px;
-        background-color: #2B2B2C;
-        /* background-color: #10108f; */
-        position: absolute;
+        width: 46px;
+        height: 46px;
         border-radius: 20px;
         rotate: 45deg;
         z-index: -1;
@@ -790,45 +706,141 @@ legend {
     
     .point-top {
         border-bottom-right-radius: 10px;
-        box-shadow: 2px 2px 1px #111111;
-        margin-top: -42px;
-        margin-left: 1px;
-    }
-    
-    #upBtn:hover + .point-top {
-        box-shadow: none;
+        margin-top: -39px;
+        margin-left: 2px;
     }
     
     .point-left {
         border-top-right-radius: 10px;
-        box-shadow: 2px -2px 1px #111111;
-        margin-top: 1px;
-        margin-left: 3px;
-    }
-    
-    #leftBtn:hover + .point-left {
-        box-shadow: none;
+        margin-top: 2px;
+        margin-left: 4px;
     }
     
     .point-right {
         border-bottom-left-radius: 10px;
-        box-shadow: -2px 2px 1px #111111;
-        margin-top: 1.5px;
-        margin-left: 0;
-    }
-    
-    #rightBtn:hover + .point-right {
-        box-shadow: none;
+        margin-top: 2px;
+        margin-left: -6px;
     }
     
     .point-down {
         border-top-left-radius: 10px;
-        box-shadow: -2px -2px 1px #111111;
-        margin-top: -47px;
-        margin-left: 1px;
+        margin-top: -48px;
+        margin-left: 2px;
     }
     
-    #downBtn:hover ~ .point-down {
-        box-shadow: none;
+}
+
+@media screen and (max-width: 548px) {
+
+    .settingsBtn {
+        width: 31px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        line-height: 28px;
+        font-size: 80%;
+        margin: 5px 40px 0 0;
     }
+    
+    .game-border {
+        width: 90%;
+        height: 97.5vmin;
+        border-radius: 10px;
+        margin: 0 10%;
+        margin-top: -7px;
+    }
+    
+    .board {
+        width: 75vmin;
+        height: 75vmin;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-top: 0%;
+    }
+
+    .center {
+        width: 77.3vmin;
+        font-size: 100%;
+    }
+    
+    /* Game Over*/
+    
+    .game-over {
+        font-size: 250%;
+        margin-top: 10%;
+        margin-left: 0;
+    }
+    
+    .restart {
+        width: 50px;
+        height: 50px;
+        font-size: 90%;
+        margin-top: 0%;
+        margin-left: 40%;
+    }
+    
+    /*  Controls */
+    .controls {
+        margin: 0 18%;
+        margin-top: 86%;
+    }
+
+    #pauseBtn {
+        width: 40px;
+        height: 40px;
+        font-size: 160%;
+        line-height: 45px;
+        margin: 0 0 2% -2px;
+    }
+    
+}
+
+@media screen and (max-width: 444px) { 
+
+    #pauseBtn {
+        margin: 0 0 0 -2px;
+    }
+
+}
+
+@media screen and (max-width: 400px) { 
+
+    #pauseBtn {
+        margin: 0 0 -3% -2px;
+    }
+
+}
+
+@media screen and (max-width: 350px) { 
+
+    .game-border {
+        width: 90%;
+        height: 97.5vmin;
+        border-radius: 10px;
+        margin: 0 3%;
+        margin-top: -7px;
+    }
+    
+    .board {
+        width: 86vmin;
+        height: 86vmin;
+        border-radius: 10px;
+        margin: 0 0;
+    }
+
+    .center {
+        width: 87.5vmin;
+        font-size: 90%;
+    }
+
+    /*  Controls */
+    .controls {
+        margin: 0 18%;
+        margin-top: 100%;
+    }
+
+    #pauseBtn {
+        margin: 0 0 -18% -2px;
+    }
+
 }
