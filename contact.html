@@ -14,48 +14,19 @@
 </head>
 
 <body>
-    <div>
-
-        <div class="landing-card">
-            <header>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="./assets/images/Logo.png" alt="Snake Snack logo of black snake around apple button push to go to home page">
-                    </a>
-                </div>
-                <div class="menu-container">
-                    <div class="menu" id="toggleMenu">
-                        <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i class="fas fa-times"></i></a>
-                        <ul>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                        <ul class="social-links-menu">
-                            <li>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                                    aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://www.github.com" target="_blank" rel="noopener"
-                                aria-label="(opens in a new tab)"><i class="fab fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com" target="_blank" rel="noopener"
-                                    aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#" class="menu-bars" onclick="openToggleMenu()" aria-label="hamburger menu"><i class="fas fa-bars"></i></a>
-                </div>
-                <nav>
-                    <ul class="pages">
+    <div class="landing-card">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/images/Logo.png"
+                        alt="Snake Snack logo of black snake around apple button push to go to home page">
+                </a>
+            </div>
+            <div class="menu-container">
+                <div class="menu" id="toggleMenu">
+                    <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i
+                            class="fas fa-times"></i></a>
+                    <ul>
                         <li>
                             <a href="index.html">Home</a>
                         </li>
@@ -66,7 +37,7 @@
                             <a href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <ul class="social-links">
+                    <ul class="social-links-menu">
                         <li>
                             <a href="https://www.facebook.com" target="_blank" rel="noopener"
                                 aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
@@ -80,28 +51,62 @@
                                 aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
                         </li>
                     </ul>
-                </nav>
-                <div class="settingsBtn" onclick="openSettings()">
-                    <i class="fas fa-cog"></i>
                 </div>
-                <fieldset class="settings-wrapper" id="settings">
-                    <legend><i class="fas fa-cog"></i></legend>
-                    <div class="settingBtns">
-                        <div class="settingBtnborder" id="settingBorder">
-                            <div class="music btnControls" id="musicBtn">
-                                <i class="fas fa-pause"></i>
-                            </div>
-                        </div>
-                        <div class="settingBtnborder" id="settingBorder">
-                            <div class="sound btnControls" id="soundBtn">
-                                <i class="fas fa-volume-mute"></i>
-                            </div>
+                <a href="#" class="menu-bars" onclick="openToggleMenu()" aria-label="hamburger menu"><i
+                        class="fas fa-bars"></i></a>
+            </div>
+            <nav>
+                <ul class="pages">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                            aria-label="(opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.github.com" target="_blank" rel="noopener"
+                            aria-label="(opens in a new tab)"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank" rel="noopener"
+                            aria-label="(opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="settingsBtn" onclick="openSettings()">
+                <i class="fas fa-cog"></i>
+            </div>
+            <fieldset class="settings-wrapper" id="settings">
+                <legend><i class="fas fa-cog"></i></legend>
+                <div class="settingBtns">
+                    <div class="settingBtnborder" id="settingBorder">
+                        <div class="music btnControls" id="musicBtn">
+                            <i class="fas fa-pause"></i>
                         </div>
                     </div>
-                    <a href="#" class="close-btn" id="closeSettings" onclick="closeSettings()"><i class="fas fa-times"></i></a>
-                </fieldset>
-            </header>
-            <main>
+                    <div class="settingBtnborder" id="settingBorder">
+                        <div class="sound btnControls" id="soundBtn">
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="close-btn" id="closeSettings" onclick="closeSettings()"><i
+                        class="fas fa-times"></i></a>
+            </fieldset>
+        </header>
+
+        <main>
+            <div class="center-container">
+
                 <h1 class="heading">Contact Us</h1>
                 <div class="information">
                     <div class="answer-back">
@@ -134,10 +139,12 @@
                                 <td></td>
                                 <td>Sat, sun</td>
                                 <td>:</td>
-                                <td>CLOSED</td></tr>
+                                <td>CLOSED</td>
+                            </tr>
                         </table>
                     </div>
                 </div>
+
                 <section class="form-section">
                     <form class="form-container" action="https://formsubmit.co/lunationdesign05@gmail.com"
                         method="POST">
@@ -156,7 +163,8 @@
                                     class="radio feedback" required>
                                 Feedback</label>
                             <label for="Message"> <input id="Message" type="radio" name="radioBtn"
-                                    class="radio message"> Message</label>
+                                    class="radio message">
+                                Message</label>
                             <label for="collaboration"> <input id="collaboration" type="radio" name="radioBtn"
                                     class="radio collaboration">
                                 Collaboration</label>
@@ -174,20 +182,25 @@
 
 
                 </section>
-            </main>
-            <footer>
-                <p class="copyright">Copyright ©Mia Rasmussen 2022</p>
-                <p class="disclaimer">Disclaimer: this Gamepage was built for a project and is not for commercial use
-                </p>
-            </footer>
+            </div>
+        </main>
 
-            <!-- font awesome script -->
-            <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
+    </div>
 
-            <!-- scripts links -->
-            <script src="./assets/js/menu.js"></script>
-            <script src="./assets/js/alert.js"></script>
-            <script src="./assets/js/game.js"></script>
+    <!-- THE START OF FOOTER ON CONTACT PAGE -->
+    <footer>
+        <p class="copyright">Copyright ©Mia Rasmussen 2022</p>
+        <p class="disclaimer">Disclaimer: this Gamepage was built for a project and is not for commercial use
+        </p>
+    </footer>
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
+
+    <!-- scripts links -->
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/alert.js"></script>
+    <script src="./assets/js/game.js"></script>
 
 </body>
 

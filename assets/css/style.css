@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Roboto:wght@300&display=swap');
+
 * {
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -9,6 +12,7 @@ html {
 
 body {
     width: 100%;
+    height: 80vh;
     background-image: linear-gradient(to bottom right, #000, #1E1E1E, #522D2D, #681E1E, #7F0F0F, #681E1E, #522D2D, #3B3B3B, #2D2D2D, #1E1E1E, #000);
 }
 
@@ -125,9 +129,15 @@ nav {
     height: 88vh;
     border-radius: 15px;
     box-shadow: 0px 0px 20px #000;
+    overflow: hidden;
     margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 30px;
+}
+
+.center-container {
+    height: 75.5vh;
+    overflow: auto;
 }
 
 .middle {
@@ -148,6 +158,7 @@ nav {
     width: 50%;
     display: inline-flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
 .btn {
@@ -162,6 +173,7 @@ nav {
     border-radius: 10px;
     box-shadow: inset 2px 2px 4px #F0F0F0,
     inset -2px -2px 4px #3B3B3B;
+    font-weight: 700;
     font-size: 240%;
     color: #000;
     text-shadow: 1px 1px 3px #3B3B3B;
@@ -353,8 +365,9 @@ nav {
 }
 
 .heading {
-    color: #DFDEE0;
+    font-family: 'Cormorant', serif;
     font-size: 400%;
+    color: #DFDEE0;
     text-align: center;
 }
 
@@ -397,6 +410,7 @@ footer {
 .answer-back, .email-box {
     width: 330px;
     height: 230px;
+    position: relative;
     text-align: center;
     color: #DFDEE0;
     background-color: #2B2B2C;
@@ -409,6 +423,10 @@ footer {
     position: absolute;
     font-size: 350%;
     margin: -60px 0 0 -25px;
+}
+
+.email-box i {
+    margin-top: -50px;
 }
 
 .answer-back h2, .email-box h2 {
@@ -429,9 +447,8 @@ footer {
 }
 
 .form-container {
-    width: 50%;
-    position: absolute;
-    margin: 0 0 0 30%;
+    width: 100%;
+    margin: 0 0 0 20%;
 }
 
 form {
@@ -441,8 +458,7 @@ form {
 }
 
 .input-wrapper {
-    width: 57%;
-    margin-top: 2%;
+    width: 70%;
 }
 
 .input {
@@ -455,7 +471,7 @@ form {
 }
 
 .radio-wrapper {
-    width: 59%;
+    width: 73%;
     text-align: center;
     margin: 1% 0 2% 0;
 }
@@ -465,7 +481,7 @@ form {
 }
 
 .form-end {
-    width: 56.3%;
+    width: 69%;
     display: block;
 }
 
@@ -498,6 +514,7 @@ textarea {
     border-radius: 40px;
     cursor: pointer;
     margin: 0 40%;
+    margin-bottom: 15%;
 }
 
 /* MEDIA QUERIES */
@@ -514,6 +531,19 @@ textarea {
     
     .pages li a {
         font-size: 110%;
+    }
+
+    .input-wrapper {
+        width: 76%;
+        margin-top: 2%;
+    }
+    
+    .radio-wrapper {
+        width: 78%;
+    }
+    
+    .form-end {
+        width: 75%;
     }
     
 }
@@ -565,29 +595,34 @@ textarea {
     
     .landing-card {
         width: 93%;
-        margin: 0 auto;
-        margin-top: 2%;
-        margin-bottom: 30px;
+    }
+
+    .middle {
+        display: block;
     }
     
     .hero-image {
-        width: 50%;
+        width: 75%;
+        margin: auto auto;
+        
     }
     
     .hero-image img {
         width: 100%;
-        margin: 7.8% 5%;
+        margin: 0 0;
     }
     
     .buttons {
-        width: 50%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .btn {
         width: 225px;
         height: 80px;
         font-size: 240%;
-        margin: 0 10%;
+        margin: 0 5%;
     }
     
     .rules-container, .play-container{
@@ -691,10 +726,6 @@ textarea {
         font-size: 220%;
         margin-top: 10%;
     }
-    
-    .about {
-        padding: 4%;
-    }
 
     .heading {
         font-size: 360%;
@@ -712,7 +743,7 @@ textarea {
     }
 
     form {
-        font-size: 110%;
+        font-size: 100%;
     }
 
     .form-container {
@@ -720,15 +751,16 @@ textarea {
     }
 
     .input-wrapper {
-        width: 63%;
+        width: 85%;
     }
 
-    .radio-wrapper{
-        width: 67%;
+    .radio-wrapper {
+        width: 86%;
+        margin: 2% 0 3% 0;
     }
-
+    
     .form-end {
-        width: 62.1%;
+        width: 84%;
     }
     
 }
@@ -752,7 +784,11 @@ textarea {
     }
 
     .pages li a {
-        margin: 0 25px;
+        margin: 0 20px;
+    }
+
+    .social-links {
+        margin-left: 10%;
     }
     
     .social-links li {
@@ -791,14 +827,14 @@ textarea {
     }
 
     .information {
-        width: 97%;
+        width: 95%;
         display: inline-flex;
         float: none;
     }
 
     .answer-back, .email-box {
         width: 350px;
-        margin: 0 4%;
+        margin: 0 0 0 6%;
     }
 
     .answer-back i, .email-box i {
@@ -892,11 +928,6 @@ textarea {
     .landing-card {
         width: 96%;
         box-shadow: none;
-        margin-top: 2%;
-    }
-
-    .about {
-        padding: 0;
     }
     
     .heading {
@@ -1075,10 +1106,6 @@ textarea {
         width: 100%;
         font-size: 220%;
         margin-top: 10%;
-    }
-    
-    .about {
-        padding: 0;
     }
     
     .heading {

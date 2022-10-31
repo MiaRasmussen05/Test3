@@ -22,7 +22,8 @@
         <header>
             <div class="logo">
                 <a href="index.html">
-                    <img src="./assets/images/Logo.png" alt="Snake Snack logo of black snake around apple button push to go to home page">
+                    <img src="./assets/images/Logo.png"
+                        alt="Snake Snack logo of black snake around apple button push to go to home page">
                 </a>
             </div>
 
@@ -57,7 +58,8 @@
             <!-- THE START OF HAMBURGER MENU -->
             <div class="menu-container">
                 <div class="menu" id="toggleMenu">
-                    <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i class="fas fa-times"></i></a>
+                    <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i
+                            class="fas fa-times"></i></a>
                     <ul>
                         <li>
                             <a href="index.html">Home</a>
@@ -84,7 +86,8 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#" class="menu-bars" onclick="openToggleMenu()" aria-label="hamburger menu"><i class="fas fa-bars"></i></a>
+                <a href="#" class="menu-bars" onclick="openToggleMenu()" aria-label="hamburger menu"><i
+                        class="fas fa-bars"></i></a>
             </div>
 
             <!-- THE START OF SETTINGS MENU -->
@@ -105,81 +108,86 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="close-btn" id="closeSettings" onclick="closeSettings()"><i class="fas fa-times"></i></a>
+                <a href="#" class="close-btn" id="closeSettings" onclick="closeSettings()"><i
+                        class="fas fa-times"></i></a>
             </fieldset>
         </header>
 
         <main>
+            <div class="center-container">
 
-            <!-- THE START OF GAMEBOARD SECTION -->
-            <section>
+                <!-- THE START OF GAMEBOARD SECTION -->
+                <section>
 
-                <div class="game-border">
-                    <div class="score-board">
-                        <div class="center">
-                            <p>Score: <span class="score"></span></p>
-                            <!--<p class="score">Score: <span id="new-score">0</span></p>-->
-                            <p>High Score: <span class="highScore"></span></p>
-                            <p class="level">Level: <span id="new-level">0</span></p>
+                    <div class="game-border">
+                        <div class="score-board">
+                            <div class="center">
+                                <p>Score: <span class="score"></span></p>
+                                <!--<p class="score">Score: <span id="new-score">0</span></p>-->
+                                <p>High Score: <span class="highScore"></span></p>
+                                <p class="level">Level: <span id="new-level">0</span></p>
+                            </div>
+                        </div>
+                        <div class="board"></div>
+                        <div class="pause btnControls" id="pauseBtn">
+                            <i class="fas fa-pause"></i>
+                        </div>
+
+                        <!-- THE GAMEOVER MESSAGE -->
+                        <div class="game-over">
+                            <h2>Game Over</h2>
+                            <div class="restart" onclick="restart()" onkeydown="restart()"><i class="fas fa-undo"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="board"></div>
-                    <div class="pause btnControls" id="pauseBtn">
-                        <i class="fas fa-pause"></i>
+
+                </section>
+
+                <!-- THE START OF CONTROLS SECTIONS -->
+                <section>
+
+                    <div class="controls">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class='btnControls' id="upBtn">
+                                        <i class="fas fa-chevron-up"></i>
+                                    </div>
+                                    <div class="point point-top"></div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="left">
+                                    <div class='btnControls' id="leftBtn">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </div>
+                                    <div class="point point-left"></div>
+                                </td>
+                                <td></td>
+                                <td class="right">
+                                    <div class='btnControls' id="rightBtn">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <div class="point point-right"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class='btnControls' id="downBtn">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="point point-down"></div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
                     </div>
 
-                    <!-- THE GAMEOVER MESSAGE -->
-                    <div class="game-over">
-                        <h2>Game Over</h2>
-                        <div class="restart" onclick="restart()" onkeydown="restart()"><i class="fas fa-undo"></i></div>
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- THE START OF CONTROLS SECTIONS -->
-            <section>
-                <div class="controls">
-                    <table>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <div class='btnControls' id="upBtn">
-                                    <i class="fas fa-chevron-up"></i>
-                                </div>
-                                <div class="point point-top"></div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="left">
-                                <div class='btnControls' id="leftBtn">
-                                    <i class="fas fa-chevron-left"></i>
-                                </div>
-                                <div class="point point-left"></div>
-                            </td>
-                            <td></td>
-                            <td class="right">
-                                <div class='btnControls' id="rightBtn">
-                                    <i class="fas fa-chevron-right"></i>
-                                </div>
-                                <div class="point point-right"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <div class='btnControls' id="downBtn">
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div class="point point-down"></div>
-                            </td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
-
-            </section>
+                </section>
+            </div>
         </main>
 
     </div>
@@ -195,7 +203,7 @@
     <!-- scripts to run the snake game -->
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/game.js"></script>
-    
+
 </body>
 
 </html>
