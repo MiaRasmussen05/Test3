@@ -273,7 +273,9 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
+    text-decoration: none;
     font-size: 200%;
+    color: #000;
     cursor: pointer;
 }
 
@@ -284,8 +286,13 @@ nav {
     margin: 3.3% 24% 0 0;
 }
 
+#close-rules a {
+    text-decoration: none;
+}
+
 #closeSettings {
     font-size: 150%;
+    text-decoration: none;
     color: #3B3B3B;
     margin: -5.5% 4% 0 0;
 }
@@ -842,6 +849,39 @@ textarea {
         margin: -55px 0 0 -25px;
     }
 
+    .form-section {
+        width: 100%;
+        margin-top: 4%;
+    }
+    
+    form {
+        font-size: 100%;
+    }
+    
+    .input-wrapper {
+        width: 70%;
+    }
+    
+    .radio-wrapper {
+        width: 73%;
+    }
+    
+    .form-end {
+        width: 69%;
+    }
+    
+    #teArea {
+        margin: 2% 0 3% 0;
+    }
+    
+    .contactBtn {
+        width: 40%;
+        font-size: 140%;
+        font-weight: 700;
+        margin: 0 32%;
+        margin-bottom: 10%;
+    }
+
 }
 
 @media screen and (min-width: 749px) {
@@ -949,6 +989,19 @@ textarea {
         font-size: 50%;
     }
     
+    .information {
+        margin-left: 1%;
+    }
+
+    .answer-back, .email-box {
+        font-size: 90%;
+        margin: 0 0 0 5%;
+    }
+
+    .form-section {
+        margin-top: 6%;
+    }
+    
     .form-container {
         width: 93%;
         margin: 0 0 0 6%;
@@ -963,14 +1016,8 @@ textarea {
         margin-top: 2%;
     }
     
-    .input {
-        height: 30px;
-        margin: 2% 0 8% 0;
-    }
-    
     .radio-wrapper {
-        text-align: center;
-        margin: 1% 0 6% 0;
+        width: 93%;
     }
     
     .form-end {
@@ -978,15 +1025,16 @@ textarea {
     }
     
     textarea {
-        height: 150px;
-        min-height: 150px;
-        max-height: 150px;
+        height: 170px;
+        min-height: 170px;
+        max-height: 170px;
     }
     
     .contactBtn {
         width: 25%;
         height: 40px;
-        margin-top: 2%;
+        font-size: 120%;
+        margin: 1% 40% 5% 40%;
     }
    
 }
@@ -1129,6 +1177,17 @@ textarea {
     
     .copyright, .disclaimer {
         font-size: 60%;
+    }
+
+    .information {
+        width: 95%;
+        display: block;
+    }
+
+    .answer-back, .email-box {
+        width: 95%;
+        font-size: 100%;
+        margin: 8% 0 0 4%;
     }
     
     .form-container {
