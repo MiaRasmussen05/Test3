@@ -24,22 +24,24 @@
 }
 
 .settings-wrapper {
-    width: 20%;
-    height: 40vh;
-    position: absolute;
+    width: 40vh;
+    height: 350px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
     display: none;
-    /* background-color: rgb(25, 25, 25, 0.8); */
     background-color: #000;
     border: 2px solid #A9ACAD;
     border-radius: 10px;
     box-shadow: 0 0 5px #000;
-    margin: 11% 40%;
+    transform: translate(-50%, -50%);
+    margin: auto auto;
     z-index: 4;
 }
 
 legend {
-    width: 15%;
-    height: 15%;
+    width: 55px;
+    height: 55px;
     background-color: #2B2B2C;
     border: 2px solid #A9ACAD;
     border-radius: 50%;
@@ -157,10 +159,13 @@ legend {
 
 .game-over {
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     color: #000;
     text-align: center;
     font-size: 400%;
-    margin: 30% 0 0 7%;
+    transform: translate(-50%, -50%);
 }
 
 .restart {
@@ -414,10 +419,6 @@ legend {
         width: 35%;
     }
 
-    .game-over {
-        margin: 40% 0 0 10%;
-    }
-
     .controls {
         margin: 10% 10% 0 0;
     }
@@ -464,7 +465,6 @@ legend {
     .game-over {
         width: 100%;
         font-size: 300%;
-        margin: 35% 13% 0 18%;
     }
 
     .restart {
@@ -483,13 +483,22 @@ legend {
         line-height: 57px;
     }
 
-    #pauseBtn {
+    #pauseBtn, #musicBtn, #soundBtn {
         width: 50px;
         height: 50px;
         font-size: 200%;
         line-height: 50px;
         border-radius: 50%;
         margin: 0 0 20px -60px;
+    }
+
+    #musicBtn, #soundBtn {
+        margin: 5px 0 0 3px;
+    }
+
+    #musicBtn i, #soundBtn i {
+        font-size: 65%;
+        border-radius: 50%;
     }
     
     #upBtn {
@@ -573,12 +582,7 @@ legend {
     }
 
     .game-over {
-        width: 100%;
-        color: #000;
-        text-align: center;
         font-size: 250%;
-        margin-top: 10%;
-        margin-left: 0;
     }
     
     .restart {
@@ -588,7 +592,7 @@ legend {
         line-height: 70px;
         padding: 0 0 0 0;
         margin-top: 0%;
-        margin-left: 45%;
+        margin-left: 47%;
     }
     
     /*  Controls */
@@ -631,14 +635,6 @@ legend {
 
     .center {
         width: 66.7vmin;
-    }
-    
-    /* Game Over*/
-    
-    .game-over {
-        font-size: 250%;
-        margin-top: 10%;
-        margin-left: 0;
     }
     
     .restart {
@@ -766,9 +762,7 @@ legend {
     /* Game Over*/
     
     .game-over {
-        font-size: 250%;
-        margin-top: 10%;
-        margin-left: 0;
+        font-size: 200%;
     }
     
     .restart {

@@ -138,6 +138,7 @@ nav {
 .center-container {
     height: 75.5vh;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .middle {

@@ -1,13 +1,13 @@
+import {music, musicBtnPlay} from "../js/sound.js";
+
 let lastRenderTime = 0;
 const GRID_SIZE = 30;
-const music = new Audio('assets/sound/music.mp3');
-let musicBtnPlay = document.getElementById('musicBtn');
+
+// const music = new Audio('assets/sound/music.mp3');
+// let musicBtnPlay = document.getElementById('musicBtn');
 const healtyFoodEffect = new Audio('assets/sound/healtyFood.mp3');
 const gameOverSound = new Audio('assets/sound/gameOver.mp3');
 let soundBtnPlay = document.getElementById('soundBtn');
-//var soundeffectList = [];
-//soundeffectList[0]= healtyFoodEffect();
-//soundeffectList[1]= healtyFoodEffect();
 
 const board = document.getElementsByClassName('board')[0];
 
