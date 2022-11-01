@@ -1,10 +1,10 @@
-import {music, musicBtnPlay} from "../js/sound.js";
+// import {music, musicBtnPlay} from "../js/sound.js";
 
 let lastRenderTime = 0;
 const GRID_SIZE = 30;
 
-// const music = new Audio('assets/sound/music.mp3');
-// let musicBtnPlay = document.getElementById('musicBtn');
+const music = new Audio('assets/sound/music.mp3');
+let musicBtnPlay = document.getElementById('musicBtn');
 const healtyFoodEffect = new Audio('assets/sound/healtyFood.mp3');
 const gameOverSound = new Audio('assets/sound/gameOver.mp3');
 let soundBtnPlay = document.getElementById('soundBtn');
@@ -289,19 +289,20 @@ musicBtnPlay.addEventListener("click", function() {
     } else {
       music.pause();
       musicBtnPlay.innerHTML = '<i class="fas fa-pause"></i>';
-      settingBorderMove.style.position = 'start';
     };
   });
 
-  //soundBtnPlay.addEventListener("click", function() {
-    //if(soundeffectList.paused){
-   //     soundeffectList.play();
-  //    soundBtnPlay.innerHTML = '<i class="fas fa-volume-up"></i>';
-  //  } else {
-  //      soundeffectList.pause();
-  //    soundBtnPlay.innerHTML = '<i class="fas fa-volume-mute"></i>';
-  //  };
- // });
+  soundBtnPlay.addEventListener("click", function() {
+    if(healtyFoodEffect.paused || healtyFoodEffect.paused){
+        healtyFoodEffect.play();
+        gameOverSound.play();
+        soundBtnPlay.innerHTML = '<i class="fas fa-volume-up"></i>';
+    } else {
+        healtyFoodEffect.muted();
+        gameOverSound.muted();
+        soundBtnPlay.innerHTML = '<i class="fas fa-volume-mute"></i>';
+    };
+  });
 
 // EventListener for the keydown of the keyboard to move the snake
 

@@ -40,10 +40,10 @@ function startLeave() {
 
     if (firstTime == null) {
         localStorage.setItem("visited", 1);
-        window.setInterval(startWelcome, 1000);
-        window.setInterval(welcomeLeave, 3000);
-        window.setInterval(startMessage, 3000);
-        window.setInterval(startLeave, 5000);
+        window.setTimeout(startWelcome, 1000);
+        window.setTimeout(welcomeLeave, 3000);
+        window.setTimeout(startMessage, 3000);
+        window.setTimeout(startLeave, 5000);
     } else {
         welcomeLeave();
         startLeave();

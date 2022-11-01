@@ -1,5 +1,6 @@
+import { SNAKE_SPEED, update as updateS, draw as drawS } from './snake.js'
+
 let lastRenderTime = 0;
-const SNAKE_SPEED = 1;
 
 /**
  * Animation frame request that updates the page 
@@ -10,7 +11,19 @@ function frameRender(currentTime) {
     if (lastRender < 1 / SNAKE_SPEED) return
     lastRenderTime = currentTime
     
-    console.log('lastRender');
+    
+
+    draw();
+    update();
 };
 
 window.requestAnimationFrame(frameRender);
+
+function draw() {
+
+    drawS();
+};
+
+function update() {
+    updateS();
+};
