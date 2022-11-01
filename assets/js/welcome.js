@@ -2,8 +2,7 @@ const firstTime = localStorage.getItem('visited');
 let welcomeMessage = document.getElementById('welcome');
 
 /**
- * Welcome message shows up when home page is loaded and dissapears
- * there after
+ * Welcome message shows up when home page is loaded
  */
     welcomeMessage.textContent += " to Snake Snack";
     welcomeMessage.style.width = "95%";
@@ -38,6 +37,10 @@ function startLeave() {
     welcomeMessage.style.display = "none";
 };
 
+/**
+ * If else statment that target the local storage to only show the welcome message the very 
+ * first time a visitor is on the site
+ */
     if (firstTime == null) {
         localStorage.setItem("visited", 1);
         window.setTimeout(startWelcome, 1000);

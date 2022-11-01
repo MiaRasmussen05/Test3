@@ -54,8 +54,8 @@ function main(currentTime) {
     if (gameOver) {
         board.style.display = 'none'
         gameOverMessage.style.display = 'block'
-        gameOverSound.play();
-        gameOverSound.volume = '0.1';
+        // gameOverSound.play();
+        // gameOverSound.volume = '0.1';
         pause();
     };
 
@@ -118,7 +118,7 @@ function updateSnake() {
 
 /**
  * Draws the snake after update the position
- */
+ */healtyFoodEffect
 function drawSnake(board) {
     SNAKE_BODY.forEach(segment => {
         
@@ -137,9 +137,9 @@ function drawSnake(board) {
 function expandSnake(amount) {
     newSegments += amount
     //healtyFoodEffect.playbackRate = 1;
-    healtyFoodEffect.play();
-    healtyFoodEffect.volume = '0.07';
-    healtyFoodEffect.currentTime = 0;
+    // healtyFoodEffect.play();
+    // healtyFoodEffect.volume = '0.07';
+    // healtyFoodEffect.currentTime = 0;
 }
 
 /**
@@ -293,13 +293,16 @@ musicBtnPlay.addEventListener("click", function() {
   });
 
   soundBtnPlay.addEventListener("click", function() {
-    if(healtyFoodEffect.paused || healtyFoodEffect.paused){
+    if(healtyFoodEffect.paused || gameOverSound.paused){
         healtyFoodEffect.play();
+        healtyFoodEffect.volume = '0.07';
+        healtyFoodEffect.currentTime = 0;
         gameOverSound.play();
+        gameOverSound.volume = '0.1';
         soundBtnPlay.innerHTML = '<i class="fas fa-volume-up"></i>';
     } else {
-        healtyFoodEffect.muted();
-        gameOverSound.muted();
+        healtyFoodEffect.pause();
+        gameOverSound.pause();
         soundBtnPlay.innerHTML = '<i class="fas fa-volume-mute"></i>';
     };
   });

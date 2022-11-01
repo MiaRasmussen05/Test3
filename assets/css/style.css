@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Nunito&family=Roboto:wght@300&display=swap');
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -398,11 +398,13 @@ footer {
     bottom: 0;
     text-align: center;
     color: #FFF;
-    margin-bottom: 0.5%;
 }
 
 .copyright, .disclaimer {
-    font-size: 90%;
+    font-size: 80%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    padding: 0 7px;
 }
 
 .disclaimer {
@@ -830,6 +832,10 @@ textarea {
         inset -1px -1px 1px #000;
     }
 
+    .copyright, .disclaimer {
+        font-size: 70%;
+    }
+
     .heading {
         font-size: 320%;
     }
@@ -986,10 +992,6 @@ textarea {
         padding: 4% 1%;
     }
 
-    .copyright, .disclaimer {
-        font-size: 50%;
-    }
-    
     .information {
         margin-left: 1%;
     }
@@ -1156,6 +1158,10 @@ textarea {
         font-size: 220%;
         margin-top: 10%;
     }
+
+    .disclaimer {
+        font-size: 60%;
+    }
     
     .heading {
         font-size: 250%;
@@ -1170,14 +1176,6 @@ textarea {
         width: 90%;
         font-size: 100%;
         padding: 4% 1%;
-    }
-
-    footer {
-        padding-bottom: 1.5%;
-    }
-    
-    .copyright, .disclaimer {
-        font-size: 60%;
     }
 
     .information {
