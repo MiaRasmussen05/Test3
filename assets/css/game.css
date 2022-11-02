@@ -93,7 +93,7 @@ legend {
 /* learned about this from tutorialspoint */
 .board  {
     border: 2vmin solid #0c5321;
-    border-image: url('../images/Bush2.png');
+    border-image: url('../images/Bush.png');
     border-image-slice: 20;
     border-image-width: 1 1 1 1;
     border-image-outset: 0.2;
