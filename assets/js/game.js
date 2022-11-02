@@ -54,8 +54,8 @@ function main(currentTime) {
     if (gameOver) {
         board.style.display = 'none'
         gameOverMessage.style.display = 'block'
-        // gameOverSound.play();
-        // gameOverSound.volume = '0.1';
+        gameOverSound.play();
+        gameOverSound.volume = '0.1';
         pause();
     };
 
@@ -136,10 +136,10 @@ function drawSnake(board) {
  */
 function expandSnake(amount) {
     newSegments += amount
-    //healtyFoodEffect.playbackRate = 1;
-    // healtyFoodEffect.play();
-    // healtyFoodEffect.volume = '0.07';
-    // healtyFoodEffect.currentTime = 0;
+    healtyFoodEffect.playbackRate = 1;
+    healtyFoodEffect.play();
+    healtyFoodEffect.volume = '0.07';
+    healtyFoodEffect.currentTime = 0;
 }
 
 /**
@@ -265,9 +265,9 @@ function outsideGrid(position) {
  * Function to Restart the game
  */
  function restart(){
-    restartBtn.addEventListener('click' || event.keyCode == 13, () => {
+    // restartBtn.addEventListener('click' || event.keyCode == 13, () => {
         window.location = './test.html';
-      });
+    //   });
 };
 
 

@@ -401,7 +401,7 @@ footer {
 }
 
 .copyright, .disclaimer {
-    font-size: 80%;
+    font-size: 12px;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     padding: 0 7px;
@@ -832,10 +832,6 @@ textarea {
         inset -1px -1px 1px #000;
     }
 
-    .copyright, .disclaimer {
-        font-size: 70%;
-    }
-
     .heading {
         font-size: 320%;
     }
@@ -1055,7 +1051,6 @@ textarea {
     
     .logo img {
         width: 150%;
-        height: 100%;
     }
     
     .middle {
@@ -1157,10 +1152,6 @@ textarea {
         width: 100%;
         font-size: 220%;
         margin-top: 10%;
-    }
-
-    .disclaimer {
-        font-size: 60%;
     }
     
     .heading {
