@@ -93,7 +93,7 @@ legend {
 /* learned about this from tutorialspoint */
 .board  {
     border: 2vmin solid #0c5321;
-    border-image: url('../images/Bush.png');
+    border-image: url('../images/Bush.webp');
     border-image-slice: 20;
     border-image-width: 1 1 1 1;
     border-image-outset: 0.2;
@@ -123,7 +123,7 @@ legend {
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
-    background-image: url(../images/scales.png);
+    background-image: url(../images/Scales.webp);
     background-position: center;
     background-size: cover;
     font-size: 120%;
@@ -174,7 +174,7 @@ legend {
     font-size: 90%;
     line-height: 100px;
     background-image: linear-gradient(to bottom right, #2B2B2C, #555557, #AAA9AD, #DFDEE0, #A9ACAD, #6F6F70, #F0F0F0, #707070, #2B2B2C);
-    background-image: url(../images/scales.png);
+    background-image: url(../images/Scales.webp);
     background-position: center;
     background-size: cover;
     border: none;
@@ -208,7 +208,7 @@ legend {
     height: 70px;
     position: relative;
     background-color: #2B2B2C;
-    background-image: url(../images/scales.png);
+    background-image: url(../images/Scales.webp);
     background-position: center;
     background-size: cover;
     border: none;
@@ -224,7 +224,7 @@ legend {
     width: 50px;
     height: 50px;
     background-color: #DFDEE0;
-    background-image: url(../images/scales.png);
+    background-image: url(../images/Scales.webp);
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -334,7 +334,7 @@ legend {
     width: 60px;
     height: 60px;
     background-color: #2B2B2C;
-    background-image: url(../images/scales.png);
+    background-image: url(../images/Scales.webp);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -441,7 +441,7 @@ legend {
         width: 37.4%;
         height: 78.8vmin;
         position: fixed;
-        margin: -1.5% 0 0 8%;
+        margin: -5.5% 0 0 8%;
     }
     
     .board {
@@ -459,7 +459,7 @@ legend {
     }
 
     .controls {
-        margin: 12% 16% 0 0;
+        margin: 12% 11% 0 0;
     }
 
     .game-over {

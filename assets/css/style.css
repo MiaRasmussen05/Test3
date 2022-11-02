@@ -395,18 +395,22 @@ nav {
 
 footer {
     width: 100%;
+    height: 60px;
     position: absolute;
-    left: 0;
     bottom: 0;
     text-align: center;
     color: #FFF;
 }
 
 .copyright, .disclaimer {
-    font-size: 12px;
+    font-size: 75%;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     padding: 0 7px;
+}
+
+.copyright{
+    margin-top: 25px;
 }
 
 .disclaimer {
@@ -1050,9 +1054,14 @@ textarea {
         font-size: 160%;
         margin-top:  50%;
     }
+
+    .logo {
+        width: 60%;
+    }
     
     .logo img {
-        width: 150%;
+        width: 50px;
+        height: 60px;
     }
     
     .middle {
@@ -1154,6 +1163,10 @@ textarea {
         width: 100%;
         font-size: 220%;
         margin-top: 10%;
+    }
+
+    .disclaimer {
+        font-size: 12px;
     }
     
     .heading {
