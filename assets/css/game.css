@@ -151,7 +151,6 @@ legend {
 /* Style for the healty food */
 .food {
     background-color: #be0f0f;
-    background-image: url("./assets/images/Apple1.png") center center no reapeat;
     border: 1px solid #681E1E;
 }
 
@@ -339,7 +338,7 @@ legend {
     background-size: cover;
     position: absolute;
     border-radius: 20px;
-    rotate: 45deg;
+    transform: rotate(45deg);
     z-index: -1;
 }
 
@@ -696,8 +695,6 @@ legend {
         width: 46px;
         height: 46px;
         border-radius: 20px;
-        rotate: 45deg;
-        z-index: -1;
     }
     
     .point-top {
