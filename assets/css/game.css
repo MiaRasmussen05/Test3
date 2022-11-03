@@ -154,7 +154,8 @@ legend {
 }
 /* Style for the healty food */
 .food {
-    background-color: #be0f0f;
+    /* background-image: url(../images/Apple.webp); */
+    background-color: rgb(139, 0, 0);
     border: 1px solid #681E1E;
 }
 

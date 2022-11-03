@@ -1,20 +1,13 @@
 let toggle = document.getElementById('toggleMenu')
 let setting = document.getElementById('settings')
 
-// window.onclick = function(event) {
-
-//     if (event.target == toggle) {
+window.onclick = function(event) {
+    if (event.target == toggle) {
  
-//         toggle.style.display = "none";
+        toggle.style.display = "none";
  
-//      };
-
-//      if (event.target == setting) {
- 
-//         setting.style.display = "none";
- 
-//      };
-//  };
+     };
+ };
 
 /**
  * Open and close the hamburger menu on smaller screens
