@@ -60,17 +60,17 @@
                 <div class="menu" id="toggleMenu">
                     <a href="#" class="close-btn" onclick="closeToggleMenu()" aria-label="close hamburger menu"><i
                             class="fas fa-times"></i></a>
-                    <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+
+                    <a href="index.html">
+                        <div class="menu-li">Home</div>
+                    </a>
+                    <a href="about.html">
+                        <div class="menu-li">About</div>
+                    </a>
+                    <a href="contact.html">
+                        <div class="menu-li">Contact</div>
+                    </a>
+
                     <ul class="social-links-menu">
                         <li>
                             <a href="https://www.facebook.com" target="_blank" rel="noopener"
@@ -120,10 +120,9 @@
                 <section>
 
                     <div class="game-border">
-                        <div class="score-board">
-                            <div class="center">
+                        <div class="score-wrapper">
+                            <div class="score-board">
                                 <p>Score: <span class="score"></span></p>
-                                <!--<p class="score">Score: <span id="new-score">0</span></p>-->
                                 <p>High Score: <span class="highScore"></span></p>
                                 <p class="level">Level: <span id="new-level">0</span></p>
                             </div>
@@ -133,7 +132,6 @@
                             <i class="fas fa-pause"></i>
                         </div>
 
-                        <!-- THE GAMEOVER MESSAGE -->
                         <div class="game-over">
                             <h2>Game Over</h2>
                             <div class="restart" onclick="restart()" onkeydown="restart()">
@@ -199,9 +197,10 @@
         <p class="disclaimer">Disclaimer: this website was built for a project and is not for commercial use</p>
     </footer>
 
-    <!-- font awesome script -->
+    <!-- font awesome link -->
     <script src="https://kit.fontawesome.com/bc2311dd0c.js" crossorigin="anonymous"></script>
-    <!-- scripts to run the snake game -->
+    
+    <!-- script links -->
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/game.js" type="module"></script>
 

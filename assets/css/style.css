@@ -12,7 +12,6 @@ html {
 
 body {
     width: 100%;
-    height: 80vh;
     background-image: linear-gradient(to bottom right, #000, #1E1E1E, #522D2D, #681E1E, #7F0F0F, #681E1E, #522D2D, #3B3B3B, #2D2D2D, #1E1E1E, #000);
 }
 
@@ -28,11 +27,15 @@ body {
     transition: all 1s ease-out;
 } */
 
+/* START OF WELCOME MESSAGE */
+
 #welcome {
     font-size: 700%;
     line-height: 180px;
     margin-top:  16.4%;
 }
+
+/* THE START OF HEADER */
 
 header {
     width: 100%;
@@ -125,6 +128,8 @@ nav {
     visibility: hidden;
 }
 
+/* THE START OF MIDDLE SECTION FROM HOME PAGE*/
+
 .landing-card {
     width: 93%;
     height: 88vh;
@@ -203,6 +208,8 @@ nav {
     inset -2px -2px 4px #F0F0F0;
 }
 
+/* THE START OF RULES MODAL SECTION FROM HOME PAGE */
+
 .rules-modal{
     width: 100%;
     height: 100%;
@@ -271,55 +278,9 @@ nav {
     width: 30%;
 }
 
-.close-btn {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-decoration: none;
-    font-size: 200%;
-    color: #000;
-    cursor: pointer;
-}
+/* THE START OF PLAY MODAL SECTION FROM HOME PAGE*/
 
-#close-rules, #close-play, #closeSettings {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin: 3.3% 24% 0 0;
-}
-
-#close-rules a {
-    text-decoration: none;
-}
-
-#closeSettings {
-    font-size: 150%;
-    text-decoration: none;
-    color: #3B3B3B;
-    margin: -5.5% 4% 0 0;
-}
-
-#close-play{
-    font-size: 170%;
-    margin: 7.5% 7% 0 0;
-}
-
-#close-rules:hover, #close-play:hover, #closeSettings:hover {
-    font-size: 250%;
-   color: #7F0F0F;
-}
-
-#close-play:hover {
-    font-size: 220%;
-}
-
-#closeSettings:hover{
-    font-size: 200%;
-}
-
-.play-modal{
+/* .play-modal{
     width: 100%;
     height: 100%;
     display: none;
@@ -373,7 +334,84 @@ nav {
 .difficulty:hover  {
     background-color: #2B2B2C;
     color: #DFDEE0;
+} */
+
+/* THE CLOSE BUTTONS FOR RULES, PLAY AND SETTINGS */
+
+.close-btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    font-size: 200%;
+    color: #000;
+    cursor: pointer;
 }
+
+#close-rules, #close-play, #closeSettings {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 3.3% 24% 0 0;
+}
+
+#close-rules a {
+    text-decoration: none;
+}
+
+#closeSettings {
+    font-size: 150%;
+    text-decoration: none;
+    color: #3B3B3B;
+    margin: -5.5% 4% 0 0;
+}
+
+#close-play{
+    font-size: 170%;
+    margin: 7.5% 7% 0 0;
+}
+
+#close-rules:hover, #close-play:hover, #closeSettings:hover {
+    font-size: 250%;
+   color: #7F0F0F;
+}
+
+#close-play:hover {
+    font-size: 220%;
+}
+
+#closeSettings:hover{
+    font-size: 200%;
+}
+
+/* THE START OF FOOTER */
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
+
+.copyright, .disclaimer {
+    font-size: 75%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    padding: 0 7px;
+}
+
+.copyright{
+    margin-top: 25px;
+}
+
+.disclaimer {
+    text-transform: uppercase;
+}
+
+/* THE START OF ABOUT PARAGRAFS SECTION FROM ABOUT PAGE */
 
 .heading {
     font-family: 'Cormorant', serif;
@@ -394,29 +432,7 @@ nav {
     padding: 1%;
 }
 
-footer {
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    color: #FFF;
-}
-
-.copyright, .disclaimer {
-    font-size: 75%;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    padding: 0 7px;
-}
-
-.copyright{
-    margin-top: 25px;
-}
-
-.disclaimer {
-    text-transform: uppercase;
-}
+/* THE START OF INFORMATION SECTION FROM THE CONTACT PAGE */
 
 .information {
     width: 50%;
@@ -455,6 +471,8 @@ footer {
         margin-left: auto;
         margin-right: auto;
 }
+
+/* THE START OF THE FORM FROM THE CONTACT PAGE */
 
 .form-section {
     width: 50%;
@@ -540,9 +558,13 @@ textarea {
 
 @media screen and (max-width: 1400px) {
 
+    /* START OF WELCOME MESSAGE */
+
     #welcome {
         font-size: 650%;
     }
+
+    /* START OF HEADER */
 
     .pages {
         margin: 0 0 0 7%;
@@ -551,6 +573,8 @@ textarea {
     .pages li a {
         font-size: 110%;
     }
+
+    /* START OF CONTACT PAGE */
 
     .input-wrapper {
         width: 76%;
@@ -571,10 +595,14 @@ textarea {
 
 @media screen and (max-width: 1280px) {
 
+    /* START OF WELCOME MESSAGE */
+
     #welcome {
         font-size: 510%;
         margin-top:  18.4%;
     }
+
+    /* START OF HEADER */
     
     header {
         width: 100%;
@@ -611,6 +639,8 @@ textarea {
         font-size: 131%;
         padding: 14% 0 0 0;
     }
+
+    /* START OF HOME PAGE */
     
     .landing-card {
         width: 93%;
@@ -746,6 +776,8 @@ textarea {
         margin-top: 10%;
     }
 
+    /* START OF ABOUT PAGE */
+
     .heading {
         font-size: 360%;
         padding-bottom: 3%;
@@ -760,6 +792,8 @@ textarea {
         font-size: 120%;
         padding: 1%;
     }
+
+    /* START OF CONTACT PAGE */
 
     form {
         font-size: 100%;
@@ -786,10 +820,14 @@ textarea {
 
 @media screen and (max-width: 992px) {
 
+    /* START OF WELCOME MESSAGE */
+
     #welcome {
         font-size: 410%;
         margin-top:  25.4%;
     }
+
+    /* START OF HEADER */
 
     nav {
         margin-right: 6%;
@@ -841,9 +879,13 @@ textarea {
         inset -1px -1px 1px #000;
     }
 
+    /* START OF ABOUT PAGE */
+
     .heading {
         font-size: 320%;
     }
+
+    /* START OF CONTACT PAGE */
 
     .information {
         width: 95%;
@@ -902,12 +944,16 @@ textarea {
 
 @media screen and (max-width:748px) {
 
+    /* START OF WELCOME MESSAGE */
+
     #welcome {
         font-size: 240%;
         margin-top:  36.4%;
     }
     
     nav {display: none;}
+
+    /* START OF HAMBURGER MENU */
 
     .menu-bars {
         width: 30px;
@@ -921,17 +967,18 @@ textarea {
 
     .menu {
         width: 160px;
-        height: 230px;
+        height: 240px;
         display: none;
         position: fixed;
         top: 0;
         right: 0;
         background-color: #2B2B2C;
-        box-shadow: 0 0 5px #000;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;
         text-align: center;
         padding: 4% 2% 1% 2%;
         margin: 10px 10px 0 0;
-        z-index: 6;
+        z-index: 4;
         animation: menu-show 1s ease forwards;
     }
 
@@ -945,17 +992,17 @@ textarea {
         }
     }
 
-    .menu li {
-        list-style: none;
+    .menu .menu-li {
         padding: 10px 0;
         margin-top: 10px;
     }
 
-    .menu li:hover {
+    .menu .menu-li:hover {
         background-color: #681E1E;
     }
 
-    .menu li a {
+    .menu a{
+        width: 100%;
         text-decoration: none;
         color: #DFDEE0;
     }
@@ -966,8 +1013,13 @@ textarea {
     }
 
     .social-links-menu li {
+        list-style: none;
         text-align: center;
         padding: 0 15px;
+    }
+
+    .social-links-menu li a {
+        color: #DFDEE0;
     }
 
     .menu .close-btn {
@@ -977,10 +1029,14 @@ textarea {
         margin: 3% 4% 0 0;
     }
 
+    /* START OF HOME PAGE */
+
     .landing-card {
         width: 96%;
         box-shadow: none;
     }
+
+    /* START OF ABOUT PAGE */
     
     .heading {
         font-size: 250%;
@@ -996,6 +1052,8 @@ textarea {
         font-size: 100%;
         padding: 4% 1%;
     }
+
+    /* START OF CONTACT PAGE */
 
     .information {
         margin-left: 1%;
@@ -1053,10 +1111,14 @@ textarea {
         max-height: 100vh;
     }
 
+    /* START WELCOME MESSAGE */
+
     #welcome {
         font-size: 160%;
         margin-top:  50%;
     }
+
+    /* START OF HOME PAGE */
 
     .logo {
         width: 60%;
@@ -1144,7 +1206,7 @@ textarea {
         font-size: 220%;
     }
     
-    .play-container{
+    /* .play-container{
         width: 8%;
         min-height: 22%;
         padding: 1%;
@@ -1166,11 +1228,15 @@ textarea {
         width: 100%;
         font-size: 220%;
         margin-top: 10%;
-    }
+    } */
+
+    /* START OF FOOTER PAGE */
 
     .disclaimer {
         font-size: 12px;
     }
+
+    /* START OF ABOUT PAGE */
     
     .heading {
         font-size: 250%;
@@ -1186,6 +1252,8 @@ textarea {
         font-size: 100%;
         padding: 4% 1%;
     }
+
+    /* START OF CONTACT PAGE */
 
     .information {
         width: 95%;
