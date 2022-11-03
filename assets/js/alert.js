@@ -7,14 +7,12 @@
      * Alert to stop accidentally closing of window while filling the form 
      */
     
-    window.addEventListener("beforeunload", (event) => {
+    function alert() {
+        if (fullName.value == '' || emailAdd.value == '' || clickedRadio.value == '' || textArea.value == '') {
 
-        if (fullName !== '' || emailAdd !== '' || clickedRadio !== '' || textArea !== '') {
+            alert('You are about to leave the page without sending your message.\n Are you sure you want to continue?');
 
-            event.returnValue = 'You are about to leave the page without sending your message.\n Are you sure you want to continue?';
-
-        } else {
-
-            window.onbeforeunload = null;
         }
-    });
+    };
+
+    alert();

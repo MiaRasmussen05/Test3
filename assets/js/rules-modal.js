@@ -5,11 +5,23 @@ const playBtn = document.querySelector('#play-btn');
 const playModal = document.querySelector('.play-modal');
 const closePlayBtn = document.querySelector('#close-play');
 
+/**
+ * Close the rules modal by clicking outside the Modal  
+ */
+window.onclick = function(event) {
+
+    if (event.target == rulesModal) {
+ 
+        rulesModal.style.display = "none";
+ 
+     };
+ };
+
 function openRules() {
     rulesModal.style.display = "block";
 };
 
-function closeRules() {
+ function closeRules() {
     rulesModal.style.display = "none";
 };
 
@@ -31,13 +43,13 @@ closePlayBtn.addEventListener("click", closePlay);
 /**
  * Close the Modals by a click on the keyboard  
  */
- document.addEventListener('keydown', (event) => {
+//  document.addEventListener('keydown', (event) => {
     
-    if (event.key === 'enter') {
-        rulesModal.style.display = "none";
-    };
+//     if (event.key === 'enter') {
+//         rulesModal.style.display = "none";
+//     };
 
-  });
+//   });
 
 
     //window.addEventListener('DOMContentLoaded', (event) => {};

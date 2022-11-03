@@ -1,23 +1,39 @@
+let toggle = document.getElementById('toggleMenu')
+let setting = document.getElementById('settings')
+
+// window.onclick = function(event) {
+
+//     if (event.target == toggle) {
+ 
+//         toggle.style.display = "none";
+ 
+//      };
+
+//      if (event.target == setting) {
+ 
+//         setting.style.display = "none";
+ 
+//      };
+//  };
+
 /**
  * Open and close the hamburger menu on smaller screens
  */
-
 function openToggleMenu() {
-    document.getElementById('toggleMenu').style.display = 'block';
+    toggle.style.display = 'block';
 };
 
 function closeToggleMenu() {
-    document.getElementById('toggleMenu').style.display = 'none';
+    toggle.style.display = 'none';
 };
 
 /**
  * Open and close the settings pop up window
  */
-
 function openSettings() {
-    document.getElementById('settings').style.display = "block";
+    setting.style.display = "block";
 };
 
 function closeSettings() {
-    document.getElementById('settings').style.display = "none";
+    setting.style.display = "none";
 };

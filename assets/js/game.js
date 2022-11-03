@@ -201,7 +201,7 @@ function addSegments() {
 function updateFood() {
     if (onSnake(food)) {
         expandSnake(EXPANSION_RATE)
-        score++
+        score
         food = getRandomFoodPosition()
     };
 };
