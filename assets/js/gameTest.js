@@ -1,4 +1,4 @@
-const gameOverSound = new Audio('assets/sound/gameOver.mp3');
+// const gameOverSound = new Audio('assets/sound/gameOver.mp3');
 
 let lastRenderTime = 0;
 let SNAKE_SPEED = 1;
@@ -21,9 +21,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     if (gameOver) {
         board.style.display = 'none'
         gameOverMessage.style.display = 'block'
-        gameOverSound.play();
-        gameOverSound.volume = '0.1';
-        pause();
+        // gameOverSound.play();
+        // gameOverSound.volume = '0.1';
+        // pause();
     };
 
     window.requestAnimationFrame(main);
