@@ -6,13 +6,14 @@
     /**
      * Alert to stop accidentally closing of window while filling the form 
      */
-    
-    function alert() {
-        if (fullName.value == '' || emailAdd.value == '' || clickedRadio.value == '' || textArea.value == '') {
+    window.addEventListener("beforeunload", () => {
+        function alert() {
+            if (fullName.value === "" || emailAdd.value === "" || clickedRadio.value === "" || textArea.value === "") {
 
-            alert('You are about to leave the page without sending your message.\n Are you sure you want to continue?');
+                alert('You are about to leave the page without sending your message.\n Are you sure you want to continue?');
 
-        }
-    };
+            }
+        };
 
-    alert();
+        alert();
+    });
