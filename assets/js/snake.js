@@ -1,14 +1,7 @@
-export const SNAKE_SPEED = 1;
 const SNAKE_BODY = [{ x: 15, y: 15 }];
 let newSegments = 0;
 
-export function draw() {
-    console.log('drawing a snake');
-};
-
-export function update() {
-
-  addSegments()
+function updateSnake() {
 
   addSegments()
     const inputDirection = getInputDirection()
@@ -23,35 +16,40 @@ export function update() {
     SNAKE_BODY[0].y += inputDirection.y
 }
 
-export function drawSnake(board) {
+function drawSnake(board) {
     SNAKE_BODY.forEach(segment => {
         
-        let snakeElement = document.createElement('div')
+        let snakeElement = document.createElement('div');
         snakeElement.style.gridRowStart = segment.y
         snakeElement.style.gridColumnStart = segment.x
-        snakeElement.classList.add('snake')
-        board.appendChild(snakeElement)
-    })
-}
+        snakeElement.classList.add('snake');
+        board.appendChild(snakeElement);
+    });
+};
 
-export function expandSnake(amount) {
+function expandSnake(amount) {
     newSegments += amount
-
+    // healtyFoodEffect.playbackRate = 1;
+    // healtyFoodEffect.play();
+    // healtyFoodEffect.volume = '0.07';
+    // healtyFoodEffect.currentTime = 0;
 }
 
-export function onSnake(position, {
-    ignoreHead = false } = {}) {
+function onSnake(position, {
+    ignoreHead = false 
+    } = {}) {
     return SNAKE_BODY.some((segment, index) => {
+        //ignores if the snake head is on the snake head
         if (ignoreHead && index === 0) return false
         return equalPositions(segment, position)
     });
 };
 
-export function getSnakeHead() {
+function getSnakeHead() {
     return SNAKE_BODY[0];
 };
 
-export function snakeIntersection() {
+function snakeIntersection() {
     return onSnake(SNAKE_BODY[0], {
         ignoreHead: true
     });

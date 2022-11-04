@@ -1,4 +1,4 @@
-// import {music, musicBtnPlay} from "../js/sound.js";
+
 
 let lastRenderTime = 0;
 

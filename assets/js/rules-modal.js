@@ -24,17 +24,3 @@ function openRules() {
 
 rulesBtn.addEventListener("click", openRules);
 closeRulesBtn.addEventListener("click", closeRules);
-
-/**
- * Close the Modals by a click on the keyboard  
- */
-//  document.addEventListener('keydown', (event) => {
-    
-//     if (event.key === 'enter') {
-//         rulesModal.style.display = "none";
-//     };
-
-//   });
-
-
-    //window.addEventListener('DOMContentLoaded', (event) => {};
