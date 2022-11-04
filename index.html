@@ -17,11 +17,8 @@
 
     <!-- THE START OF WELCOME MESSAGE -->
     <!--<div class="welcomeBackground">-->
-    <div class="First-message" id="welcome">
+    <div id="welcome">
         <h1>Welcome to Snake Snack</h1>
-    </div>
-    <div class="First-message">
-        <h2>Let's get started!</h2>
     </div>
     <!--</div>-->
 
@@ -107,8 +104,11 @@
                 <legend><i class="fas fa-cog"></i></legend>
                 <div class="settingBtns">
                     <div class="settingBtnborder">
-                        <div class="music btnControls" id="musicBtn">
+                        <div class="music btnControls" id="musicBtnOff">
                             <i class="fas fa-pause"></i>
+                        </div>
+                        <div class="music btnControls" id="musicBtnOn">
+                            <i class="fas fa-music"></i>
                         </div>
                     </div>
                     <div class="settingBtnborder">
@@ -134,9 +134,9 @@
                     </div>
                     <div class="buttons">
                         <div class="btn" id="rules-btn">Rules</div>
-                        <a href="./test.html">
-                            <div class="btn">Play</div>
-                        </a>
+                            <div class="btn"> 
+                                <a id="play-btn" href="./test.html">Play</a>
+                            </div>
                     </div>
 
                 </div>
@@ -200,8 +200,8 @@
     <!-- script links-->
     <script src="./assets/js/welcome.js"></script>
     <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/sound.js"></script>
     <script src="./assets/js/rules-modal.js"></script>
-    <script src="./assets/js/game.js"></script>
 
 </body>
 

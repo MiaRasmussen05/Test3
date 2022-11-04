@@ -17,16 +17,16 @@ body {
 
 /* START OF WELCOME MESSAGE */
 
-.First-message {
+#welcome {
     width: 95%;
-    display: none;
     position: absolute;
+    display: none;
     background-color: #2B2B2C;
+    border-radius: 12px;
     border-bottom-right-radius: 100px;
     border-top-left-radius: 100px;
-    border-radius: 12px;
     box-shadow: 0 0 10px #000;
-    font-size: 700%;
+    font-size: 500%;
     text-align: center;
     line-height: 180px;
     color: #DFDEE0;
@@ -35,6 +35,10 @@ body {
     margin-top:  16.4%;
     margin-left: 2%;
     transition: all 2s ease-in;
+}
+
+#welcome h1{
+    font-size: 90%;
 }
 
 /* THE START OF HEADER */
@@ -196,6 +200,12 @@ nav {
 .btn:hover {
     box-shadow: inset 2px 2px 4px #3B3B3B,
     inset -2px -2px 4px #F0F0F0;
+}
+
+#play-btn {
+    display: block;
+    text-decoration: none;
+    color: #000;
 }
 
 /* THE START OF RULES MODAL SECTION FROM HOME PAGE */

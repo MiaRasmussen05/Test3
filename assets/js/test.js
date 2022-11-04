@@ -1,8 +1,6 @@
 let lastRenderTime = 0;
 const GRID_SIZE = 30;
 
-const music = new Audio('assets/sound/music.mp3');
-let musicBtnPlay = document.getElementById('musicBtn');
 const healtyFoodEffect = new Audio('assets/sound/healtyFood.mp3');
 const gameOverSound = new Audio('assets/sound/gameOver.mp3');
 let soundBtnPlay = document.getElementById('soundBtn');
@@ -271,18 +269,6 @@ function outsideGrid(position) {
     lastInputDirection = inputDirection
     return inputDirection
 }
-
-musicBtnPlay.addEventListener("click", function() {
-    if(music.paused){
-      music.play();
-      music.volume = 0.1;
-      music.loop = true;
-      musicBtnPlay.innerHTML = '<i class="fas fa-music"></i>';
-    } else {
-      music.pause();
-      musicBtnPlay.innerHTML = '<i class="fas fa-pause"></i>';
-    };
-  });
 
 // EventListener for the keydown of the keyboard to move the snake
 

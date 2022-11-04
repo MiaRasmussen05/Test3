@@ -137,7 +137,7 @@ legend {
 }
 
 .score-board p {
-    width: 35%;
+    width: 100%;
     display: inline-flex;
     justify-content: center;
 }
@@ -368,16 +368,25 @@ legend {
     margin: 0 0 -40px -60px;
 }
 
-#musicBtn {
-    margin: 5px 0 15% 2%;
+#musicBtnOff {
+    margin: 4px 0 15% 2%;
 }
 
-#musicBtn i, #soundBtn i{
-    padding: 15% 0 0 20%;
+#musicBtnOn {
+    display: none;
+    margin: 4px 0 15% 72.5%;
 }
 
 #soundBtn {
     margin: 5px 0 0 2%;
+}
+
+#musicBtnOff i, #soundBtnOff i{
+    padding: 17% 0 0 20%;
+}
+
+#musicBtnOn i, #soundBtnOn i{
+    padding: 17% 4% 0 0;
 }
 
 #pauseBtn, #musicBtn, #soundBtn {
