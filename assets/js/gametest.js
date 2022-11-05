@@ -11,21 +11,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     for (let i = 0; i < touchControls.length; i++) {
         touchControls[i].addEventListener('click', touchControlsClicked);
     }
-
-    playPause.addEventListener("click", function() {
-        if(isPlaying){
-            isPlaying = true;
-            board.innerText = "PAUSED";
-          playPause.innerHTML = '<i class="fas fa-play"></i>';
-        } else {
-            isPlaying = false;
-            cancelAnimationFrame(main);
-            cancelAnimationFrame(main);
-            cancelAnimationFrame(main);
-            cancelAnimationFrame(main);
-          playPause.innerHTML = '<i class="fas fa-pause"></i>';
-        };
-      });
 });
 
 /**
@@ -55,6 +40,7 @@ function update() {
     updateSnake();
     updateFood();
     checkDeath();
+    updateNewHighScore();
 };
 
 function draw() {
