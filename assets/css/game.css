@@ -791,6 +791,12 @@ legend {
         width: 77.3vmin;
         font-size: 100%;
     }
+
+    .score-board p {
+        width: 47%;
+        justify-content: start;
+        margin-left: 3%;
+    }
     
     .game-over {
         font-size: 200%;
@@ -859,6 +865,12 @@ legend {
     .score-board {
         width: 87.5vmin;
         font-size: 90%;
+    }
+
+    .score-wrapper {
+        width: 103.5%;
+        text-align: start;
+        margin-bottom: 1%;
     }
 
     /* START OF CONTROLS */
