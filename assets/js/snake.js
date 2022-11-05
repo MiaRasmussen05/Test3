@@ -1,4 +1,4 @@
-const SNAKE_BODY = [{ x: 15, y: 15 }];
+const SNAKE_BODY = [{ x: 20, y: 20 }];
 let newSegments = 0;
 
 function updateSnake() {
