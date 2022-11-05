@@ -1,14 +1,8 @@
-
-
 let lastRenderTime = 0;
+const GRID_SIZE = 30;
 
-const music = new Audio('assets/sound/music.mp3');
-let musicBtnPlay = document.getElementById('musicBtn');
 const healtyFoodEffect = new Audio('assets/sound/healtyFood.mp3');
 const gameOverSound = new Audio('assets/sound/gameOver.mp3');
-let soundlist = ['assets/sound/gameOver.mp3',
-'assets/sound/healtyFood.mp3'];
-let soundEffect = new Audio(soundlist[s]);
 let soundBtnPlay = document.getElementById('soundBtn');
 
 const board = document.getElementsByClassName('board')[0];
@@ -18,6 +12,7 @@ let newSegments = 0;
 
 const SNAKE_SPEED = 1;
 
+var img = new Image(); 
 var div = document.getElementsByClassName('food'); 
 
 let food = getRandomFoodPosition();
@@ -27,18 +22,17 @@ const EXPANSION_RATE = 1;
 let score = 0;
 const getScore = document.getElementsByClassName('score')[0];
 
-let directionMove = { x: 0, y: 0 };
-let lastDirectionMove = { x: 0, y: 0 };
+
+let inputDirection = { x: 0, y: 0 };
+let lastInputDirection = { x: 0, y: 0 };
 
 const controlButtons = document.getElementsByClassName('touch-controls')[0];
 const touchControls = document.getElementsByClassName('btnControls');
-
-let playing = false;
-let playPause = document.getElementById('pauseBtn');
  
+
 const gameOverMessage = document.getElementsByClassName('game-over')[0];
 let gameOver = false;
-let restartBtn = document.querySelector('.restart');
+const restartBtn = document.querySelector('.restart');
 
 window.addEventListener('DOMContentLoaded', (event) => {
     window.requestAnimationFrame(main)
@@ -59,6 +53,7 @@ function main(currentTime) {
         gameOverSound.play();
         gameOverSound.volume = '0.1';
         pause();
+        restart(); 
     };
 
     //getting the frame to animate the game
@@ -68,8 +63,6 @@ function main(currentTime) {
     if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
 
     lastRenderTime = currentTime
-
-    playing = true;
     
     update()
     draw()
@@ -94,24 +87,12 @@ function draw() {
     drawFood(board)
 }
 
-playPause.addEventListener("click", function() {
-    if(main.paused){
-        main.play();
-        playing = false;
-        board.innerText = "PAUSED";
-      playPause.innerHTML = '<i class="fas fa-play"></i>';
-    } else {
-        main.pause();
-      playPause.innerHTML = '<i class="fas fa-pause"></i>';
-    };
-  });
-
 /**
  * Check a failure.
  * Failure happens if the snake get out of the grid or touch itself
  */
 function checkDeath() {
-    gameOver = outside(getSnakeHead()) || snakeIntersection()
+    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
 }
 
 /**
@@ -119,7 +100,7 @@ function checkDeath() {
  */
 function updateSnake() {
     addSegments()
-    const directionMove = getDirectionMove()
+    const inputDirection = getInputDirection()
     //update every segment except the last one
     for (let i = SNAKE_BODY.length - 2; i >= 0; i--) {
         SNAKE_BODY[i + 1] = {
@@ -127,8 +108,8 @@ function updateSnake() {
         }
     }
 
-    SNAKE_BODY[0].x += directionMove.x
-    SNAKE_BODY[0].y += directionMove.y
+    SNAKE_BODY[0].x += inputDirection.x
+    SNAKE_BODY[0].y += inputDirection.y
 }
 
 
@@ -204,11 +185,11 @@ function addSegments() {
     for (let i = 0; i < newSegments; i++) {
         //takes the very last segment and duplicate on the end of the snake
         SNAKE_BODY.push({
-            ...SNAKE_BODY[SNAKE_BODY.length]
+            ...SNAKE_BODY[SNAKE_BODY.length - 1]
         });
     };
-
-    newSegments = 0;
+    //Avoid add more elements then its told to
+    newSegments = 0
 };
 
 /**
@@ -230,10 +211,6 @@ function drawFood(board) {
     const foodElement = document.createElement('div')
     foodElement.style.gridRowStart = food.y
     foodElement.style.gridColumnStart = food.x
-    img.onload = function() { 
-        div.appendChild(img); 
-      }; 
-      img.src = './assets/images/Apple1.png' 
     foodElement.classList.add('food')
     board.appendChild(foodElement)
 }
@@ -260,27 +237,27 @@ function getRandomFoodPosition() {
     let newFoodPosition
     if (newFoodPosition == null || onSnake(newFoodPosition)) {
         newFoodPosition = randomGridPosition()
-    }
+    }restart
     return newFoodPosition
 }
 
 /**
- * Return game over if the snake get beyond the grid border
+ * Return true or false if the element is outside the grid
  */
-function outside(position) {
+
+//Return true of false if the snake get beyond the grid border
+function outsideGrid(position) {
     return (
-        position.x < 0 || position.x > 30 ||
-        position.y < 0 || position.y > 30
-    );
-};
+        position.x < 1 || position.x > GRID_SIZE ||
+        position.y < 1 || position.y > GRID_SIZE
+    )
+}
 
 /**
  * Function to Restart the game
  */
  function restart(){
-    // restartBtn.addEventListener('click' || event.keyCode == 13, () => {
         window.location = './test.html';
-    //   });
 };
 
 
@@ -288,65 +265,43 @@ function outside(position) {
  * Listen to the user input with the arrow keys on the keyboard
  *  and get the user input and change direction of the snake
  */
- function getDirectionMove() {
-    lastDirectionMove = directionMove
-    return directionMove
+ function getInputDirection() {
+    lastInputDirection = inputDirection
+    return inputDirection
 }
-
-musicBtnPlay.addEventListener("click", function() {
-    if(music.paused){
-      music.play();
-      music.volume = 0.1;
-      music.loop = true;
-      musicBtnPlay.innerHTML = '<i class="fas fa-music"></i>';
-    } else {
-      music.pause();
-      musicBtnPlay.innerHTML = '<i class="fas fa-pause"></i>';
-    };
-  });
-
-  soundBtnPlay.addEventListener("click", function() {
-    if(soundEffect.paused){
-        soundEffect.play();
-        soundBtnPlay.innerHTML = '<i class="fas fa-volume-up"></i>';
-    } else {
-        soundEffect.pause();
-        soundBtnPlay.innerHTML = '<i class="fas fa-volume-mute"></i>';
-    };
-  });
 
 // EventListener for the keydown of the keyboard to move the snake
 
 window.addEventListener('keydown', e => {
     switch (e.key) {
         case 'ArrowUp':
-            if (lastDirectionMove.y !== 0) 
+            if (lastInputDirection.y !== 0) 
             break
-            directionMove = {
+            inputDirection = {
                 x: 0,
                 y: -1
             }
             break
         case 'ArrowDown':
-            if (lastDirectionMove.y !== 0) 
+            if (lastInputDirection.y !== 0) 
             break
-            directionMove = {
+            inputDirection = {
                 x: 0,
                 y: 1
             }
             break
         case 'ArrowLeft':
-            if (lastDirectionMove.x !== 0) 
+            if (lastInputDirection.x !== 0) 
             break
-            directionMove = {
+            inputDirection = {
                 x: -1,
                 y: 0
             }
             break
         case 'ArrowRight':
-            if (lastDirectionMove.x !== 0) 
+            if (lastInputDirection.x !== 0) 
             break
-            directionMove = {
+            inputDirection = {
                 x: 1,
                 y: 0
             }
@@ -357,40 +312,40 @@ window.addEventListener('keydown', e => {
 // Attributes for the controls in the game page
 function touchControlsClicked() {
     if (this.getAttribute("id") === "leftBtn") {
-        if(lastDirectionMove.x !== 0){
+        if(lastInputDirection.x !== 0){
             return
         } else {
-            directionMove = {
+            inputDirection = {
                 x: -1,
                 y: 0
             }
             return
         }
     } else if (this.getAttribute("id") === "rightBtn") {
-       if(lastDirectionMove.x !== 0){
+       if(lastInputDirection.x !== 0){
         return
        } else {
-        directionMove = {
+        inputDirection = {
             x: 1,
             y: 0
         }
         return
        }
     } else if (this.getAttribute("id") === "upBtn") {
-       if(lastDirectionMove.y !== 0){
+       if(lastInputDirection.y !== 0){
         return
        } else {
-        directionMove = {
+        inputDirection = {
             x: 0,
             y: -1
         }
         return
        }
     } else if (this.getAttribute("id") === "downBtn") {
-        if(lastDirectionMove.y !== 0){
+        if(lastInputDirection.y !== 0){
             return
         } else {
-            directionMove = {
+            inputDirection = {
                 x: 0,
                 y: 1
             }

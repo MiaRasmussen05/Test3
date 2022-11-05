@@ -1,15 +1,6 @@
 const controlButtons = document.getElementsByClassName('touch-controls')[0];
 const touchControls = document.getElementsByClassName('btnControls');
 
-function main(currentTime) {
-window.addEventListener('DOMContentLoaded', (event) => {
-    window.requestAnimationFrame(main)
-    for (let i = 0; i < touchControls.length; i++) {
-        touchControls[i].addEventListener('click', touchControlsClicked);
-    }
-});
-};
-
 // EventListener for the keydown of the keyboard to move the snake
 
 window.addEventListener('keydown', e => {

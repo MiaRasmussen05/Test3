@@ -1,4 +1,4 @@
-// const gameOverSound = new Audio('assets/sound/gameOver.mp3');
+// const gameOverSound = new Audio('assets/sound/gameover.mp3');
 
 let lastRenderTime = 0;
 let SNAKE_SPEED = 1;
@@ -11,6 +11,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
     for (let i = 0; i < touchControls.length; i++) {
         touchControls[i].addEventListener('click', touchControlsClicked);
     }
+
+    playPause.addEventListener("click", function() {
+        if(isPlaying){
+            isPlaying = true;
+            board.innerText = "PAUSED";
+          playPause.innerHTML = '<i class="fas fa-play"></i>';
+        } else {
+            isPlaying = false;
+            cancelAnimationFrame(main);
+            cancelAnimationFrame(main);
+            cancelAnimationFrame(main);
+            cancelAnimationFrame(main);
+          playPause.innerHTML = '<i class="fas fa-pause"></i>';
+        };
+      });
 });
 
 /**
@@ -23,7 +38,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         gameOverMessage.style.display = 'block'
         // gameOverSound.play();
         // gameOverSound.volume = '0.1';
-        // pause();
+        // gameOverSound.pause();
     };
 
     window.requestAnimationFrame(main);
@@ -35,8 +50,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     update();
 };
 
-window.requestAnimationFrame(main);
-
 function update() {
     getScore.innerHTML = score
     updateSnake();
@@ -45,7 +58,11 @@ function update() {
 };
 
 function draw() {
-    board.innerHTML = ''
+    board.innerHTML = ""
     drawFood(board);
     drawSnake(board);
 };
+
+function checkDeath() {
+    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
+  };

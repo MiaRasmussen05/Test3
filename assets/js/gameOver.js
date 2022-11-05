@@ -8,10 +8,6 @@ function outsideGrid(position) {
       position.y < 1 || position.y > 30
     )
   }
-
-function checkDeath() {
-    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
-  };
   
   function restart(){
       window.location = './test.html';
