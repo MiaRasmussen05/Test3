@@ -24,6 +24,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         // gameOverSound.play();
         // gameOverSound.volume = '0.1';
         // gameOverSound.pause();
+        updateNewHighScore();
     };
 
     window.requestAnimationFrame(main);
@@ -37,10 +38,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 function update() {
     getScore.innerHTML = score
+    getHighscore.innerHTML = highScore
     updateSnake();
     updateFood();
     checkDeath();
-    updateNewHighScore();
+    // updateNewHighScore();
 };
 
 function draw() {
