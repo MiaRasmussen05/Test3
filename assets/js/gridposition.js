@@ -32,8 +32,8 @@ function randomGridPosition() {
     }
   } else {
     return {
-      x: Math.floor(Math.random() * 30) + 1,
-      y: Math.floor(Math.random() * 30) + 1
+      x: Math.floor(Math.random() * 0) + 1,
+      y: Math.floor(Math.random() * 0) + 1
     } 
   }
 };
