@@ -11,7 +11,8 @@ html {
 }
 
 body {
-    width: 100%;
+    width: 100vw;
+    height: 95vh;
     background-image: linear-gradient(to bottom right, #000, #1E1E1E, #522D2D, #681E1E, #7F0F0F, #681E1E, #522D2D, #3B3B3B, #2D2D2D, #1E1E1E, #000);
 }
 
