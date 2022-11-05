@@ -464,10 +464,12 @@ legend {
         position: fixed;
         margin: -5.5% 0 0 8%;
     }
-    
+
     .board {
         width: 66vmin;
         height: 66vmin;
+        grid-template-columns: repeat(28, 1fr);
+        grid-template-rows: repeat(28, 1fr);
     }
 
     .score-wrapper {
@@ -598,6 +600,8 @@ legend {
         width: 55vmin;
         height: 55vmin;
         border-radius: 10px;
+        grid-template-columns: repeat(25, 1fr);
+        grid-template-rows: repeat(25, 1fr);
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
@@ -659,6 +663,8 @@ legend {
         width: 64vmin;
         height: 64vmin;
         border-radius: 10px;
+        grid-template-columns: repeat(22, 1fr);
+        grid-template-rows: repeat(22, 1fr);
         margin: 0 auto;
         margin-top: 0%;
     }
@@ -783,6 +789,8 @@ legend {
         width: 75vmin;
         height: 75vmin;
         border-radius: 10px;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(20, 1fr);
         margin: 0 auto;
         margin-top: 0%;
     }
@@ -859,6 +867,8 @@ legend {
         width: 86vmin;
         height: 86vmin;
         border-radius: 10px;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(16, 1fr);
         margin: 0 0;
     }
 
