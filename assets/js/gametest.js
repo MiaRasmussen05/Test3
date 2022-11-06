@@ -4,7 +4,6 @@ let lastRenderTime = 0;
 let SNAKE_SPEED = 1;
 let board = document.getElementsByClassName('board')[0];
 
-
 window.addEventListener('DOMContentLoaded', (event) => {
     window.requestAnimationFrame(main)
     gameOverMessage.style.display = "none"
@@ -49,6 +48,7 @@ function draw() {
     board.innerHTML = ""
     drawFood(board);
     drawSnake(board);
+    // if(!paused)
 };
 
 function checkDeath() {

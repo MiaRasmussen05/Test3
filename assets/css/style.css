@@ -327,23 +327,28 @@ footer {
     width: 100%;
     position: relative;
     left: 0;
-    bottom: 0;
+    bottom: 4px;
     text-align: center;
 }
 
 .copyright, .disclaimer {
+    display: none;
     font-size: 70%;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
+    text-shadow: 0 0 4px #000;
     color: #FFF;
     padding: 0 7px;
 }
 
-.copyright{
-    margin-top: 25px;
+.footer-top i {
+    display: block;
+    font-size: 200%;
+    color: #DFDEE0;
+    text-align: start;
+    margin-top: -0.5%;
+    margin-left: 3%;
 }
-
-.footer-top i {display: none;}
 
 .disclaimer {
     text-transform: uppercase;
@@ -778,6 +783,13 @@ textarea {
         inset -1px -1px 1px #000;
     }
 
+    /* START OF FOOTER */
+
+    .footer-top i {
+        margin-top: 0;
+        margin-left: 3%;
+    }
+
     /* START OF ABOUT PAGE */
 
     .heading {
@@ -937,14 +949,12 @@ textarea {
 
     /* START OF FOOTER */
 
-    .copyright, .disclaimer {display: none;}
+    .copyright, .disclaimer {
+        font-size: 60%;
+    }
 
-    .footer-top i {
-        display: block;
-        font-size: 200%;
-        color: #DFDEE0;
-        text-align: start;
-        margin-left: 3%;
+    .disclaimer {
+        font-size: 50%;
     }
 
     /* START OF ABOUT PAGE */

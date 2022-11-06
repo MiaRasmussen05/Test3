@@ -1,14 +1,13 @@
-let isPlaying = true;
+let isPlaying = false;
 let playPause = document.getElementById('pauseBtn');
 
 playPause.addEventListener("click", function() {
-    if(isPlaying){
-        isPlaying = true;
+    if(!isPlaying){
+        isPlaying = false;
         board.innerText = "PAUSED";
       playPause.innerHTML = '<i class="fas fa-play"></i>';
       
     } else {
-        isPlaying = false;
         cancelAnimationFrame(main);
       playPause.innerHTML = '<i class="fas fa-pause"></i>';
     }

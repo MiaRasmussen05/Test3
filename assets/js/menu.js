@@ -41,19 +41,15 @@ function closeSettings() {
 // };
 
 function openRights() {
-    if(window.matchMedia("(max-width: 748px)").matches) {
     copyright.style.display = "block";
     disclaimer.style.display = "block";
     copyDisclaimer.style.display = "none";
-    };
 };
 
 function closeRights() {
-    if(window.matchMedia("(max-width: 748px)").matches) {
     copyright.style.display = "none";
     disclaimer.style.display = "none";
     copyDisclaimer.style.display = "block";
-    };
 };
 
 setInterval(closeRights, 5000);

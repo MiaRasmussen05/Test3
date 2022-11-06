@@ -2,8 +2,8 @@ function outsideGrid(position) {
 
     if (window.matchMedia("(min-width: 1281px)").matches) {
         return (
-            position.x < 1 || position.x > 20 ||
-            position.y < 1 || position.y > 20
+            position.x < 1 || position.x > 30 ||
+            position.y < 1 || position.y > 30
         );
     } else if (window.matchMedia("(max-width: 1280px)").matches) {
         return (

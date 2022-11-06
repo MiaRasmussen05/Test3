@@ -108,8 +108,8 @@ legend {
     height: 75vmin;
     position: absolute;
     display: grid;
-    grid-template-columns: repeat(30, 1fr);
-    grid-template-rows: repeat(30, 1fr);
+    grid-template-columns: repeat(26, 1fr);
+    grid-template-rows: repeat(26, 1fr);
     background-color: #0d9b37;
     border-radius: 10px;
 }
@@ -153,8 +153,13 @@ legend {
 }
 /* Style for the healty food */
 .food {
-    background-color: rgb(139, 0, 0);
-    border: 1px solid #681E1E;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/apple.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
 }
 
 /* START OF GAME OVER AND RESTART */
@@ -364,9 +369,9 @@ legend {
 
 #pauseBtn {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    margin: 0 0 11vh 16vw;
+    bottom: 9%;
+    left: 18%;
+    transform: translate(-40%, -25%);
 }
 
 #musicBtnOff {
@@ -442,7 +447,9 @@ legend {
     }
 
     #pauseBtn {
-        margin: 0 0 14vh 11vw;
+        bottom: 9%;
+        left: 15%;
+        transform: translate(-80%, -55%);
     }
 
 }
@@ -469,8 +476,8 @@ legend {
     .board {
         width: 66vmin;
         height: 66vmin;
-        grid-template-columns: repeat(28, 1fr);
-        grid-template-rows: repeat(28, 1fr);
+        /* grid-template-columns: repeat(28, 1fr);
+        grid-template-rows: repeat(28, 1fr); */
     }
 
     .score-wrapper {
@@ -483,12 +490,12 @@ legend {
     }
 
     .controls {
-        margin: 12% 11% 0 0;
+        margin: 12% 6% 0 0;
     }
 
     .game-over {
-        width: 100%;
         font-size: 300%;
+        transform: translate(-40%, -50%);
     }
 
     .restart {
@@ -565,7 +572,9 @@ legend {
     /* START OF BUTTONS */
 
     #pauseBtn {
-        margin: 0 0 16vh 6vw;
+        bottom: 11%;
+        left: 9%;
+        transform: translate(-60%, -45%);
     }
 
     #pauseBtn, #musicBtn, #soundBtn {
@@ -604,8 +613,8 @@ legend {
         width: 55vmin;
         height: 55vmin;
         border-radius: 10px;
-        grid-template-columns: repeat(26, 1fr);
-        grid-template-rows: repeat(26, 1fr);
+        /* grid-template-columns: repeat(26, 1fr);
+        grid-template-rows: repeat(26, 1fr); */
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
@@ -618,6 +627,7 @@ legend {
 
     .game-over {
         font-size: 250%;
+        transform: translate(-72%, -120%);
     }
     
     .restart {
@@ -637,7 +647,8 @@ legend {
     }
 
     #pauseBtn {
-        margin: 0 0 10.5vh 6vw;
+        bottom: 9%;
+        transform: translate(-80%, -30%);
     }
     
 }
@@ -656,6 +667,8 @@ legend {
         margin: 42px 0 0 0;
     }
 
+    /* START OF GAMEBOARD */
+
     .game-border {
         width: 50%;
         height: 97.5vmin;
@@ -667,8 +680,8 @@ legend {
         width: 64vmin;
         height: 64vmin;
         border-radius: 10px;
-        grid-template-columns: repeat(22, 1fr);
-        grid-template-rows: repeat(22, 1fr);
+        /* grid-template-columns: repeat(22, 1fr);
+        grid-template-rows: repeat(22, 1fr); */
         margin: 0 auto;
     }
 
@@ -676,10 +689,16 @@ legend {
         width: 66.7vmin;
     }
 
+    .game-over {
+        font-size: 220%;
+        transform: translate(-30%, -100%);
+    }
+
     .restart {
         width: 50px;
         height: 50px;
-        font-size: 90%;
+        font-size: 80%;
+        line-height: 50px;
         margin-top: 0%;
         margin-left: 40%;
     }
@@ -759,7 +778,9 @@ legend {
     }
 
     #pauseBtn {
-        margin: 0 0 30% 18vw;
+        bottom: 10%;
+        left: 6.5%;
+        transform: translate(-60%, -30%);
     }
     
 }
@@ -792,8 +813,8 @@ legend {
         width: 75vmin;
         height: 75vmin;
         border-radius: 10px;
-        grid-template-columns: repeat(20, 1fr);
-        grid-template-rows: repeat(20, 1fr);
+        /* grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(20, 1fr); */
         margin: 0 auto;
         margin-top: 0%;
     }
@@ -808,9 +829,10 @@ legend {
         justify-content: start;
         margin-left: 3%;
     }
-    
+
     .game-over {
         font-size: 200%;
+        transform: translate(-55%, -70%);
     }
     
     .restart {
@@ -831,9 +853,10 @@ legend {
     #pauseBtn {
         width: 40px;
         height: 40px;
+        left: 7%;
         font-size: 160%;
         line-height: 45px;
-        margin: 0 0 2% -2px;
+        transform: translate(-60%, -30%);
     }
     
 }
@@ -841,7 +864,8 @@ legend {
 @media screen and (max-width: 444px) { 
 
     #pauseBtn {
-        margin: 0 0 0 -2px;
+        left: 8%;
+        transform: translate(-60%, -30%);
     }
 
 }
@@ -849,7 +873,8 @@ legend {
 @media screen and (max-width: 400px) { 
 
     #pauseBtn {
-        margin: 0 0 -3% -2px;
+        bottom: 13%;
+        transform: translate(-60%, 60%);
     }
 
 }
@@ -862,21 +887,21 @@ legend {
         width: 90%;
         height: 97.5vmin;
         border-radius: 10px;
-        margin: 0 3%;
+        margin: 0 4%;
         margin-top: -17px;
     }
     
     .board {
-        width: 86vmin;
-        height: 86vmin;
+        width: 84vmin;
+        height: 84vmin;
         border-radius: 10px;
-        grid-template-columns: repeat(18, 1fr);
-        grid-template-rows: repeat(18, 1fr);
+        /* grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr); */
         margin: 0 0;
     }
 
     .score-board {
-        width: 87.5vmin;
+        width: 86vmin;
         font-size: 90%;
     }
 
@@ -884,6 +909,10 @@ legend {
         width: 103.5%;
         text-align: start;
         margin-bottom: 1%;
+    }
+
+    .game-over {
+        transform: translate(-50%, -30%);
     }
 
     /* START OF CONTROLS */
@@ -894,7 +923,17 @@ legend {
     }
 
     #pauseBtn {
-        margin: 0 0 -18% -2px;
+        bottom: 7%;
+        left: 7%;
+        transform: translate(-40%, -30%);
     }
+}
 
+@media screen and (max-width: 310px) { 
+
+    #pauseBtn {
+        bottom: 3%;
+        left: 6%;
+        transform: translate(-30%, -90%);
+    }
 }
