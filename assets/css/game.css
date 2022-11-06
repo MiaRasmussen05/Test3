@@ -363,9 +363,10 @@ legend {
 }
 
 #pauseBtn {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    margin: 0 0 -40px -60px;
+    left: 0;
+    margin: 0 0 11vh 16vw;
 }
 
 #musicBtnOff {
@@ -441,7 +442,7 @@ legend {
     }
 
     #pauseBtn {
-        margin: 0 0 -15px -60px;
+        margin: 0 0 14vh 11vw;
     }
 
 }
@@ -563,13 +564,17 @@ legend {
 
     /* START OF BUTTONS */
 
+    #pauseBtn {
+        margin: 0 0 16vh 6vw;
+    }
+
     #pauseBtn, #musicBtn, #soundBtn {
         width: 50px;
         height: 50px;
         font-size: 200%;
         line-height: 50px;
         border-radius: 50%;
-        margin: 0 0 20px -60px;
+        
     }
 
     #musicBtn, #soundBtn {
@@ -578,7 +583,6 @@ legend {
 
     #musicBtn i, #soundBtn i {
         font-size: 65%;
-        border-radius: 50%;
     }
 
 }
@@ -633,7 +637,7 @@ legend {
     }
 
     #pauseBtn {
-        margin: 0 0 170px 0;
+        margin: 0 0 10.5vh 6vw;
     }
     
 }
@@ -666,7 +670,6 @@ legend {
         grid-template-columns: repeat(22, 1fr);
         grid-template-rows: repeat(22, 1fr);
         margin: 0 auto;
-        margin-top: 0%;
     }
 
     .score-board {
@@ -756,7 +759,7 @@ legend {
     }
 
     #pauseBtn {
-        margin: 0 0 50% -57px;
+        margin: 0 0 30% 18vw;
     }
     
 }

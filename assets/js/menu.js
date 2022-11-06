@@ -1,11 +1,12 @@
-let toggle = document.getElementById('toggleMenu')
-let setting = document.getElementById('settings')
+let toggle = document.getElementById("toggleMenu")
+let setting = document.getElementById("settings")
+let copyDisclaimer = document.querySelector(".fa-copyright")
+let copyright = document.querySelector(".copyright")
+let disclaimer = document.querySelector(".disclaimer")
 
 window.onclick = function(event) {
     if (event.target == toggle) {
- 
         toggle.style.display = "none";
- 
      };
  };
 
@@ -13,11 +14,11 @@ window.onclick = function(event) {
  * Open and close the hamburger menu on smaller screens
  */
 function openToggleMenu() {
-    toggle.style.display = 'block';
+    toggle.style.display = "block";
 };
 
 function closeToggleMenu() {
-    toggle.style.display = 'none';
+    toggle.style.display = "none";
 };
 
 /**
@@ -30,3 +31,37 @@ function openSettings() {
 function closeSettings() {
     setting.style.display = "none";
 };
+
+// function keepOpen() {
+//     if(window.matchMedia("(min-width: 749px)").matches) {
+//         // copyright.style.display = "block";
+//         // disclaimer.style.display = "block";
+//         // copyDisclaimer.style.display = "none";
+//         };
+// };
+
+function openRights() {
+    if(window.matchMedia("(max-width: 748px)").matches) {
+    copyright.style.display = "block";
+    disclaimer.style.display = "block";
+    copyDisclaimer.style.display = "none";
+    };
+};
+
+function closeRights() {
+    if(window.matchMedia("(max-width: 748px)").matches) {
+    copyright.style.display = "none";
+    disclaimer.style.display = "none";
+    copyDisclaimer.style.display = "block";
+    };
+};
+
+setInterval(closeRights, 5000);
+
+// let close = setInterval(closeRights, 5000);
+
+// function keepOpen() {
+//     if(window.matchMedia("(min-width: 749px)").matches) {
+//         clearInterval(close);
+//     };
+// };

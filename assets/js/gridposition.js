@@ -1,39 +1,38 @@
 function randomGridPosition() {
 
-  if (window.innerWidth > 1280) {
+  if (window.matchMedia("(min-width: 1281px)").matches) {
     return {
       x: Math.floor(Math.random() * 30) + 1,
       y: Math.floor(Math.random() * 30) + 1
     } 
-  } else if (window.innerWidth < 1280) {
+  } else if (window.matchMedia("(max-width: 1280px)").matches) {
     return {
       x: Math.floor(Math.random() * 28) + 1,
       y: Math.floor(Math.random() * 28) + 1
     }
-  } else if (window.innerWidth < 992) {
+  } else if (window.matchMedia("(max-width: 992px)").matches) {
     return {
       x: Math.floor(Math.random() * 26) + 1,
       y: Math.floor(Math.random() * 26) + 1
     }
-  } else if (window.innerWidth < 748) {
+  } else if (window.matchMedia("(max-width: 748px)").matches) {
     return {
       x: Math.floor(Math.random() * 22) + 1,
       y: Math.floor(Math.random() * 22) + 1
     }
-  } else if (window.innerWidth < 548) {
+  } else if (window.matchMedia("(max-width: 548px)").matches) {
     return {
       x: Math.floor(Math.random() * 20) + 1,
       y: Math.floor(Math.random() * 20) + 1
     }
-  } else if (window.innerWidth < 350) {
+  } else if (window.matchMedia("(max-width: 350px)").matches) {
     return {
       x: Math.floor(Math.random() * 18) + 1,
       y: Math.floor(Math.random() * 18) + 1
     }
   } else {
     return {
-      x: Math.floor(Math.random() * 0) + 1,
-      y: Math.floor(Math.random() * 0) + 1
+      undefined
     } 
   }
 };

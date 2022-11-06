@@ -6,10 +6,10 @@ playPause.addEventListener("click", function() {
         isPlaying = true;
         board.innerText = "PAUSED";
       playPause.innerHTML = '<i class="fas fa-play"></i>';
-      requestAnimationFrame(main);
+      
     } else {
         isPlaying = false;
         cancelAnimationFrame(main);
       playPause.innerHTML = '<i class="fas fa-pause"></i>';
-    };
+    }
   });
