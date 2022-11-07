@@ -1,12 +1,15 @@
-const music = new Audio('assets/sound/music.mp3');
-let musicBtnPlay = document.querySelector('.music');
-let musicOff = document.getElementById('musicBtnOff');
-let musicOn = document.getElementById('musicBtnOn');
+const music = new Audio("assets/sound/music.mp3");
+let musicBtnPlay = document.getElementsByClassName("music");
+let musicOff = document.getElementById("musicBtnOff");
+let musicOn = document.getElementById("musicBtnOn");
 // let healtyFoodEffect = new Audio('assets/sound/healtyFood.mp3');
-// let soundBtnPlay = document.getElementById('soundBtn');
+let soundBtnPlay = document.querySelector(".sound");
+let soundOff = document.getElementById("soundBtnOff");
+let soundOn = document.getElementById("soundBtnOn");
 
-musicBtnPlay.addEventListener("click", function() {
-    if(music.paused){
+for (var i = 0; i < musicBtnPlay.length; i++) {
+  musicBtnPlay[i].addEventListener("click", function () {
+    if (music.paused) {
       music.play();
       music.volume = 0.1;
       music.loop = true;
@@ -18,3 +21,18 @@ musicBtnPlay.addEventListener("click", function() {
       musicOn.style.display = 'none';
     };
   });
+};
+
+soundBtnPlay.addEventListener("click", function () {
+  if (music.paused) {
+    music.play();
+    music.volume = 0.1;
+    music.loop = true;
+    soundOn.style.display = 'block';
+    soundOff.style.display = 'none';
+  } else {
+    music.pause();
+    musicOff.style.display = 'block';
+    musicOn.style.display = 'none';
+  };
+});

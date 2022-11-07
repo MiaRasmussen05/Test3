@@ -763,7 +763,6 @@ textarea {
         position: relative;
         font-size: 80%;
         color: #DFDEE0;
-        text-shadow: 0 0 4px #000;
         border: 3px solid #DFDEE0;
         border-radius: 50%;
         box-shadow: 1px 1px 1px #000,
@@ -775,7 +774,6 @@ textarea {
     
     .social-links li i:hover {
         color: #2D2D2D;
-        text-shadow: 0 0 4px #7F0F0F;
         border: 3px solid #2D2D2D;
         box-shadow: 0px 0px 2px #000,
         0px 0px 2px #000,

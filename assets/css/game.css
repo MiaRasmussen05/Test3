@@ -26,7 +26,7 @@
 }
 
 .settings-wrapper {
-    width: 40vh;
+    width: 380px;
     height: 350px;
     position: fixed;
     top: 50%;
@@ -72,7 +72,6 @@ legend {
     width: 60%;
     height: 60px;
     display: inline-flex;
-    justify-content: start;
     background-color: #1e1e1f;
     box-shadow: 2px 1px 2px #DFDEE0,
     -2px -1px 2px #1d1d1d,
@@ -375,34 +374,42 @@ legend {
 }
 
 #musicBtnOff {
-    margin: 4px 0 15% 2%;
+    margin: 4.5px 0 15% 2%;
 }
 
-#musicBtnOn {
+#musicBtnOn, #soundBtnOn  {
     display: none;
-    margin: 4px 0 15% 72.5%;
+    margin: 4.5px 0 15% 77.5%;
 }
 
-#soundBtn {
-    margin: 5px 0 0 2%;
+#soundBtnOff {
+    margin: 4.5px 0 0 2%;
 }
 
 #musicBtnOff i, #soundBtnOff i{
-    padding: 17% 0 0 20%;
+    padding: 18% 0 0 22.5%;
 }
 
-#musicBtnOn i, #soundBtnOn i{
+#musicBtnOff i:before {
+    padding: 18% 17px 0 0;
+}
+
+#musicBtnOn i {
     padding: 17% 4% 0 0;
 }
 
-#pauseBtn, #musicBtn, #soundBtn {
+#soundBtnOn i{
+    padding: 18% 0 0 15%;
+}
+
+#pauseBtn, #musicBtnOff, #musicBtnOn,  #soundBtnOff, #soundBtnOn {
     box-shadow: 1px 1px 3px #111111,
     -1px -1px 3px #7c7c7c,
     -1px 1px 3px #111111,
     1px -1px 3px #7c7c7c;
 }
 
-#pauseBtn:hover, #musicBtn:hover, #soundBtn:hover {
+#pauseBtn:hover, #musicBtnOff:hover, #musicBtnOn:hover, #soundBtnOff:hover, #soundBtnOn:hover {
     box-shadow: inset 1px 1px 3px #111111,
     inset -1px -1px 3px #7c7c7c,
     inset -1px 1px 3px #111111,
@@ -577,7 +584,7 @@ legend {
         transform: translate(-60%, -45%);
     }
 
-    #pauseBtn, #musicBtn, #soundBtn {
+    #pauseBtn, #musicBtnOff, #musicBtnOn, #soundBtnOff, #soundBtnOn {
         width: 50px;
         height: 50px;
         font-size: 200%;
@@ -586,14 +593,13 @@ legend {
         
     }
 
-    #musicBtn, #soundBtn {
-        margin: 5px 0 0 3px;
-    }
-
-    #musicBtn i, #soundBtn i {
+    #musicBtnOff i, #musicBtnOn i, #soundBtnOff i, #soundBtnOn i {
         font-size: 65%;
     }
 
+    #musicBtnOff i:before {
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -799,6 +805,11 @@ legend {
         margin: 5px 40px 0 0;
     }
 
+    .settings-wrapper {
+        width: 250px;
+        height: 300px;
+    }
+
     /* START OF GAMEBOARD */
     
     .game-border {
@@ -858,7 +869,10 @@ legend {
         line-height: 45px;
         transform: translate(-60%, -30%);
     }
-    
+
+    #musicBtnOn, #soundBtnOn  {
+        margin: 4.5px 0 15% 65.5%;
+    }
 }
 
 @media screen and (max-width: 444px) { 
