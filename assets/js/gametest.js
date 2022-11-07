@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         board.style.display = 'none'
         gameOverMessage.style.display = 'block'
         gameOverSound.play();
+        gameOverSound.volume = '0.1';
         gameOverSound.pause();
         updateNewHighScore();
     };
