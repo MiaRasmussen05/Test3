@@ -34,6 +34,7 @@ soundBtnPlay(s).addEventListener("click", function () {
   if (effects.paused) {
     effects.play(effects);
     effects.volume = 0.1;
+    mute = false;
     soundOn.style.display = 'block';
     soundOff.style.display = 'none';
   } else {
