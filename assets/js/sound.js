@@ -5,6 +5,8 @@ let musicBtnPlay = document.getElementsByClassName("music");
 let musicOff = document.getElementById("musicBtnOff");
 let musicOn = document.getElementById("musicBtnOn");
 let mute = false;
+let soundeffects = ['assets/sound/healtyfood.mp3', 'assets/sounds/gameover.mp3'];
+  let effects = new Audio(soundeffects);
 let soundBtnPlay = document.getElementsByClassName("sound");
 let soundOff = document.getElementById("soundBtnOff");
 let soundOn = document.getElementById("soundBtnOn");
@@ -27,9 +29,6 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
 
 for (var i = 0; i < soundBtnPlay.length; i++) {
 soundBtnPlay[i].addEventListener("click", function () {
-
-  let soundeffects = ['assets/sound/healtyfood.mp3', 'assets/sounds/gameover.mp3'];
-  let effects = new Audio(soundeffects);
 
   if (effects.paused) {
     effects.play(effects);

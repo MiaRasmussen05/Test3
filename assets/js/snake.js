@@ -29,10 +29,10 @@ function drawSnake(board) {
 
 function expandSnake(amount) {
     newSegments += amount
-    soundeffects[0].playbackRate = 1;
-    soundeffects[0].play();
+    healtyFoodEffect.playbackRate = 1;
+    healtyFoodEffect.play();
     // healtyFoodEffect.volume = '0.07';
-    soundeffects[0].currentTime = 0;
+    healtyFoodEffect.currentTime = 0;
 }
 
 function onSnake(position, {
