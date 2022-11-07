@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     for (let i = 0; i < touchControls.length; i++) {
         touchControls[i].addEventListener('click', touchControlsClicked);
     }
+    
 });
 
 /**
@@ -21,7 +22,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         board.style.display = 'none'
         gameOverMessage.style.display = 'block'
         gameOverSound.play();
-        gameOverSound.volume = '0.1';
         gameOverSound.pause();
         updateNewHighScore();
     };

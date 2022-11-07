@@ -6,7 +6,7 @@ let musicOff = document.getElementById("musicBtnOff");
 let musicOn = document.getElementById("musicBtnOn");
 let mute = false;
 let soundeffects = ['assets/sound/healtyfood.mp3', 'assets/sound/gameover.mp3'];
-  let effects = new Audio(soundeffects);
+let effects = new Audio(soundeffects);
 let soundBtnPlay = document.getElementsByClassName("sound");
 let soundOff = document.getElementById("soundBtnOff");
 let soundOn = document.getElementById("soundBtnOn");
@@ -29,19 +29,28 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
 
 for (var i = 0; i < soundBtnPlay.length; i++) {
 soundBtnPlay[i].addEventListener("click", function () {
-
   if (effects.paused) {
-    effects.play(effects);
+    // effects.play();
     effects.volume = 0.1;
-    mute = false;
+    enableMute()
     soundOn.style.display = 'block';
     soundOff.style.display = 'none';
   } else {
-    mute = true;
-    effects.pause(effects);
+    disableMute()
+    // effects.pause();
     musicOff.style.display = 'block';
     musicOn.style.display = 'none';
   };
 });
 console.log("hello");
 };
+
+function enableMute() { 
+  healtyFoodEffect.muted = true;
+  gameOverSound.muted = true;
+} 
+
+function disableMute() { 
+  healtyFoodEffect.muted = false;
+  gameOverSound.muted = false;
+} 
