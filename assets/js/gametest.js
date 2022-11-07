@@ -20,8 +20,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     if (gameOver) {
         board.style.display = 'none'
         gameOverMessage.style.display = 'block'
-        gameOverSound.play();
-        gameOverSound.pause();
+        soundeffects[1].play();
+        soundeffects[1].pause();
         updateNewHighScore();
     };
 

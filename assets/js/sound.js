@@ -1,11 +1,11 @@
 const music = new Audio("assets/sound/music.mp3");
-const healtyFoodEffect = new Audio('assets/sound/healtyFood.mp3');
+const healtyFoodEffect = new Audio('assets/sound/healtyfood.mp3');
 const gameOverSound = new Audio('assets/sound/gameover.mp3');
 let musicBtnPlay = document.getElementsByClassName("music");
 let musicOff = document.getElementById("musicBtnOff");
 let musicOn = document.getElementById("musicBtnOn");
 let mute = false;
-let soundBtnPlay = document.querySelector(".sound");
+let soundBtnPlay = document.getElementsByClassName("sound");
 let soundOff = document.getElementById("soundBtnOff");
 let soundOn = document.getElementById("soundBtnOn");
 
@@ -26,7 +26,7 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
 };
 
 for (var i = 0; i < soundBtnPlay.length; i++) {
-soundBtnPlay(s).addEventListener("click", function () {
+soundBtnPlay[i].addEventListener("click", function () {
 
   let soundeffects = ['assets/sound/healtyfood.mp3', 'assets/sounds/gameover.mp3'];
   let effects = new Audio(soundeffects[s]);
@@ -44,4 +44,5 @@ soundBtnPlay(s).addEventListener("click", function () {
     musicOn.style.display = 'none';
   };
 });
+console.log("hello");
 };
