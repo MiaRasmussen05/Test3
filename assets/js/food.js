@@ -13,7 +13,7 @@ function updateFood() {
 };
 
 function drawFood(board) {
-    const foodElement = new Image();
+    const foodElement = document.createElement('div');
     foodElement.style.gridRowStart = food.y
     foodElement.style.gridColumnStart = food.x
     foodElement.classList.add('food')

@@ -29,14 +29,10 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
 
 for (var i = 0; i < soundBtnPlay.length; i++) {
   soundBtnPlay[i].addEventListener("click", function () {
-    if (effects.play) {
+    if (effects.play()) {
       disableMute();
-      soundOff.style.display = 'none';
-      soundOn.style.display = 'block';
     } else {
       enableMute();
-      soundOff.style.display = 'block';
-      soundOn.style.display = 'none';
     };
   });
   console.log("hello");
@@ -47,9 +43,13 @@ console.log(soundBtnPlay);
 function enableMute() {
   healtyFoodEffect.muted = true;
   gameOverSound.muted = true;
+  soundOff.style.display = 'block';
+  soundOn.style.display = 'none';
 }
 
 function disableMute() {
   healtyFoodEffect.muted = false;
   gameOverSound.muted = false;
+  soundOff.style.display = 'none';
+  soundOn.style.display = 'block';
 }

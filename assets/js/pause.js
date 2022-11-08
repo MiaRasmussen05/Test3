@@ -15,3 +15,4 @@ let playPause = document.getElementById('pauseBtn');
     }
   // });
   }; 
+  console.log(pauseGame);
