@@ -31,7 +31,6 @@ function expandSnake(amount) {
     newSegments += amount
     healtyFoodEffect.playbackRate = 1;
     healtyFoodEffect.play();
-    // healtyFoodEffect.volume = '0.07';
     healtyFoodEffect.currentTime = 0;
 }
 

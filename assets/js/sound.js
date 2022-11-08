@@ -5,8 +5,6 @@ let musicBtnPlay = document.getElementsByClassName("music");
 let musicOff = document.getElementById("musicBtnOff");
 let musicOn = document.getElementById("musicBtnOn");
 let muted = false;
-let soundeffects = ['healtyFoodEffect', 'gameOverSound'];
-let effects = new Audio(soundeffects);
 let soundBtnPlay = document.getElementsByClassName("sound");
 let soundOff = document.getElementById("soundBtnOff");
 let soundOn = document.getElementById("soundBtnOn");
@@ -27,29 +25,32 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
   });
 };
 
+window.addEventListener('DOMContentLoaded', (event) => { 
+  enableMute()
+});
+
 for (var i = 0; i < soundBtnPlay.length; i++) {
   soundBtnPlay[i].addEventListener("click", function () {
-    if (effects.play()) {
-      disableMute();
-    } else {
+    if (muted) {
       enableMute();
+      soundOff.style.display = 'block';
+      soundOn.style.display = 'none';
+    } else {
+      disableMute();
+      soundOff.style.display = 'none';
+      soundOn.style.display = 'block';
     };
   });
-  console.log("hello");
 };
 
-console.log(soundBtnPlay);
-
 function enableMute() {
-  healtyFoodEffect.muted = true;
-  gameOverSound.muted = true;
-  soundOff.style.display = 'block';
-  soundOn.style.display = 'none';
+  muted = true;
+  healtyFoodEffect.volume = 0;
+  gameOverSound.volume = 0;
 }
 
 function disableMute() {
-  healtyFoodEffect.muted = false;
-  gameOverSound.muted = false;
-  soundOff.style.display = 'none';
-  soundOn.style.display = 'block';
+  muted = false;
+  healtyFoodEffect.volume = 0.1;
+  gameOverSound.volume = 0.1;
 }
