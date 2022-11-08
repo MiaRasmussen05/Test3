@@ -109,7 +109,7 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
 
   ![Apple image](./READMEimages/Apple.webp)
   ![Snake Snack Logo image](./READMEimages/Logo.webp)
-  ![Bush for the border of the game image](./assets/images/heroimage.webp)
+  ![Bush for the border of the game image](./READMEimages/Bush.webp)
   ![Scales image](./READMEimages/Scales.webp)
   ![hero-image](./READMEimages/HeroImage.webp)
 
