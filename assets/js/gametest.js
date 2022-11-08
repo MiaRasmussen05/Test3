@@ -10,6 +10,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     for (let i = 0; i < touchControls.length; i++) {
         touchControls[i].addEventListener('click', touchControlsClicked);
     }
+
+    console.log("window main")
     
 });
 
@@ -25,7 +27,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         gameOverSound.pause();
         updateNewHighScore();
     };
-
+    console.log("main")
     window.requestAnimationFrame(main);
     const secondsSinceLastRender = (currentTime - lastRenderTime) / 150;
     if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
@@ -34,6 +36,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     draw();
     update();
 };
+
+console.log(main)
 
 function update() {
     getScore.innerHTML = score
