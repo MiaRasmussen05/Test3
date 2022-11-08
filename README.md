@@ -4,12 +4,20 @@ Are you ready to help the snake grow and get some food to eat?
 Snake Snack is based on the classic Snake Game that so many people around the world have grown up with.
 It is for every person that wants either a hit of nostalgia or just a fun easy game to play. It is on a full on responsive webside with multiple options to either play the game or maybe you want to learn about the reason behind the website, or get in contact. So why not give it a try, and get lost in the game, try and beat your own high score while listening to a good song in the background.
 
+![GitHub shield last commit](https://img.shields.io/github/last-commit/MiaRasmussen05/Test3?color=red)
+![GitHub shield language count](https://img.shields.io/github/languages/count/MiaRasmussen05/Test3?color=orange)
+![GitHub shield contributors](https://img.shields.io/github/contributors/MiaRasmussen05/Test3?color=yellow)
+![W3C shield Validation](https://img.shields.io/w3c-validation/html?color=brightgreen&targetUrl=https%3A%2F%2Fmiarasmussen05.github.io%2FTest3%2F)
+![GitHub shield top language](https://img.shields.io/github/languages/top/MiaRasmussen05/Test3?color=blueviolet)
+
+
 ## __User Stories__
 
   - ### First Time Visitor Goals
 
-    - I want it to be easy to navigate the website.
-    - I want to be able to play the game.
+    - I want to be able to navigate the website without any problems.
+    - I want to to read the rules.
+    - I want to be able to play the snake game.
     - I will be able to learn about the creator and project.
     - I would be able to contact the creator with any inquiries.
     
@@ -23,18 +31,21 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
     - All pages have a favicon in browser tab. The favicon used is of the logo for Snake Snack. [Favicon.io](https://favicon.io/) is used to create the favicon.
 
   - ### Navigation Bar
-    - The navigation bar is showed on all pages. With only a slight difference on the game page where the page links aren't shown. It is fully responsive. It includes logo for snake snack, links to the diffrent pages - game page not included - social links, and a button for settings. 
+    - The navigation bar is showed on all pages. With only a slight difference on the game page where the page links aren't shown on bigger screens. It is fully responsive. It includes logo for snake snack, links to the diffrent pages - game page not included on bigger screens - social links, and a button for settings. 
     - It helps to create and easy navigations between the pages on the home page and easy acces to the settings button and social links.
+    - The settings button open op a settings pop up that lets the visitor choose to turn on the music and sound effects of the website.
     - On smaller screens the navigation menu moves inside a hambuger menu with the setting and logo staying outside.
 
   - ### Home Page
-    - The home page introduces the game page. It has the hero-image that catches the eye of the visitor when they get on it, an image of a snake that is jumping out of the screen with the name Snake Snack behind it. 
-    - The working buttons of rules and play to the right of the hero image. The rules buttons have a modal box pop op on the screen that explains the rules, how to play and what the different foods there are in the game. The play buttons open up directly into the game when clicked. 
+    - The home page introduces the feel of the website. It has the hero-image that catches the eye of the visitor when they get on it, an image of a snake that is jumping out of the screen with the name Snake Snack behind it. 
+    - Only the first time a visitor comes to the website there is a message that shows up on the screen. The meesages tells the visitor "Welcome to Snake Snack" and then another message "Let's get started!" that disapears after a few seconds. 
+    - The working buttons of rules and play to the right of the hero image. The rules buttons have a modal box pop op on the screen that explains the rules, how to play and shows images there are in the game. The play buttons open up directly into the game when clicked. 
     - The home page as well as the navigation bar is inclosed inside a card shape that fill out most of the page with the shadow border to give the effect.
     - On smaller screens the hero images moves to fill the whole width and the buttons move under it.
 
   - ### Footer
-    - The footer is under the card effects with a copyright mark and disclaimer.
+    - The footer is under the card effects with a copyright icon to the left of the page. 
+    - When clicked the icon goes away and the copright and disclaimer messages shows up in the center of the footer, which then goes away after 5 seconds where the copyright icon again shows up.
     
   - ### About Page
     - The about page have the header and two secions inside the page.
@@ -47,7 +58,7 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
     - With two additional boxes to the right of the form the visitor will get information on respond time. As well as the email address and hours where the creator will be working.
     - In the form the visitor have to give there full name, there email address, choose a topic in the radio buttons, and give a little about what there inquiry is about. For  - To be able to push the send button all the boxes need to be answered as well as one radio button needs to be choosen. 
     - The send button then send the visitor to another page with a pop up window that needs to be clicked. Then they get a thank you that their message have been submited and with a link to go back to the home page.
-    - On medium screens the two boxes jump beside each other above the form. On smaller screen they go on each other to keep it fully responsive.
+    - On medium screens the two boxes jump beside each other above the form. On smaller screen they go on each other to keep it fully responsive and easy to read.
 
   - ### Game Page
     - The game page has the game board in the middle of the screen inside the card shape. With the clickable controls on the right side and the pause button on the left corner right next to the game. Score board above the game.
@@ -59,13 +70,16 @@ It is for every person that wants either a hit of nostalgia or just a fun easy g
     - When the game is over, a game over message comes to the pages instead of it showing the board with a restart button.
 
 - ### Future Features
-  - A future feature could be to have high score board that saves all high scores so visitors can try and beat each others score and get to the top.
+  - A future feature could be to have high score board that saves all high scores of all players so visitors can try and beat each others scores and get to the top.
   - Levels with opsticals of different bushes so the highest levels have a whole labyrient that the player have to go back and forth in to get the food.
-  - Even more different kinds of food to go after.  
+  - Different kinds of food to go after both healty and unhealty that takes points away.  
 
 ### __Typography and Color Scheme__
 
 - ### Typography
+  - There where used easy readable fonts. For the headings 'Cormorant' with the secondary font of sans-serif.
+  - For the normal writing on all pages there where used the font of 'Roboto' with the secondary font of sans-serif, to match the headigs. The Footer got the font of 'Nunito' also with the sans-serif as its secondary font.
+  - These fonts where all choosen for good readabilty and the matching between the fonts.
 
 - ### Color Scheme
   - The color scheme for Snake Snack is made with two different color scheme. 

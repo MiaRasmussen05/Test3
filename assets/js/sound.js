@@ -4,8 +4,8 @@ const gameOverSound = new Audio('assets/sound/gameover.mp3');
 let musicBtnPlay = document.getElementsByClassName("music");
 let musicOff = document.getElementById("musicBtnOff");
 let musicOn = document.getElementById("musicBtnOn");
-let mute = false;
-let soundeffects = ['assets/sound/healtyfood.mp3', 'assets/sound/gameover.mp3'];
+let muted = false;
+let soundeffects = ['healtyFoodEffect', 'gameOverSound'];
 let effects = new Audio(soundeffects);
 let soundBtnPlay = document.getElementsByClassName("sound");
 let soundOff = document.getElementById("soundBtnOff");
@@ -28,29 +28,28 @@ for (var i = 0; i < musicBtnPlay.length; i++) {
 };
 
 for (var i = 0; i < soundBtnPlay.length; i++) {
-soundBtnPlay[i].addEventListener("click", function () {
-  if (effects.paused) {
-    // effects.play();
-    effects.volume = 0.1;
-    enableMute()
-    soundOn.style.display = 'block';
-    soundOff.style.display = 'none';
-  } else {
-    disableMute()
-    // effects.pause();
-    musicOff.style.display = 'block';
-    musicOn.style.display = 'none';
-  };
-});
-console.log("hello");
+  soundBtnPlay[i].addEventListener("click", function () {
+    if (effects.play) {
+      disableMute();
+      soundOff.style.display = 'none';
+      soundOn.style.display = 'block';
+    } else {
+      enableMute();
+      soundOff.style.display = 'block';
+      soundOn.style.display = 'none';
+    };
+  });
+  console.log("hello");
 };
 
-function enableMute() { 
+console.log(soundBtnPlay);
+
+function enableMute() {
   healtyFoodEffect.muted = true;
   gameOverSound.muted = true;
-} 
+}
 
-function disableMute() { 
+function disableMute() {
   healtyFoodEffect.muted = false;
   gameOverSound.muted = false;
-} 
+}

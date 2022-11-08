@@ -41,7 +41,6 @@ function update() {
     updateSnake();
     updateFood();
     checkDeath();
-    // updateNewHighScore();
 };
 
 function draw() {

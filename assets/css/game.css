@@ -158,7 +158,7 @@ legend {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    border: none;
+    border: 1px solid #111111;
 }
 
 /* START OF GAME OVER AND RESTART */
