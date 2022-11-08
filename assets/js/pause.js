@@ -14,4 +14,4 @@ let playPause = document.getElementById('pauseBtn');
       playPause.innerHTML = '<i class="fas fa-pause"></i>';
     }
   // });
-  };
+  }; 
